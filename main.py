@@ -330,6 +330,8 @@ def get_se_copyright(card, sheet):
         'tftbw': '2017',
         'bob': '2020',
         'dre': '2020',
+        'tskc': '2023',
+        'fhvp': '2024'
     }
     return f'<cop> {year_map[pack]} FFG'
 
@@ -382,6 +384,8 @@ def get_se_pack(card, sheet):
         'lif': 'TheInnsmouthConspiracy',
         'lod': 'TheInnsmouthConspiracy',
         'itm': 'TheInnsmouthConspiracy',
+        'tskc': 'TheScarletKeys',
+        'fhvp': 'TheFeastofHemlockVale',
         'eoep': 'EdgeOfTheEarthInv',
         'eoec': 'EdgeOfTheEarth',
         'rtnotz': 'ReturnToTheNightOfTheZealot', 
@@ -1685,41 +1689,47 @@ def download_card(ahdb_id):
         with open(f'translations/{lang_code}/taboo.json', 'r', encoding='utf-8') as file:
             cards.extend(json.loads(file.read()))
         for card in cards:
-            ahdb[card['code']] = card
-        # NOTE: Add parallel cards with all front back combinations.
-        for id in ['90001', '90008', '90017', '90024', '90037']:
-            card = ahdb[id]
-            old_id = card['alternate_of']
-            old_card = ahdb[old_id]
+            ahdb[card['code']] = card        
+     
+            if 'alternate_of' in card:                                                 
+                old_id = card['alternate_of']
+                old_card = ahdb[old_id]
 
-            pid = f'{old_id}-p'
-            pp_card = copy.deepcopy(card)
-            pp_card['code'] = pid
-            ahdb[pid] = pp_card
+                pid = f'{old_id}-p'
+                pp_card = copy.deepcopy(card)
+                pp_card['code'] = pid
+                ahdb[pid] = pp_card
 
-            pfid = f'{old_id}-pf'
-            pf_card = copy.deepcopy(card)
-            pf_card['code'] = pfid
-            pf_card['back_text'] = get_field(old_card, 'back_text', '')
-            pf_card['back_flavor'] = get_field(old_card, 'back_flavor', '')
-            ahdb[pfid] = pf_card
+                pfid = f'{old_id}-pf'
+                pf_card = copy.deepcopy(card)
+                pf_card['code'] = pfid
+                pf_card['back_text'] = get_field(old_card, 'back_text', '')
+                pf_card['back_flavor'] = get_field(old_card, 'back_flavor', '')
+                ahdb[pfid] = pf_card
 
-            pbid = f'{old_id}-pb'
-            pb_card = copy.deepcopy(card)
-            pb_card['code'] = pbid
-            pb_card['pack_code'] = old_card['pack_code']
-            pb_card['illustrator'] = get_field(old_card, 'illustrator', '')
-            pb_card['position'] = get_field(old_card, 'position', 0)
-            pb_card['text'] = get_field(old_card, 'text', '')
-            pb_card['flavor'] = get_field(old_card, 'flavor', '')
-            pb_card['health'] = get_field(old_card, 'health', 0)
-            pb_card['sanity'] = get_field(old_card, 'sanity', 0)
-            pb_card['skill_willpower'] = get_field(old_card, 'skill_willpower', 0)
-            pb_card['skill_intellect'] = get_field(old_card, 'skill_intellect', 0)
-            pb_card['skill_combat'] = get_field(old_card, 'skill_combat', 0)
-            pb_card['skill_agility'] = get_field(old_card, 'skill_agility', 0)
-            ahdb[pbid] = pb_card
+                pbid = f'{old_id}-pb'
+                pb_card = copy.deepcopy(card)
+                pb_card['code'] = pbid
+                pb_card['pack_code'] = old_card['pack_code']
+                pb_card['illustrator'] = get_field(old_card, 'illustrator', '')
+                pb_card['position'] = get_field(old_card, 'position', 0)
+                pb_card['text'] = get_field(old_card, 'text', '')
+                pb_card['flavor'] = get_field(old_card, 'flavor', '')
+                pb_card['health'] = get_field(old_card, 'health', 0)
+                pb_card['sanity'] = get_field(old_card, 'sanity', 0)
+                pb_card['skill_willpower'] = get_field(old_card, 'skill_willpower', 0)
+                pb_card['skill_intellect'] = get_field(old_card, 'skill_intellect', 0)
+                pb_card['skill_combat'] = get_field(old_card, 'skill_combat', 0)
+                pb_card['skill_agility'] = get_field(old_card, 'skill_agility', 0)
+                ahdb[pbid] = pb_card
 
+        # NOTE: Add Hank Samson
+        for id in ['10016a']:
+            ahdb['10015-b1'] = ahdb[id]
+
+        for id in ['10016b']:
+            ahdb['10015-b2'] = ahdb[id]
+        
         # NOTE: Patching special point attributes as separate fields.
         points = {
             'shelter': ['08502', '08503', '08504', '08505', '08506', '08507', '08508', '08509', '08510', '08511', '08512', '08513', '08514'],
