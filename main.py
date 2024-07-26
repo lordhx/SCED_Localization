@@ -331,7 +331,17 @@ def get_se_copyright(card, sheet):
         'bob': '2020',
         'dre': '2020',
         'tskc': '2023',
-        'fhvp': '2024'
+        'tskp': '2023',
+        'fhvp': '2024',
+        'fhvc': '2024',
+        'otr': '2023',
+        'rop': '2024',
+        'fof': '2023',
+        'mtt': '2022',
+        'ltr': '2023',
+        'blbe': '2023',
+        'hfa': '2024',
+        'ptr': '2023'
     }
     return f'<cop> {year_map[pack]} FFG'
 
@@ -385,7 +395,9 @@ def get_se_pack(card, sheet):
         'lod': 'TheInnsmouthConspiracy',
         'itm': 'TheInnsmouthConspiracy',
         'tskc': 'TheScarletKeys',
+        'tskp': 'TheScarletKeys',
         'fhvp': 'TheFeastofHemlockVale',
+        'fhvc': 'TheFeastofHemlockVale',
         'eoep': 'EdgeOfTheEarthInv',
         'eoec': 'EdgeOfTheEarth',
         'rtnotz': 'ReturnToTheNightOfTheZealot', 
@@ -400,6 +412,9 @@ def get_se_pack(card, sheet):
         'hotel': 'MurderAtTheExcelsiorHotel',
         'blob': 'TheBlobThatAteEverything',
         'wog': 'WarOfTheOuterGods',
+        'fof': 'FortuneAndFolly',
+        'mtt': 'MachinationsThroughTime',
+        'blbe': 'TheBlobThatAteEverythingELSE!',
         'nat': 'NathanielCho',
         'har': 'HarveyWalters',
         'win': 'WinifredHabbamock',
@@ -410,13 +425,18 @@ def get_se_pack(card, sheet):
         'bad': 'ParallelInvestigators',
         'btb': 'ParallelInvestigators',
         'rtr': 'ParallelInvestigators',
+        'otr': 'ParallelInvestigators',
+        'ltr': 'ParallelInvestigators',
+        'ptr': 'ParallelInvestigators',
+        'rop': 'ParallelInvestigators',
+        'hfa': 'ParallelInvestigators',
         'hoth': 'Promos',
         'tdor': 'Promos',
         'iotv': 'Promos',
         'tdg': 'Promos',
         'tftbw': 'Promos',
         'bob': 'Promos',
-        'dre': 'Promos',
+        'dre': 'Promos'
     }
     return pack_map[pack]
 
@@ -690,6 +710,15 @@ def get_se_encounter(card, sheet):
         'bad_blood': 'BadBlood',
         'by_the_book': 'ByTheBook',
         'red_tide_rising': 'RedTideRising',
+        'globetrotting': 'Globetrotting',
+        'the_longest_night': 'TheLongestNight',
+        'heirlooms': 'Heirlooms',
+        'fortune_and_folly': 'FortuneAndFolly',
+        'machinations_through_time': 'MachinationsThroughTime',
+        'residents': 'Residents',
+        'hemlock_house': 'HemlockHouse',
+        'written_in_rock': 'WrittenInRock',
+        'day_of_rain': 'DayOfRain',
         None: '',
     }
     return encounter_map[encounter]
@@ -952,6 +981,15 @@ def get_se_encounter_total(card, sheet):
         'bad_blood': 4,
         'by_the_book': 5,
         'red_tide_rising': 5,
+        'globetrotting': 15,
+        'the_longest_night': 2,
+        'heirlooms': 3,
+        'fortune_and_folly': 61,
+        'machinations_through_time': 75,
+        'residents': 11,
+        'hemlock_house': 2,
+        'written_in_rock': 3,
+        'day_of_rain': 6,
         None: 0,
     }
     return str(encounter_map[encounter])
@@ -1611,6 +1649,7 @@ def recreate_dir(dir):
 def download_repo(repo_folder, repo):
     if os.path.isdir(repo_folder):
         return repo_folder
+    
     print(f'Cloning {repo}...')
     ensure_dir(args.repo_dir)
     repo_name = repo.split('/')[-1]
@@ -1866,7 +1905,7 @@ def translate_sced_card(url, deck_w, deck_h, deck_x, deck_y, is_front, card, met
     result_id = encode_result_id(get_en_url_id(url), deck_w, deck_h, deck_x, deck_y, rotate, sheet)
     if result_id in result_set:
         return
-    print(f'Translating {result_id}...')
+    print(f'Translating {card['code']} - {result_id}...')
 
     if card_type == 'asset':
         if get_field(card, 'encounter_code', None):
@@ -2174,10 +2213,14 @@ def process_encounter_cards(callback, **kwargs):
     folders = ['campaigns', 'scenarios']
     # NOTE: These campaigns don't have data on ADB yet.
     skip_files = [
-        'the_scarlet_keys.json',
+        # 'the_scarlet_keys.json',
         'fortune_and_folly.json',
         'machinations_through_time.json',
-        'meddling_of_meowlathotep.json'
+        'meddling_of_meowlathotep.json',
+        'the_feast_of_hemlock_vale.json',
+        'blob_that_ate_everything.json',
+        'challenge_laid_to_rest.json',
+        'challenge_relics_of_the_past.json'
    ]
     for folder in folders:
         campaign_folder = f'{repo_folder}/{folder}'
