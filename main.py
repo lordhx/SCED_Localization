@@ -2327,7 +2327,13 @@ def pack_images():
             deck_url = url_map['en'][deck_url_id]
             deck_image_filename = download_deck_image(deck_url)
             if deck_url_id not in deck_images:
-                deck_images[deck_url_id] = Image.open(deck_image_filename)
+                deck_image = Image.open(deck_image_filename)
+
+                if deck_image.mode == 'P':
+                    deck_image = deck_image.convert('RGB')
+
+                deck_images[deck_url_id] = deck_image
+
             deck_image = deck_images[deck_url_id]
             card_image_filename = f'{image_dir}/{filename}'
             card_image = Image.open(card_image_filename)
