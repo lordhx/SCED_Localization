@@ -719,6 +719,9 @@ def get_se_encounter(card, sheet):
         'hemlock_house': 'HemlockHouse',
         'written_in_rock': 'WrittenInRock',
         'day_of_rain': 'DayOfRain',
+        'dead_heat': 'DeadHeat',
+        'spreading_corruption': 'SpreadingCorruption',
+        'scarlet_sorcery': 'ScarletSorcery',
         None: '',
     }
     return encounter_map[encounter]
@@ -990,6 +993,9 @@ def get_se_encounter_total(card, sheet):
         'hemlock_house': 2,
         'written_in_rock': 3,
         'day_of_rain': 6,
+        'dead_heat': 31,
+        'spreading_corruption': 6,
+        'scarlet_sorcery': 4,
         None: 0,
     }
     return str(encounter_map[encounter])
@@ -2213,11 +2219,12 @@ def process_encounter_cards(callback, **kwargs):
     folders = ['campaigns', 'scenarios']
     # NOTE: These campaigns don't have data on ADB yet.
     skip_files = [
-        # 'the_scarlet_keys.json',
+        'labyrinths_of_lunacy.json', #issue during download
+        'the_scarlet_keys.json', #double sided key
         'fortune_and_folly.json',
         'machinations_through_time.json',
         'meddling_of_meowlathotep.json',
-        'the_feast_of_hemlock_vale.json',
+        'the_feast_of_hemlock_vale.json', #missing agenda and scenario cards
         'blob_that_ate_everything.json',
         'challenge_laid_to_rest.json',
         'challenge_relics_of_the_past.json'
