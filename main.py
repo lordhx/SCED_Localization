@@ -6,6 +6,7 @@
 # Return to scenarios, missing swapping encounter set icons data
 # Promos, LOL, TSK, MTT, FOF, no translation
 
+from progress.bar import Bar
 import argparse
 import csv
 import json
@@ -722,9 +723,23 @@ def get_se_encounter(card, sheet):
         'dead_heat': 'DeadHeat',
         'spreading_corruption': 'SpreadingCorruption',
         'scarlet_sorcery': 'ScarletSorcery',
+        'without_a_trace': 'WithoutATrace',
+        'beyond_the_beyond': 'BeyondTheBeyond',
+        'agents_of_the_outside': 'AgentsOfTheOutside',
+        'secret_war': 'SecretWar',
+        'outsiders': 'Outsiders',
+        'dancing_mad': 'DancingMad',
+        'shadow_of_a_doubt': 'ShadowOfADoubt',
+        'cleanup_crew': 'CleanupCrew',
+        'crimson_conspiracy': 'CrimsonConspiracy',
+        'dealings_in_the_dark': 'DealingsInTheDark',
         None: '',
     }
-    return encounter_map[encounter]
+
+    if encounter in encounter_map:
+        return encounter_map[encounter]
+    else: 
+        return "".join(x.capitalize() for x in encounter.lower().split("_"))
 
 def get_se_encounter_total(card, sheet):
     if is_se_bottom_line_transparent(card, sheet):
@@ -996,6 +1011,27 @@ def get_se_encounter_total(card, sheet):
         'dead_heat': 31,
         'spreading_corruption': 6,
         'scarlet_sorcery': 4,
+        'without_a_trace': 13,
+        'beyond_the_beyond': 11,
+        'agents_of_the_outside': 4,
+        'secret_war': 7,
+        'outsiders': 6,
+        'dancing_mad': 19,
+        'shadow_of_a_doubt': 4,
+        'cleanup_crew': 6,
+        'crimson_conspiracy': 5,
+        'dealings_in_the_dark': 30,
+        'sanguine_shadows': 25,
+        'riddles_and_rain': 19,
+        'shades_of_suffering': 27,
+        'on_thin_ice': 31,
+        'dogs_of_war': 31,
+        'dark_veiling': 4,
+        'agents_of_yuggoth': 4,
+        'strange_happenings': 4,
+        'congress_of_the_keys': 22,
+        'spatial_anomaly': 8,
+        'mysteries_abound': 4,
         None: 0,
     }
     return str(encounter_map[encounter])
@@ -1060,6 +1096,9 @@ def get_se_per_investigator(card):
         return '0' if get_field(card, 'clues', 0) in [0, -2] or get_field(card, 'clues_fixed', False) else '1'
     else:
         return '1' if get_field(card, 'health_per_investigator', False) else '0'
+
+def get_se_per_investigator_stamina(card):
+    return '1' if get_field(card, 'health_per_investigator', False) else '0'
 
 def get_se_progress_number(card):
     return str(get_field(card, 'stage', 0))
@@ -1175,8 +1214,12 @@ def get_se_front_rule(card):
     rule = get_field(card, 'text', '')
     return get_se_rule(rule)
 
-def get_se_back_rule(card):
-    rule = get_field(card, 'back_text', '')
+def get_se_back_rule(card, sheet):
+    if sheet == 1: 
+        rule = get_field(card, 'text', '')
+    else: 
+        rule = get_field(card, 'back_text', '')
+    
     return get_se_rule(rule)
 
 def get_se_chaos(rule, index):
@@ -1287,8 +1330,12 @@ def get_se_front_flavor(card):
     flavor = get_field(card, 'flavor', '')
     return get_se_flavor(flavor)
 
-def get_se_back_flavor(card):
-    flavor = get_field(card, 'back_flavor', '')
+def get_se_back_flavor(card, sheet):
+    if sheet == 1: 
+        flavor = get_field(card, 'flavor', '')
+    else: 
+        flavor = get_field(card, 'back_flavor', '')
+    
     return get_se_flavor(flavor)
 
 def get_se_back_header(card):
@@ -1436,7 +1483,12 @@ def get_se_vengeance(card):
 def get_se_victory(card):
     victory = get_field(card, 'victory', None)
     victory = f'Victory {victory}.' if type(victory) == int else ''
-    return transform_lang(victory)
+    victory = transform_lang(victory)
+
+    if card['type_code'] == 'asset':
+        return f'<right>{victory}'
+    else:
+        return victory
 
 def get_se_shelter(card):
     shelter = get_field(card, 'shelter', None)
@@ -1521,6 +1573,7 @@ def get_se_card(result_id, card, metadata, image_filename, image_scale, image_mo
         'port1Y': image_move_y,
         'port1Rot': '0',
         'name': get_se_front_name(card),
+        '$TitleFront': get_se_front_name(card),
         '$Subtitle': get_se_subname(card),
         '$TitleBack': get_se_back_name(card),
         '$Subtype': get_se_subtype(card),
@@ -1550,10 +1603,11 @@ def get_se_card(result_id, card, metadata, image_filename, image_scale, image_mo
         '$Attack': get_se_enemy_fight(card),
         '$Evade': get_se_enemy_evade(card),
         '$Traits': get_se_traits(card),
+        '$TraitsBack': get_se_traits(card),
         '$Rules': get_se_front_rule(card),
         '$Flavor': get_se_front_flavor(card),
-        '$FlavorBack': get_se_back_flavor(card),
-        '$InvStoryBack': get_se_back_flavor(card),
+        '$FlavorBack': get_se_back_flavor(card, image_sheet),
+        '$InvStoryBack': get_se_back_flavor(card, 0),
         '$Text1NameBack': get_se_deck_header(card, 0),
         '$Text1Back': get_se_deck_rule(card, 0),
         '$Text2NameBack': get_se_deck_header(card, 1),
@@ -1586,6 +1640,7 @@ def get_se_card(result_id, card, metadata, image_filename, image_scale, image_mo
         '$Asterisk': get_se_doom_comment(card),
         '$Shroud': get_se_shroud(card),
         '$PerInvestigator': get_se_per_investigator(card),
+        '$PerInvestigatorStamina': get_se_per_investigator_stamina(card),
         '$ScenarioIndex': get_se_progress_number(card),
         '$ScenarioDeckID': get_se_progress_letter(card),
         '$Orientation': get_se_progress_direction(card),
@@ -1610,8 +1665,8 @@ def get_se_card(result_id, card, metadata, image_filename, image_scale, image_mo
         '$AccentedStoryCBack': get_se_back_paragraph_flavor(card, 2),
         '$RulesCBack': get_se_back_paragraph_rule(card, 2),
         '$HeaderBack': get_se_back_header(card),
-        '$StoryBack': get_se_back_flavor(card),
-        '$RulesBack': get_se_back_rule(card),
+        '$StoryBack': get_se_back_flavor(card, 0),
+        '$RulesBack': get_se_back_rule(card, image_sheet),
         '$LocationIcon': get_se_front_location(metadata),
         '$Connection1Icon': get_se_front_connection(metadata, 0),
         '$Connection2Icon': get_se_front_connection(metadata, 1),
@@ -1735,7 +1790,13 @@ def download_card(ahdb_id):
             cards.extend(json.loads(file.read()))
         for card in cards:
             ahdb[card['code']] = card        
-     
+
+            if 'back_link' in card and card['code'][-1] == 'a':                
+                pid = f'{card['code'][:-1]}'
+                pp_card = copy.deepcopy(card)
+                pp_card['code'] = pid
+                ahdb[pid] = pp_card
+
             if 'alternate_of' in card:                                                 
                 old_id = card['alternate_of']
                 old_card = ahdb[old_id]
@@ -1774,7 +1835,17 @@ def download_card(ahdb_id):
 
         for id in ['10016b']:
             ahdb['10015-b2'] = ahdb[id]
-        
+
+        for id in ['09750']:
+            for letter in ['a', 'b']:
+                ahdb[f'{id}{letter}'] = ahdb[id]
+
+        for id in ['09606a']:
+             ahdb[id[:-1]] = ahdb[id]
+
+        for id in ['09557']:
+            ahdb[f'{id}a'] = ahdb[id]
+
         # NOTE: Patching special point attributes as separate fields.
         points = {
             'shelter': ['08502', '08503', '08504', '08505', '08506', '08507', '08508', '08509', '08510', '08511', '08512', '08513', '08514'],
@@ -1894,6 +1965,8 @@ se_types = [
     'scenario_back',
     'scenario_header',
     'story',
+    'key_front',
+    'key_back'
 ]
 se_cards = dict(zip(se_types, [[] for _ in range(len(se_types))]))
 result_set = set()
@@ -1912,6 +1985,7 @@ def translate_sced_card(url, deck_w, deck_h, deck_x, deck_y, is_front, card, met
     if result_id in result_set:
         return
     print(f'Translating {card['code']} - {result_id}...')
+    # print(f'{card}')
 
     if card_type == 'asset':
         if get_field(card, 'encounter_code', None):
@@ -1985,6 +2059,11 @@ def translate_sced_card(url, deck_w, deck_h, deck_x, deck_y, is_front, card, met
             se_type = 'scenario_header'
         else:
             se_type = 'story'
+    elif card_type == 'key':
+        if 'back_link' in card:
+            se_type = 'key_front'
+        else:
+            se_type = 'key_back'
     else:
         se_type = None
 
@@ -2019,6 +2098,12 @@ def translate_sced_card(url, deck_w, deck_h, deck_x, deck_y, is_front, card, met
         'scenario_back': (0, 0),
         'scenario_header': (0, 0),
         'story': (0, 0),
+        'key_front': (0, 93),
+        'key_back': (0, 93),
+        'asset_enemy_front': (0, -122),
+        'asset_enemy_back': (0, 93),
+        'enemy_enemy_front': (0, -122),
+        'enemy_enemy_back': (0, -122),
     }
     # NOTE: Handle the case where agenda and act direction reversed on cards.
     if se_type in ['agenda_front', 'act_front'] and is_se_progress_reversed(card):
@@ -2098,6 +2183,8 @@ def translate_sced_card_object(object, metadata, card):
                 '83024b',
                 '83025b',
                 '83026b',
+                '09557',
+                '09607'
         ]:
             front_card, back_card = back_card, front_card
     else:
@@ -2165,11 +2252,16 @@ def translate_sced_card_object(object, metadata, card):
             (2662, 6, 1),
             (2662, 7, 1),
             (5469, 6, 1),
-            (5469, 7, 1)
+            (5469, 7, 1),
+            (5921, 1, 3),
+            (5924, 1, 3),
+            (5918, 3, 2)
     ]:
         translate_back = False
 
     if translate_back:
+        if card['type_code'] == 'key': back_is_front = False     
+        
         # NOTE: If back side has a separate entry, then it's treated as if it's the front side of the card.
         if deck['UniqueBack']:
             translate_sced_card(back_url, deck_w, deck_h, deck_x, deck_y, back_is_front, back_card, metadata)
@@ -2195,7 +2287,11 @@ def is_translatable(ahdb_id):
 def process_player_cards(callback):
     repo_folder = download_repo(args.mod_dir_primary, 'argonui/SCED')
     player_folder = f'{repo_folder}/objects/AllPlayerCards.15bb07'
-    for filename in os.listdir(player_folder):
+    filenames = os.listdir(player_folder)
+    
+    bar = Bar(f'Processing player cards ', max=len(filenames))
+    for filename in filenames:
+        bar.next()
         if filename.endswith('.gmnotes'):
             metadata_filename = f'{player_folder}/{filename}'
             with open(metadata_filename, 'r', encoding='utf-8') as metadata_file:
@@ -2213,6 +2309,8 @@ def process_player_cards(callback):
                             for state_object in object['States'].values():
                                 callback(state_object, metadata, card, object_filename, object)
 
+    bar.finish()
+
 def process_encounter_cards(callback, **kwargs):
     include_decks = kwargs.get('include_decks', False)
     repo_folder = download_repo(args.mod_dir_secondary, 'Chr1Z93/loadable-objects')
@@ -2220,7 +2318,7 @@ def process_encounter_cards(callback, **kwargs):
     # NOTE: These campaigns don't have data on ADB yet.
     skip_files = [
         'labyrinths_of_lunacy.json', #issue during download
-        'the_scarlet_keys.json', #double sided key
+        # 'the_scarlet_keys.json', #double sided key
         'fortune_and_folly.json',
         'machinations_through_time.json',
         'meddling_of_meowlathotep.json',
@@ -2319,8 +2417,11 @@ def pack_images():
     deck_images = {}
     url_map, _ = read_url_map()
     for image_dir in glob.glob('SE_Generator/images*'):
-        for filename in os.listdir(image_dir):
-            print(f'Packing {filename}...')
+        filenames = os.listdir(image_dir)
+        bar = Bar(f'Packing {image_dir}', max=len(filenames))
+        for filename in filenames:
+            bar.next()
+            # print(f'Packing {filename}...')
             result_id = filename.split('.')[0]
             deck_url_id, deck_w, deck_h, deck_x, deck_y, rotate, _ = decode_result_id(result_id)
             # NOTE: We use the English version of the url as the base image to pack to avoid repeated saving that reduces quality.
@@ -2345,13 +2446,18 @@ def pack_images():
             top = deck_y * height
             card_image = card_image.resize((width, height))
             deck_image.paste(card_image, box=(left, top))
+        bar.finish()
 
     decks_dir = f'{args.decks_dir}/{args.lang}'
     recreate_dir(decks_dir)
+
+    bar = Bar('Writing', max=len(deck_images))
     for deck_url_id, deck_image in deck_images.items():
-        print(f'Writing {deck_url_id}.jpg...')
+        bar.next()
+        # print(f'Writing {deck_url_id}.jpg...')
         deck_image = deck_image.convert('RGB')
         deck_image.save(f'{decks_dir}/{deck_url_id}.jpg', progressive=True, optimize=True)
+    bar.finish()
 
 def upload_images():
     dbx = dropbox.Dropbox(args.dropbox_token)
@@ -2362,8 +2468,11 @@ def upload_images():
     except:
         pass
     decks_dir = f'{args.decks_dir}/{args.lang}'
-    for filename in os.listdir(decks_dir):
-        print(f'Uploading {filename}...')
+    filenames = os.listdir(decks_dir)
+    bar = Bar('Uploading', max=len(filenames))
+    for filename in filenames:
+        bar.next()
+        # print(f'Uploading {filename}...')
         with open(f'{decks_dir}/{filename}', 'rb') as file:
             deck_image_data = file.read()
             deck_filename = f'{folder}/{filename}'
@@ -2379,6 +2488,7 @@ def upload_images():
             url = url.replace('?dl=0', '').replace('www.dropbox.com', 'dl.dropboxusercontent.com')
             url_id = filename.split('.')[0]
             set_url_id(url_id, url)
+    bar.finish()
 
 updated_files = {}
 def update_sced_card_object(object, metadata, card, filename, root):
