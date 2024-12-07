@@ -6,6 +6,7 @@
 # Return to scenarios, missing swapping encounter set icons data
 # Promos, LOL, TSK, MTT, FOF, no translation
 
+from progress.bar import Bar
 import argparse
 import csv
 import json
@@ -330,6 +331,18 @@ def get_se_copyright(card, sheet):
         'tftbw': '2017',
         'bob': '2020',
         'dre': '2020',
+        'tskc': '2023',
+        'tskp': '2023',
+        'fhvp': '2024',
+        'fhvc': '2024',
+        'otr': '2023',
+        'rop': '2024',
+        'fof': '2023',
+        'mtt': '2022',
+        'ltr': '2023',
+        'blbe': '2023',
+        'hfa': '2024',
+        'ptr': '2023'
     }
     return f'<cop> {year_map[pack]} FFG'
 
@@ -382,6 +395,10 @@ def get_se_pack(card, sheet):
         'lif': 'TheInnsmouthConspiracy',
         'lod': 'TheInnsmouthConspiracy',
         'itm': 'TheInnsmouthConspiracy',
+        'tskc': 'TheScarletKeys',
+        'tskp': 'TheScarletKeys',
+        'fhvp': 'TheFeastofHemlockVale',
+        'fhvc': 'TheFeastofHemlockVale',
         'eoep': 'EdgeOfTheEarthInv',
         'eoec': 'EdgeOfTheEarth',
         'rtnotz': 'ReturnToTheNightOfTheZealot', 
@@ -396,6 +413,9 @@ def get_se_pack(card, sheet):
         'hotel': 'MurderAtTheExcelsiorHotel',
         'blob': 'TheBlobThatAteEverything',
         'wog': 'WarOfTheOuterGods',
+        'fof': 'FortuneAndFolly',
+        'mtt': 'MachinationsThroughTime',
+        'blbe': 'TheBlobThatAteEverythingELSE!',
         'nat': 'NathanielCho',
         'har': 'HarveyWalters',
         'win': 'WinifredHabbamock',
@@ -406,13 +426,18 @@ def get_se_pack(card, sheet):
         'bad': 'ParallelInvestigators',
         'btb': 'ParallelInvestigators',
         'rtr': 'ParallelInvestigators',
+        'otr': 'ParallelInvestigators',
+        'ltr': 'ParallelInvestigators',
+        'ptr': 'ParallelInvestigators',
+        'rop': 'ParallelInvestigators',
+        'hfa': 'ParallelInvestigators',
         'hoth': 'Promos',
         'tdor': 'Promos',
         'iotv': 'Promos',
         'tdg': 'Promos',
         'tftbw': 'Promos',
         'bob': 'Promos',
-        'dre': 'Promos',
+        'dre': 'Promos'
     }
     return pack_map[pack]
 
@@ -686,9 +711,35 @@ def get_se_encounter(card, sheet):
         'bad_blood': 'BadBlood',
         'by_the_book': 'ByTheBook',
         'red_tide_rising': 'RedTideRising',
+        'globetrotting': 'Globetrotting',
+        'the_longest_night': 'TheLongestNight',
+        'heirlooms': 'Heirlooms',
+        'fortune_and_folly': 'FortuneAndFolly',
+        'machinations_through_time': 'MachinationsThroughTime',
+        'residents': 'Residents',
+        'hemlock_house': 'HemlockHouse',
+        'written_in_rock': 'WrittenInRock',
+        'day_of_rain': 'DayOfRain',
+        'dead_heat': 'DeadHeat',
+        'spreading_corruption': 'SpreadingCorruption',
+        'scarlet_sorcery': 'ScarletSorcery',
+        'without_a_trace': 'WithoutATrace',
+        'beyond_the_beyond': 'BeyondTheBeyond',
+        'agents_of_the_outside': 'AgentsOfTheOutside',
+        'secret_war': 'SecretWar',
+        'outsiders': 'Outsiders',
+        'dancing_mad': 'DancingMad',
+        'shadow_of_a_doubt': 'ShadowOfADoubt',
+        'cleanup_crew': 'CleanupCrew',
+        'crimson_conspiracy': 'CrimsonConspiracy',
+        'dealings_in_the_dark': 'DealingsInTheDark',
         None: '',
     }
-    return encounter_map[encounter]
+
+    if encounter in encounter_map:
+        return encounter_map[encounter]
+    else: 
+        return "".join(x.capitalize() for x in encounter.lower().split("_"))
 
 def get_se_encounter_total(card, sheet):
     if is_se_bottom_line_transparent(card, sheet):
@@ -948,6 +999,39 @@ def get_se_encounter_total(card, sheet):
         'bad_blood': 4,
         'by_the_book': 5,
         'red_tide_rising': 5,
+        'globetrotting': 15,
+        'the_longest_night': 2,
+        'heirlooms': 3,
+        'fortune_and_folly': 61,
+        'machinations_through_time': 75,
+        'residents': 11,
+        'hemlock_house': 2,
+        'written_in_rock': 3,
+        'day_of_rain': 6,
+        'dead_heat': 31,
+        'spreading_corruption': 6,
+        'scarlet_sorcery': 4,
+        'without_a_trace': 13,
+        'beyond_the_beyond': 11,
+        'agents_of_the_outside': 4,
+        'secret_war': 7,
+        'outsiders': 6,
+        'dancing_mad': 19,
+        'shadow_of_a_doubt': 4,
+        'cleanup_crew': 6,
+        'crimson_conspiracy': 5,
+        'dealings_in_the_dark': 30,
+        'sanguine_shadows': 25,
+        'riddles_and_rain': 19,
+        'shades_of_suffering': 27,
+        'on_thin_ice': 31,
+        'dogs_of_war': 31,
+        'dark_veiling': 4,
+        'agents_of_yuggoth': 4,
+        'strange_happenings': 4,
+        'congress_of_the_keys': 22,
+        'spatial_anomaly': 8,
+        'mysteries_abound': 4,
         None: 0,
     }
     return str(encounter_map[encounter])
@@ -1012,6 +1096,9 @@ def get_se_per_investigator(card):
         return '0' if get_field(card, 'clues', 0) in [0, -2] or get_field(card, 'clues_fixed', False) else '1'
     else:
         return '1' if get_field(card, 'health_per_investigator', False) else '0'
+
+def get_se_per_investigator_stamina(card):
+    return '1' if get_field(card, 'health_per_investigator', False) else '0'
 
 def get_se_progress_number(card):
     return str(get_field(card, 'stage', 0))
@@ -1127,8 +1214,12 @@ def get_se_front_rule(card):
     rule = get_field(card, 'text', '')
     return get_se_rule(rule)
 
-def get_se_back_rule(card):
-    rule = get_field(card, 'back_text', '')
+def get_se_back_rule(card, sheet):
+    if sheet == 1: 
+        rule = get_field(card, 'text', '')
+    else: 
+        rule = get_field(card, 'back_text', '')
+    
     return get_se_rule(rule)
 
 def get_se_chaos(rule, index):
@@ -1239,8 +1330,12 @@ def get_se_front_flavor(card):
     flavor = get_field(card, 'flavor', '')
     return get_se_flavor(flavor)
 
-def get_se_back_flavor(card):
-    flavor = get_field(card, 'back_flavor', '')
+def get_se_back_flavor(card, sheet):
+    if sheet == 1: 
+        flavor = get_field(card, 'flavor', '')
+    else: 
+        flavor = get_field(card, 'back_flavor', '')
+    
     return get_se_flavor(flavor)
 
 def get_se_back_header(card):
@@ -1388,7 +1483,12 @@ def get_se_vengeance(card):
 def get_se_victory(card):
     victory = get_field(card, 'victory', None)
     victory = f'Victory {victory}.' if type(victory) == int else ''
-    return transform_lang(victory)
+    victory = transform_lang(victory)
+
+    if card['type_code'] == 'asset':
+        return f'<right>{victory}'
+    else:
+        return victory
 
 def get_se_shelter(card):
     shelter = get_field(card, 'shelter', None)
@@ -1473,6 +1573,7 @@ def get_se_card(result_id, card, metadata, image_filename, image_scale, image_mo
         'port1Y': image_move_y,
         'port1Rot': '0',
         'name': get_se_front_name(card),
+        '$TitleFront': get_se_front_name(card),
         '$Subtitle': get_se_subname(card),
         '$TitleBack': get_se_back_name(card),
         '$Subtype': get_se_subtype(card),
@@ -1502,10 +1603,11 @@ def get_se_card(result_id, card, metadata, image_filename, image_scale, image_mo
         '$Attack': get_se_enemy_fight(card),
         '$Evade': get_se_enemy_evade(card),
         '$Traits': get_se_traits(card),
+        '$TraitsBack': get_se_traits(card),
         '$Rules': get_se_front_rule(card),
         '$Flavor': get_se_front_flavor(card),
-        '$FlavorBack': get_se_back_flavor(card),
-        '$InvStoryBack': get_se_back_flavor(card),
+        '$FlavorBack': get_se_back_flavor(card, image_sheet),
+        '$InvStoryBack': get_se_back_flavor(card, 0),
         '$Text1NameBack': get_se_deck_header(card, 0),
         '$Text1Back': get_se_deck_rule(card, 0),
         '$Text2NameBack': get_se_deck_header(card, 1),
@@ -1538,6 +1640,7 @@ def get_se_card(result_id, card, metadata, image_filename, image_scale, image_mo
         '$Asterisk': get_se_doom_comment(card),
         '$Shroud': get_se_shroud(card),
         '$PerInvestigator': get_se_per_investigator(card),
+        '$PerInvestigatorStamina': get_se_per_investigator_stamina(card),
         '$ScenarioIndex': get_se_progress_number(card),
         '$ScenarioDeckID': get_se_progress_letter(card),
         '$Orientation': get_se_progress_direction(card),
@@ -1562,8 +1665,8 @@ def get_se_card(result_id, card, metadata, image_filename, image_scale, image_mo
         '$AccentedStoryCBack': get_se_back_paragraph_flavor(card, 2),
         '$RulesCBack': get_se_back_paragraph_rule(card, 2),
         '$HeaderBack': get_se_back_header(card),
-        '$StoryBack': get_se_back_flavor(card),
-        '$RulesBack': get_se_back_rule(card),
+        '$StoryBack': get_se_back_flavor(card, 0),
+        '$RulesBack': get_se_back_rule(card, image_sheet),
         '$LocationIcon': get_se_front_location(metadata),
         '$Connection1Icon': get_se_front_connection(metadata, 0),
         '$Connection2Icon': get_se_front_connection(metadata, 1),
@@ -1607,6 +1710,7 @@ def recreate_dir(dir):
 def download_repo(repo_folder, repo):
     if os.path.isdir(repo_folder):
         return repo_folder
+    
     print(f'Cloning {repo}...')
     ensure_dir(args.repo_dir)
     repo_name = repo.split('/')[-1]
@@ -1685,40 +1789,62 @@ def download_card(ahdb_id):
         with open(f'translations/{lang_code}/taboo.json', 'r', encoding='utf-8') as file:
             cards.extend(json.loads(file.read()))
         for card in cards:
-            ahdb[card['code']] = card
-        # NOTE: Add parallel cards with all front back combinations.
-        for id in ['90001', '90008', '90017', '90024', '90037']:
-            card = ahdb[id]
-            old_id = card['alternate_of']
-            old_card = ahdb[old_id]
+            ahdb[card['code']] = card        
 
-            pid = f'{old_id}-p'
-            pp_card = copy.deepcopy(card)
-            pp_card['code'] = pid
-            ahdb[pid] = pp_card
+            if 'back_link' in card and card['code'][-1] == 'a':                
+                pid = f'{card['code'][:-1]}'
+                pp_card = copy.deepcopy(card)
+                pp_card['code'] = pid
+                ahdb[pid] = pp_card
 
-            pfid = f'{old_id}-pf'
-            pf_card = copy.deepcopy(card)
-            pf_card['code'] = pfid
-            pf_card['back_text'] = get_field(old_card, 'back_text', '')
-            pf_card['back_flavor'] = get_field(old_card, 'back_flavor', '')
-            ahdb[pfid] = pf_card
+            if 'alternate_of' in card:                                                 
+                old_id = card['alternate_of']
+                old_card = ahdb[old_id]
 
-            pbid = f'{old_id}-pb'
-            pb_card = copy.deepcopy(card)
-            pb_card['code'] = pbid
-            pb_card['pack_code'] = old_card['pack_code']
-            pb_card['illustrator'] = get_field(old_card, 'illustrator', '')
-            pb_card['position'] = get_field(old_card, 'position', 0)
-            pb_card['text'] = get_field(old_card, 'text', '')
-            pb_card['flavor'] = get_field(old_card, 'flavor', '')
-            pb_card['health'] = get_field(old_card, 'health', 0)
-            pb_card['sanity'] = get_field(old_card, 'sanity', 0)
-            pb_card['skill_willpower'] = get_field(old_card, 'skill_willpower', 0)
-            pb_card['skill_intellect'] = get_field(old_card, 'skill_intellect', 0)
-            pb_card['skill_combat'] = get_field(old_card, 'skill_combat', 0)
-            pb_card['skill_agility'] = get_field(old_card, 'skill_agility', 0)
-            ahdb[pbid] = pb_card
+                pid = f'{old_id}-p'
+                pp_card = copy.deepcopy(card)
+                pp_card['code'] = pid
+                ahdb[pid] = pp_card
+
+                pfid = f'{old_id}-pf'
+                pf_card = copy.deepcopy(card)
+                pf_card['code'] = pfid
+                pf_card['back_text'] = get_field(old_card, 'back_text', '')
+                pf_card['back_flavor'] = get_field(old_card, 'back_flavor', '')
+                ahdb[pfid] = pf_card
+
+                pbid = f'{old_id}-pb'
+                pb_card = copy.deepcopy(card)
+                pb_card['code'] = pbid
+                pb_card['pack_code'] = old_card['pack_code']
+                pb_card['illustrator'] = get_field(old_card, 'illustrator', '')
+                pb_card['position'] = get_field(old_card, 'position', 0)
+                pb_card['text'] = get_field(old_card, 'text', '')
+                pb_card['flavor'] = get_field(old_card, 'flavor', '')
+                pb_card['health'] = get_field(old_card, 'health', 0)
+                pb_card['sanity'] = get_field(old_card, 'sanity', 0)
+                pb_card['skill_willpower'] = get_field(old_card, 'skill_willpower', 0)
+                pb_card['skill_intellect'] = get_field(old_card, 'skill_intellect', 0)
+                pb_card['skill_combat'] = get_field(old_card, 'skill_combat', 0)
+                pb_card['skill_agility'] = get_field(old_card, 'skill_agility', 0)
+                ahdb[pbid] = pb_card
+
+        # NOTE: Add Hank Samson
+        for id in ['10016a']:
+            ahdb['10015-b1'] = ahdb[id]
+
+        for id in ['10016b']:
+            ahdb['10015-b2'] = ahdb[id]
+
+        for id in ['09750']:
+            for letter in ['a', 'b']:
+                ahdb[f'{id}{letter}'] = ahdb[id]
+
+        for id in ['09606a']:
+             ahdb[id[:-1]] = ahdb[id]
+
+        for id in ['09557']:
+            ahdb[f'{id}a'] = ahdb[id]
 
         # NOTE: Patching special point attributes as separate fields.
         points = {
@@ -1839,6 +1965,8 @@ se_types = [
     'scenario_back',
     'scenario_header',
     'story',
+    'key_front',
+    'key_back'
 ]
 se_cards = dict(zip(se_types, [[] for _ in range(len(se_types))]))
 result_set = set()
@@ -1856,7 +1984,8 @@ def translate_sced_card(url, deck_w, deck_h, deck_x, deck_y, is_front, card, met
     result_id = encode_result_id(get_en_url_id(url), deck_w, deck_h, deck_x, deck_y, rotate, sheet)
     if result_id in result_set:
         return
-    print(f'Translating {result_id}...')
+    print(f'Translating {card['code']} - {result_id}...')
+    # print(f'{card}')
 
     if card_type == 'asset':
         if get_field(card, 'encounter_code', None):
@@ -1930,6 +2059,11 @@ def translate_sced_card(url, deck_w, deck_h, deck_x, deck_y, is_front, card, met
             se_type = 'scenario_header'
         else:
             se_type = 'story'
+    elif card_type == 'key':
+        if 'back_link' in card:
+            se_type = 'key_front'
+        else:
+            se_type = 'key_back'
     else:
         se_type = None
 
@@ -1964,6 +2098,12 @@ def translate_sced_card(url, deck_w, deck_h, deck_x, deck_y, is_front, card, met
         'scenario_back': (0, 0),
         'scenario_header': (0, 0),
         'story': (0, 0),
+        'key_front': (0, 93),
+        'key_back': (0, 93),
+        'asset_enemy_front': (0, -122),
+        'asset_enemy_back': (0, 93),
+        'enemy_enemy_front': (0, -122),
+        'enemy_enemy_back': (0, -122),
     }
     # NOTE: Handle the case where agenda and act direction reversed on cards.
     if se_type in ['agenda_front', 'act_front'] and is_se_progress_reversed(card):
@@ -2043,6 +2183,8 @@ def translate_sced_card_object(object, metadata, card):
                 '83024b',
                 '83025b',
                 '83026b',
+                '09557',
+                '09607'
         ]:
             front_card, back_card = back_card, front_card
     else:
@@ -2110,11 +2252,16 @@ def translate_sced_card_object(object, metadata, card):
             (2662, 6, 1),
             (2662, 7, 1),
             (5469, 6, 1),
-            (5469, 7, 1)
+            (5469, 7, 1),
+            (5921, 1, 3),
+            (5924, 1, 3),
+            (5918, 3, 2)
     ]:
         translate_back = False
 
     if translate_back:
+        if card['type_code'] == 'key': back_is_front = False     
+        
         # NOTE: If back side has a separate entry, then it's treated as if it's the front side of the card.
         if deck['UniqueBack']:
             translate_sced_card(back_url, deck_w, deck_h, deck_x, deck_y, back_is_front, back_card, metadata)
@@ -2140,7 +2287,11 @@ def is_translatable(ahdb_id):
 def process_player_cards(callback):
     repo_folder = download_repo(args.mod_dir_primary, 'argonui/SCED')
     player_folder = f'{repo_folder}/objects/AllPlayerCards.15bb07'
-    for filename in os.listdir(player_folder):
+    filenames = os.listdir(player_folder)
+    
+    bar = Bar(f'Processing player cards ', max=len(filenames))
+    for filename in filenames:
+        bar.next()
         if filename.endswith('.gmnotes'):
             metadata_filename = f'{player_folder}/{filename}'
             with open(metadata_filename, 'r', encoding='utf-8') as metadata_file:
@@ -2158,16 +2309,23 @@ def process_player_cards(callback):
                             for state_object in object['States'].values():
                                 callback(state_object, metadata, card, object_filename, object)
 
+    bar.finish()
+
 def process_encounter_cards(callback, **kwargs):
     include_decks = kwargs.get('include_decks', False)
     repo_folder = download_repo(args.mod_dir_secondary, 'Chr1Z93/loadable-objects')
     folders = ['campaigns', 'scenarios']
     # NOTE: These campaigns don't have data on ADB yet.
     skip_files = [
-        'the_scarlet_keys.json',
+        'labyrinths_of_lunacy.json', #issue during download
+        # 'the_scarlet_keys.json', #double sided key
         'fortune_and_folly.json',
         'machinations_through_time.json',
-        'meddling_of_meowlathotep.json'
+        'meddling_of_meowlathotep.json',
+        'the_feast_of_hemlock_vale.json', #missing agenda and scenario cards
+        'blob_that_ate_everything.json',
+        'challenge_laid_to_rest.json',
+        'challenge_relics_of_the_past.json'
    ]
     for folder in folders:
         campaign_folder = f'{repo_folder}/{folder}'
@@ -2259,15 +2417,24 @@ def pack_images():
     deck_images = {}
     url_map, _ = read_url_map()
     for image_dir in glob.glob('SE_Generator/images*'):
-        for filename in os.listdir(image_dir):
-            print(f'Packing {filename}...')
+        filenames = os.listdir(image_dir)
+        bar = Bar(f'Packing {image_dir}', max=len(filenames))
+        for filename in filenames:
+            bar.next()
+            # print(f'Packing {filename}...')
             result_id = filename.split('.')[0]
             deck_url_id, deck_w, deck_h, deck_x, deck_y, rotate, _ = decode_result_id(result_id)
             # NOTE: We use the English version of the url as the base image to pack to avoid repeated saving that reduces quality.
             deck_url = url_map['en'][deck_url_id]
             deck_image_filename = download_deck_image(deck_url)
             if deck_url_id not in deck_images:
-                deck_images[deck_url_id] = Image.open(deck_image_filename)
+                deck_image = Image.open(deck_image_filename)
+
+                if deck_image.mode == 'P':
+                    deck_image = deck_image.convert('RGB')
+
+                deck_images[deck_url_id] = deck_image
+
             deck_image = deck_images[deck_url_id]
             card_image_filename = f'{image_dir}/{filename}'
             card_image = Image.open(card_image_filename)
@@ -2279,13 +2446,18 @@ def pack_images():
             top = deck_y * height
             card_image = card_image.resize((width, height))
             deck_image.paste(card_image, box=(left, top))
+        bar.finish()
 
     decks_dir = f'{args.decks_dir}/{args.lang}'
     recreate_dir(decks_dir)
+
+    bar = Bar('Writing', max=len(deck_images))
     for deck_url_id, deck_image in deck_images.items():
-        print(f'Writing {deck_url_id}.jpg...')
+        bar.next()
+        # print(f'Writing {deck_url_id}.jpg...')
         deck_image = deck_image.convert('RGB')
         deck_image.save(f'{decks_dir}/{deck_url_id}.jpg', progressive=True, optimize=True)
+    bar.finish()
 
 def upload_images():
     dbx = dropbox.Dropbox(args.dropbox_token)
@@ -2296,8 +2468,11 @@ def upload_images():
     except:
         pass
     decks_dir = f'{args.decks_dir}/{args.lang}'
-    for filename in os.listdir(decks_dir):
-        print(f'Uploading {filename}...')
+    filenames = os.listdir(decks_dir)
+    bar = Bar('Uploading', max=len(filenames))
+    for filename in filenames:
+        bar.next()
+        # print(f'Uploading {filename}...')
         with open(f'{decks_dir}/{filename}', 'rb') as file:
             deck_image_data = file.read()
             deck_filename = f'{folder}/{filename}'
@@ -2313,6 +2488,7 @@ def upload_images():
             url = url.replace('?dl=0', '').replace('www.dropbox.com', 'dl.dropboxusercontent.com')
             url_id = filename.split('.')[0]
             set_url_id(url_id, url)
+    bar.finish()
 
 updated_files = {}
 def update_sced_card_object(object, metadata, card, filename, root):
