@@ -72,7 +72,7 @@
   },
   {
     "pack_code": "woc",
-    "pack_name": "Weaver of the Cosmos",
+    "pack_name": "Плетущая космос",
     "type_code": "asset",
     "type_name": "Актив",
     "faction_code": "survivor",
@@ -81,10 +81,10 @@
     "exceptional": false,
     "myriad": false,
     "code": "06332-t",
-    "name": "Scavenging",
+    "name": "Рытьё в мусоре",
     "real_name": "Scavenging",
     "cost": 1,
-    "text": "[reaction] After you successfully investigate by 2 or more, exhaust Scavenging: Choose an [[Item]] card in your discard pile and either add it to your hand or play it <i>(paying its cost)</i>.",
+    "text": "[reaction] После того как вы успешно исследовали, превысив сложность на 2 или больше, поверните «Рытьё в мусоре»: Выберите карту [[вещи]] в своём сбросе и либо добавьте её себе на руку, либо сыграйте её (заплатив цену).",
     "real_text": "[reaction] After you successfully investigate by 2 or more, exhaust Scavenging: Choose an [[Item]] card in your discard pile and either add it to your hand or play it <i>(paying its cost)</i>.",
     "quantity": 2,
     "skill_intellect": 2,
@@ -92,7 +92,7 @@
     "health_per_investigator": false,
     "deck_limit": 2,
     "real_slot": "",
-    "traits": "Talent.",
+    "traits": "Талант.",
     "real_traits": "Talent.",
     "illustrator": "Derk Venneman",
     "is_unique": false,
@@ -210,7 +210,7 @@
     "octgn_id": "0ddd4332-6338-3470-3816-14e36d0acba0",
     "url": "http://arkhamdb.com/card/02226",
     "imagesrc": "/bundles/cards/02226.png",
-    "taboo_text": "This card’s [action] ability gains: “This attack may target a non-[[Elite]] enemy up to one location away from its standard range, ignoring the aloof and retaliate keywords.”",
+    "taboo_text": "В конце текста добавляется «Можете провести эту атаку против не [[элитного]] врага в локации на одну дальше, чем обычно, игнорируя ключевые слова „Осторожный\" и „Мститель\"».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -285,7 +285,7 @@
     "octgn_id": "7d69d529-8921-4ab8-94d6-9602ef6aee5a",
     "url": "http://arkhamdb.com/card/05153",
     "imagesrc": "/bundles/cards/05153.png",
-    "taboo_text": "This card’s [fast] ability is now a [action] ability.",
+    "taboo_text": "[fast] меняется на [action].",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -372,7 +372,7 @@
     "name": "Знания — сила",
     "real_name": "Knowledge is Power",
     "cost": 0,
-    "text": "Быстрое. Играйте только в свой ход.\nВыберите актив-[[книгу]] или [[заклинание]] под вашим контролем либо покажите со своей руки актив-[[книгу]] или [[заклинание]]. Разыграйте свойство [action] или [free] с того актива, игнорируя его цену <i>(в том числе цену в [action])</i>. Затем, если тот актив был у вас на руке, можете сбросить его, чтобы взять 1 карту.",
+    "text": "Быстрое. Играйте только в свой ход.\nВыберите актив-[[книгу]] или [[заклинание]] под вашим контролем либо покажите со своей руки актив-[[книгу]] или [[заклинание]]. Разыграйте свойство [action] или [free] с того актива, игнорируя его цены. Затем, если тот актив был у вас на руке, можете сбросить его, чтобы взять 1 карту.",
     "real_text": "Fast. Play only during your turn.\nChoose a [[Tome]] or [[Spell]] asset you control, or reveal a [[Tome]] or [[Spell]] asset from your hand. Resolve an [action] or [free] ability on that asset, ignoring all costs <i>(including its [action] cost, if any)</i>. Then, if that asset was in your hand, you may discard it to draw 1 card.",
     "quantity": 2,
     "skill_willpower": 1,
@@ -428,12 +428,12 @@
     "duplicated_by": [
       "01692"
     ],
-    "taboo_text": "This card’s ability gains: “Remove Eucatastrophe from the game.”",
+    "taboo_text": "В конце текста добавляется «Удалите „Чудесное спасение\" из игры».",
     "WARNING": "NOT UPDATED"
   },
   {
     "pack_code": "tde",
-    "pack_name": "The Dream-Eaters",
+    "pack_name": "Пожиратели снов",
     "type_code": "asset",
     "type_name": "Актив",
     "faction_code": "seeker",
@@ -442,19 +442,19 @@
     "exceptional": false,
     "myriad": false,
     "code": "06022-t",
-    "name": "Pendant of the Queen",
+    "name": "Подвеска королевы",
     "real_name": "Pendant of the Queen",
-    "subname": "Of Nothing at All",
+    "subname": "Ничем не повелевающей",
     "bonded_to": "Segment of Onyx",
     "bonded_count": 1,
-    "text": "Bonded (Segment of Onyx). Uses (3 charges). If this card has no charges, set it aside, out of play, and shuffle 3 set-aside copies of Segment of Onyx into your deck.\n[free] Exhaust Pendant of the Queen and spend 1 charge: Choose a revealed location and select one - move to that location, discover 1 clue at that location, or automatically evade an enemy at that location.",
+    "text": "Зависимая (от «Ониксового фрагмента»). Многоразовая (3 заряда). Если на этой карте нет зарядов, отложите её в сторону, вне игры, и замешайте 3 отложенных экземпляра «Ониксового фрагмента» в свою колоду.\n[free] Поверните эту карту и потратьте 1 заряд: Выберите открытую локацию и выберите одно — переместитесь в ту локацию, найдите 1 улику в той локации или автоматически уйдите от врага в той локации.",
     "real_text": "Bonded (Segment of Onyx). Uses (3 charges). If this card has no charges, set it aside, out of play, and shuffle 3 set-aside copies of Segment of Onyx into your deck.\n[free] Exhaust Pendant of the Queen and spend 1 charge: Choose a revealed location and select one - move to that location, discover 1 clue at that location, or automatically evade an enemy at that location.",
     "quantity": 1,
     "health_per_investigator": false,
     "deck_limit": 0,
-    "slot": "Accessory",
+    "slot": "Аксессуар",
     "real_slot": "Accessory",
-    "traits": "Item. Relic.",
+    "traits": "Вещь. Редкая.",
     "real_traits": "Item. Relic.",
     "illustrator": "Diana Martínez",
     "is_unique": true,
@@ -463,12 +463,12 @@
     "octgn_id": "dc7600e3-a132-42b0-b96b-67ca0cee4aff",
     "url": "http://arkhamdb.com/card/06022",
     "imagesrc": "/bundles/cards/06022.png",
-    "taboo_text": "This card’s constant ability now reads: “If this card has no charges, remove it from the game.”",
+    "taboo_text": "Постоянное свойство этой карты следует читать: «Если на этой карте нет зарядов, удалите её из игры».",
     "WARNING": "NOT UPDATED"
   },
   {
     "pack_code": "dsm",
-    "pack_name": "Dark Side of the Moon",
+    "pack_name": "Тёмная сторона Луны",
     "type_code": "skill",
     "type_name": "Навык",
     "faction_code": "rogue",
@@ -477,9 +477,9 @@
     "exceptional": false,
     "myriad": true,
     "code": "06199-t",
-    "name": "Three Aces",
+    "name": "Три туза",
     "real_name": "Three Aces",
-    "text": "Myriad.\nIf you commit 3 copies of Three Aces to a skill test, that test automatically succeeds <i>(do not reveal chaos tokens from the chaos bag)</i>. Then draw 3 cards and gain 3 resources (max once per test)",
+    "text": "Мириада.\nЕсли вы добавили к проверке 3 экземпляра «Трёх тузов», эта проверка автоматически успешна (не вытягивайте жетоны хаоса). Затем возьмите 3 карты и получите 3 ресурса (максимум 1 раз за проверку).",
     "real_text": "Myriad.\nIf you commit 3 copies of Three Aces to a skill test, that test automatically succeeds <i>(do not reveal chaos tokens from the chaos bag)</i>. Then draw 3 cards and gain 3 resources (max once per test).",
     "quantity": 3,
     "skill_wild": 1,
@@ -487,7 +487,7 @@
     "health_per_investigator": false,
     "deck_limit": 3,
     "real_slot": "",
-    "traits": "Fortune. Practiced.",
+    "traits": "Удача. Приобретённый.",
     "real_traits": "Fortune. Practiced.",
     "illustrator": "Diana Martínez",
     "is_unique": false,
@@ -496,7 +496,7 @@
     "octgn_id": "583a859c-01f8-4a2f-b963-4bccef10ca34",
     "url": "http://arkhamdb.com/card/06199",
     "imagesrc": "/bundles/cards/06199.png",
-    "taboo_text": "This card’s ability gains: “Remove each committed copy of Three Aces from the game.”",
+    "taboo_text": "В конце текста добавляется: «Удалите каждый добавленный к этой проверке экземпляр „Трёх тузов“ из игры».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -530,7 +530,7 @@
     "octgn_id": "5a8f5e1c-3603-4662-bdb3-824eef31b70b",
     "url": "http://arkhamdb.com/card/60318",
     "imagesrc": "/bundles/cards/60318.png",
-    "taboo_text": "Instead of “Shuffle each weakness that was discarded…”, this card’s ability now reads: “After this skill test resolves, draw each weakness discarded by this effect.”",
+    "taboo_text": "Вместо «Замешайте обратно в свою колоду каждую сброшенную при этом слабость» следует читать «После завершения этой проверки возьмите каждую слабость, сброшенную по этому эффекту».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -744,7 +744,7 @@
     "octgn_id": "83fc44d4-edfe-4fb3-a7f8-8e42244c7064",
     "url": "http://arkhamdb.com/card/03112",
     "imagesrc": "/bundles/cards/03112.png",
-    "taboo_text": "This card’s [fast] ability now reads: “…Gain 1 resource for each doom on David Renfield (to a maximum of 3 resources).”",
+    "taboo_text": "Свойство этой карты следует читать так: «…Получите 1 ресурс за каждую безысходность на „Дэвиде Ренфилде“ (максимум 3 ресурса)».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -893,6 +893,88 @@
     "WARNING": "NOT UPDATED"
   },
   {
+    "pack_code": "fhvp",
+    "pack_name": "Пир в Хемлок-Вейл. Сыщики",
+    "type_code": "asset",
+    "type_name": "Актив",
+    "faction_code": "seeker",
+    "faction_name": "Искатель",
+    "position": 59,
+    "exceptional": false,
+    "myriad": false,
+    "code": "10059-t",
+    "name": "Ненасытный миконид",
+    "real_name": "Ravenous Myconid",
+    "subname": "Разумный штамм",
+    "cost": 2,
+    "text": "Изученный. Не более 1 такой карты в колоде.\n[fast]: Найдите среди своих зависимых карт «Жуткую поросль» и добавьте себе на руку. (Не чаще 1 раза в раунд.)\n[reaction] Когда сыщик берёт напасть (но не слабость), если неясность его локации не больше числа наростов на этой карте: Отмените эффекты той напасти и сбросьте её. Удалите все наросты с этой карты.",
+    "real_text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[reaction] When an investigator draws a non-weakness treachery card, if their locations shroud is equal to or less than Ravenous Myconid's growth: Cancel that treachery's effects and discard it. Remove all growth from Ravenous Myconid.",
+    "quantity": 1,
+    "skill_intellect": 1,
+    "xp": 4,
+    "health": 1,
+    "health_per_investigator": false,
+    "sanity": 1,
+    "deck_limit": 1,
+    "traits": "Существо. Наука.",
+    "real_traits": "Creature. Science.",
+    "illustrator": "JB Casacop",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "aecbfa60-22c0-44b9-9d89-0037e06320db",
+    "url": "http://arkhamdb.com/card/10059",
+    "bonded_cards": [
+      {
+        "count": 1,
+        "code": "10045"
+      }
+    ],
+    "taboo_xp": 1,
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "fhvp",
+    "pack_name": "Пир в Хемлок-Вейл. Сыщики",
+    "type_code": "asset",
+    "type_name": "Актив",
+    "faction_code": "seeker",
+    "faction_name": "Искатель",
+    "position": 60,
+    "exceptional": false,
+    "myriad": false,
+    "code": "10060-t",
+    "name": "Ненасытный миконид",
+    "real_name": "Ravenous Myconid",
+    "subname": "Плотоядный штамм",
+    "cost": 2,
+    "text": "Изученный. Не более 1 такой карты в колоде.\n[fast]: Найдите среди своих зависимых карт «Жуткую поросль» и добавьте себе на руку. (Не чаще 1 раза в раунд.)\n[fast] Выберите не [[элитного]] врага в вашей локации, чьё оставшееся здоровье не больше числа наростов на этой карте: Победите того врага. Удалите все наросты с этой карты.",
+    "real_text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[fast] Choose a non-[[Elite]] enemy at your location with equal or fewer remaining health than the amount of growth on Ravenous Myconid: Defeat that enemy. Remove all growth from Ravenous Myconid.",
+    "quantity": 1,
+    "skill_combat": 1,
+    "xp": 4,
+    "health": 1,
+    "health_per_investigator": false,
+    "sanity": 1,
+    "deck_limit": 1,
+    "traits": "Монстр. Наука.",
+    "real_traits": "Monster. Science.",
+    "illustrator": "JB Casacop",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "6f426c03-ea92-4c7d-bd07-e99c6231a7c5",
+    "url": "http://arkhamdb.com/card/10060",
+    "bonded_cards": [
+      {
+        "count": 1,
+        "code": "10045"
+      }
+    ],
+    "taboo_xp": 1,
+    "WARNING": "NOT UPDATED"
+  },
+  {
     "pack_code": "tskp",
     "pack_name": "Алые ключи. Сыщики",
     "type_code": "asset",
@@ -967,7 +1049,38 @@
     "octgn_id": "5ef0a6ec-da59-43c4-9232-db4e9fe927b9",
     "url": "http://arkhamdb.com/card/09022",
     "imagesrc": "/bundles/cards/09022.png",
-    "taboo_text": "",
+    "taboo_text": "Улучшение «Руна охоты»: +1 опыт.",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "tskp",
+    "pack_name": "Алые ключи. Сыщики",
+    "type_code": "asset",
+    "type_name": "Актив",
+    "faction_code": "rogue",
+    "faction_name": "Ловкач",
+    "position": 77,
+    "exceptional": true,
+    "myriad": false,
+    "code": "09077-t",
+    "name": "Подпольный рынок",
+    "real_name": "Underworld Market",
+    "text": "Постоянный. Исключительный. У вас +10 к размеру колоды.\n[reaction] Перед тем как брать стартовую руку, выберите из своей колоды 10 [[незаконных]] карт: Перемешайте их и положите рядом с этой картой; это колода рынка.\n[reaction] В начале вашего хода: Раскройте 2 верхние карты колоды рынка. Можете потратить 1 ресурс, чтобы взять одну из них. Оставшиеся верните под низ колоды рынка в любом порядке.",
+    "real_text": "Permanent. Exceptional. You get +10 deck size.\n[reaction] Before drawing your opening hand, choose 10 [[Illicit]] cards from your deck: Shuffle them together and place them next to Underworld Market, as your market deck.\n[reaction] At the start of your turn: Reveal the top 2 cards of your market deck. You may spend 1 resource to draw 1 of them. Place the rest on the bottom, in any order.",
+    "quantity": 1,
+    "xp": 2,
+    "health_per_investigator": false,
+    "deck_limit": 1,
+    "traits": "Связи. Незаконные.",
+    "real_traits": "Connection. Illicit.",
+    "illustrator": "Anders Finer",
+    "is_unique": false,
+    "permanent": true,
+    "double_sided": false,
+    "octgn_id": "ca637eba-e67c-4fe3-a6b9-ee91efceb665",
+    "url": "http://arkhamdb.com/card/09077",
+    "imagesrc": "/bundles/cards/09077.png",
+    "taboo_xp": 2,
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1105,7 +1218,7 @@
     "octgn_id": "72d6431f-ee56-43c6-b3b7-88d53f98cd54",
     "url": "http://arkhamdb.com/card/08019",
     "imagesrc": "/bundles/cards/08019.png",
-    "taboo_text": "This card’s <b>Forced</b> effect now reads: “<b>Forced</b> – When your first turn of the game begins: One at a time, play up to 5 [[Item]] assets…”",
+    "taboo_text": "Обязательное свойство этой карты следует читать так:\n«<b>Обязательно</b> — Когда начинается ваш первый ход в партии: По очереди сыграйте с руки до 5 активов-[[вещей]]…»",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1143,7 +1256,7 @@
     "octgn_id": "b5b399d6-072b-428b-8dd5-85122d007aa2",
     "url": "http://arkhamdb.com/card/08032",
     "imagesrc": "/bundles/cards/08032.png",
-    "taboo_text": "This card’s ability gains: “(Max twice per game.)”",
+    "taboo_text": "Считайте, что в конце текста данной карты указано: «(Максимум 2 раза за игру.)».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1185,7 +1298,7 @@
     "duplicated_by": [
       "01533"
     ],
-    "taboo_text": "This card’s [reaction] ability now reads: “After you successfully investigate, exhaust Dr. Milan Christopher...”",
+    "taboo_text": "Последний абзац текста следует читать так: «[reaction] После того как вы успешно исследовали, поверните „Доктора Милана Кристофера\": Получите 1 ресурс».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1280,7 +1393,7 @@
     "alternated_by": [
       "90078"
     ],
-    "taboo_text": "This card’s [reaction] ability gains: “(Limit once per round.)”",
+    "taboo_text": "[reaction] свойство этой карты можно активировать не чаще 1 раза в раунд.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1416,7 +1529,7 @@
     "octgn_id": "31c82a7c-e642-4c53-a1ad-13b589edac18",
     "url": "http://arkhamdb.com/card/03029",
     "imagesrc": "/bundles/cards/03029.png",
-    "taboo_text": "This card’s ability now reads: “Put a level 0-3 [[Item]] asset into play from your hand.”",
+    "taboo_text": "Вместо «Введите в игру актив-[[вещь]] со своей руки» следует читать «Введите в игру актив-[[вещь]] уровня 0–3 со своей руки».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1524,7 +1637,7 @@
     "octgn_id": "a9990ab5-25b1-40aa-9436-e24bd889bfd7",
     "url": "http://arkhamdb.com/card/05116",
     "imagesrc": "/bundles/cards/05116.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "[action] меняется на [fast].",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1559,7 +1672,7 @@
     "octgn_id": "f6e6bd79-7d2a-4ee8-a469-6e72ebbfa25c",
     "url": "http://arkhamdb.com/card/05188",
     "imagesrc": "/bundles/cards/05188.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "[action] меняется на [fast].",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1595,7 +1708,7 @@
     "octgn_id": "8c671c80-d9a1-400d-a11d-75678e3b5bd7",
     "url": "http://arkhamdb.com/card/05189",
     "imagesrc": "/bundles/cards/05189.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "[action] меняется на [fast].",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1632,12 +1745,12 @@
     "octgn_id": "43caf116-2a77-4168-a3cb-13885b676b25",
     "url": "http://arkhamdb.com/card/05020",
     "imagesrc": "/bundles/cards/05020.png",
-    "taboo_text": "This card’s ability now reads “<b>Parley.</b> Choose a non-[[Elite]] enemy at your location…”",
+    "taboo_text": "Свойство этой карты следует читать так: «<b>Переговоры.</b> Выберите не [[элитного]] врага в вашей локации…»",
     "WARNING": "NOT UPDATED"
   },
   {
     "pack_code": "dsm",
-    "pack_name": "Dark Side of the Moon",
+    "pack_name": "Тёмная сторона Луны",
     "type_code": "asset",
     "type_name": "Актив",
     "faction_code": "guardian",
@@ -1646,10 +1759,10 @@
     "exceptional": false,
     "myriad": false,
     "code": "06195-t",
-    "name": ".35 Winchester",
+    "name": "Винчестер 35-го калибра",
     "real_name": ".35 Winchester",
     "cost": 4,
-    "text": "Uses (5 ammo).\n[action]: <b>Fight.</b> You get +2 [combat] for this attack. If a +1, 0, or [elder_sign] chaos token is revealed during this attack, this attack deals +2 damage.",
+    "text": "Многоразовый (5 патронов).\n[action] Потратьте 1 патрон: <b>Бой.</b> У вас +2 [combat] в этой атаке. Если при этой атаке вытянут «+1», «0» или [elder_sign], она наносит +2 раны.",
     "real_text": "Uses (5 ammo).\n[action] Spend 1 ammo: <b>Fight.</b> You get +2 [combat] for this attack. If a +1, 0, or [elder_sign] chaos token is revealed during this attack, this attack deals +2 damage.",
     "errata_date": {
       "date": "2020-03-01 00:00:00.000000",
@@ -1661,9 +1774,9 @@
     "xp": 0,
     "health_per_investigator": false,
     "deck_limit": 2,
-    "slot": "Hand x2",
+    "slot": "Рука ×2",
     "real_slot": "Hand x2",
-    "traits": "Item. Weapon. Firearm.",
+    "traits": "Вещь. Оружие. Огнестрельное.",
     "real_traits": "Item. Weapon. Firearm.",
     "illustrator": "Stephen Somers",
     "is_unique": false,
@@ -1672,7 +1785,7 @@
     "octgn_id": "56924231-f626-4110-a6cb-110051423225",
     "url": "http://arkhamdb.com/card/06195",
     "imagesrc": "/bundles/cards/06195.png",
-    "taboo_text": "This card’s [action] ability now reads: “[action] Spend 1 ammo: <b>Fight.</b> You get +2 [combat] for this attack. If a chaos token with a non-negative modifier is revealed during this attack, this attack deals +2 damage.”",
+    "taboo_text": "Свойство [action] следует читать: «[action] Потратьте 1 патрон: <b>Бой.</b> У вас +2 [combat] в этой атаке. Если в ходе этой атаки вытянут жетон с неотрицательным модификатором, эта атака наносит +2 раны».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2198,7 +2311,7 @@
     "octgn_id": "8cc2d9c7-68be-4c2e-ac73-255a2cef591b",
     "url": "http://arkhamdb.com/card/04105",
     "imagesrc": "/bundles/cards/04105.png",
-    "taboo_text": "This card’s ability now reads “<b>Parley.</b> Choose a non-weakness enemy at your location…”",
+    "taboo_text": "Свойство этой карты следует читать так: «<b>Переговоры.</b> Выберите в вашей локации врага (но не слабость)…»",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2267,12 +2380,12 @@
     "octgn_id": "876a0c74-c958-44be-8dd4-b9d49a3a2d39",
     "url": "http://arkhamdb.com/card/04233",
     "imagesrc": "/bundles/cards/04233.png",
-    "taboo_text": "",
+    "taboo_text": "Свойство этой карты следует читать так: «Получите 1 ресурс за каждое потраченное в этот ход действие…»",
     "WARNING": "NOT UPDATED"
   },
   {
     "pack_code": "tde",
-    "pack_name": "The Dream-Eaters",
+    "pack_name": "Пожиратели снов",
     "type_code": "investigator",
     "type_name": "Сыщик",
     "faction_code": "seeker",
@@ -2281,10 +2394,10 @@
     "exceptional": false,
     "myriad": false,
     "code": "06002-t",
-    "name": "Mandy Thompson",
+    "name": "Мэнди Томпсон",
     "real_name": "Mandy Thompson",
-    "subname": "The Researcher",
-    "text": "[reaction] When an investigator at your location would search their deck or the encounter deck: They may either search 3 additional cards or resolve 1 additional target of the search. (Limit once per round.)\n[elder_sign] effect: +0. Search the top 3 cards of your deck for a card and either draw it or commit it to this test, if able. Shuffle your deck.",
+    "subname": "Изыскатель",
+    "text": "[reaction] Когда сыщик в вашей локации должен найти карту в своей колоде или колоде контактов: Тот сыщик может либо искать среди 3 дополнительных карт, либо разыграть на 1 цель поиска больше. (Не чаще 1 раза в раунд.)\n[elder_sign]: +0. Найдите среди 3 верхних карт своей колоды любую карту и либо возьмите её, либо добавьте её к этой проверке, если возможно. Перемешайте свою колоду.",
     "real_text": "[reaction] When an investigator at your location would search their deck or the encounter deck: They may either search 3 additional cards or resolve 1 additional target of the search. (Limit once per round.)\n[elder_sign] effect: +0. Search the top 3 cards of your deck for a card and either draw it or commit it to this test, if able. Shuffle your deck.",
     "quantity": 1,
     "skill_willpower": 3,
@@ -2296,7 +2409,7 @@
     "sanity": 8,
     "deck_limit": 1,
     "real_slot": "",
-    "traits": "Assistant. Scholar.",
+    "traits": "Ассистент. Учёный.",
     "real_traits": "Assistant. Scholar.",
     "deck_requirements": {
       "size": 30,
@@ -2357,13 +2470,13 @@
     "is_unique": true,
     "permanent": false,
     "double_sided": true,
-    "back_text": "<b>Deck Size</b>: At deck creation, choose 30, 40, or 50.\n<b>Secondary Class Choice</b>: At deck creation, choose Mystic ([mystic]), Rogue ([rogue]), or Survivor ([survivor]).\n<b>Deckbuilding Options</b>: Seeker cards ([seeker]) level 0-5, Neutral cards level 0-5, up to 10 level 0-1 events and/or skills of your chosen secondary class.\n<b>Deckbuilding Requirements</b> (do not count toward deck size): 1 copy of Occult Evidence (2 copies instead if your deck size is 40; 3 copies instead if your deck size is 50), Shocking Discovery, 1 random basic weakness.",
-    "back_flavor": "Ever since she was a child, Mandy would read whenever she could not sleep. Such has been the case on many nights. Her remarkable memory and ability to correlate facts have landed her a highly valued job as a researcher for Miskatonic University. She has spent hours poring over the profane pages of ancient, forbidden texts. In doing so, she has discovered a pattern indicating an impending catacylsm. Has paranoia finally caught up to her? Or is a disaster of truly epic proportions on the horizon?",
+    "back_text": "<b>Размер колоды</b>: При создании колоды выберите: 30, 40 или 50.\n<b>Второстепенный класс</b>: При создании колоды выберите: Мистик ([mystic]), Ловкач ([rogue]) или Выживший ([survivor]).\n<b>Возможные карты</b>: Карты Искателя ([seeker]) уровня 0–5, нейтральные карты уровня 0–5, до 10 событий и/или навыков выбранного второстепенного класса уровня 0–1.\n<b>Обязательные карты</b> (не идут в счёт размера колоды): 1 экземпляр «Оккультных свидетельств» (или 2 экземпляра при размере колоды 40, или 3 — при размере колоды 50), «Шокирующее открытие», 1 случайная базовая слабость.",
+    "back_flavor": "С самого детства Мэнди читала всякий раз, когда не могла уснуть. А так случалось часто. Её поразительная память и способность сопоставлять факты обеспечили ей уважаемую должность изыскателя в Мискатоникском университете. Она часами корпела над богохульными страницами древних запретных текстов. И в них она обнаружила свидетельства надвигающегося катаклизма. Это разыгралась её паранойя? Или на горизонте катастрофа поистине эпических масштабов?",
     "octgn_id": "860404e7-ebaa-43b4-b61b-10d0dd51c4d1:95ab38d9-176e-451b-8d4d-e3d3c32f4d12",
     "url": "http://arkhamdb.com/card/06002",
     "imagesrc": "/bundles/cards/06002.png",
     "backimagesrc": "/bundles/cards/06002b.png",
-    "taboo_text": "",
+    "taboo_text": "Считайте, что на обратной стороне карты этого сыщика указано: «<b>Размер колоды</b>: 50» и «<b>Обязательные карты</b> (не идут в счёт размера колоды): 3 экземпляра „Оккультных свидетельств“, …»",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2393,6 +2506,7 @@
     "real_slot": "Hand",
     "traits": "Item. Instrument. Relic. Cursed.",
     "real_traits": "Item. Instrument. Relic. Cursed.",
+    "tags": "se.",
     "illustrator": "Carlos Palma Cruchaga",
     "is_unique": true,
     "permanent": false,
@@ -2502,7 +2616,7 @@
     "octgn_id": "50e87e5f-6d92-4dd6-86a4-ab8ba454799c",
     "url": "http://arkhamdb.com/card/08076",
     "imagesrc": "/bundles/cards/08076.png",
-    "taboo_text": "This card’s ability gains “(Max twice per game.)”",
+    "taboo_text": "Считайте, что в конце текста данной карты указано: «(Максимум 2 раза за игру.)».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2559,7 +2673,7 @@
     "name": "Схема эонов",
     "real_name": "Eon Chart",
     "cost": 2,
-    "text": "Многоразовая (3 тайны).\n[fast] В свой ход поверните «Схему эонов» и потратьте 1 тайну: Выберите и совершите два разных действия из следующих — <b>«Движение»</b>, <b>«Уход»</b> или <b>«Исследование»</b>.",
+    "text": "Многоразовая (3 тайны).\n[fast] В свой ход поверните «Схему эонов» и потратьте 1 тайну: Выберите и в любом порядке совершите два разных действия из следующих — <b>«Движение»</b>, <b>«Уход»</b> или <b>«Исследование»</b>.",
     "real_text": "Uses (3 secrets).\n[fast] During your turn, exhaust Eon Chart and spend 1 secret: Choose and take two different actions of the following, in any order (move, evade, or investigate).",
     "quantity": 2,
     "skill_intellect": 1,
@@ -2580,6 +2694,41 @@
     "url": "http://arkhamdb.com/card/08100",
     "imagesrc": "/bundles/cards/08100.png",
     "taboo_text": "Данная карта позволяет совершить только базовые движение, уход, исследование.",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "eoep",
+    "pack_name": "На краю земли. Сыщики",
+    "type_code": "asset",
+    "type_name": "Актив",
+    "faction_code": "rogue",
+    "faction_name": "Ловкач",
+    "faction2_code": "survivor",
+    "faction2_name": "Выживший",
+    "position": 113,
+    "exceptional": false,
+    "myriad": false,
+    "code": "08113-t",
+    "name": "Щедрая ссуда",
+    "real_name": "Unscrupulous Loan",
+    "cost": 0,
+    "text": "Не более 1 такой карты на сыщика. Не может выйти из игры.\n[reaction] После того как вы сыграли «Щедрую ссуду»: Получите 10 ресурсов.\n<b>Обязательно</b> — Когда заканчивается партия или когда вы побеждены, если в вашем пуле меньше 10 ресурсов: Изгоните «Щедрую ссуду».",
+    "real_text": "Limit 1 per investigator. Cannot leave play.\n[reaction] After you play Unscrupulous Loan: Gain 10 resources.\n<b>Forced</b> - When the game ends or you are eliminated, if you have fewer than 10 resources in your resource pool: Exile Unscrupulous Loan.",
+    "quantity": 2,
+    "xp": 3,
+    "health_per_investigator": false,
+    "deck_limit": 2,
+    "traits": "Сделка.",
+    "real_traits": "Pact.",
+    "illustrator": "Drazenka Kimpel",
+    "is_unique": false,
+    "exile": true,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "90f645d5-0de3-409b-bb6e-5cd89178004b",
+    "url": "http://arkhamdb.com/card/08113",
+    "imagesrc": "/bundles/cards/08113.png",
+    "taboo_text": "",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2652,7 +2801,7 @@
     "octgn_id": "31b210cb-325b-4a50-9e7b-cccb0dd8f04a",
     "url": "http://arkhamdb.com/card/09045",
     "imagesrc": "/bundles/cards/09045.png",
-    "taboo_text": "This card’s second ability gains: “(max 3 evidence spent per round).”",
+    "taboo_text": "Считайте, что в конце второго свойства данной карты указано: «(Максимум 3 потраченных подтверждения за раунд.)».",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2729,7 +2878,82 @@
     "octgn_id": "fe908036-fc59-4d16-9499-bb1921915c6d",
     "url": "http://arkhamdb.com/card/09081",
     "imagesrc": "/bundles/cards/09081.png",
-    "taboo_text": "This card’s text box now reads: “[action] If attached enemy is at your location: <b>Parley.</b> Test [willpower] (3). If you succeed, give it a command (limit once per round per command) – “Go.” This enemy moves once in a direction of your choice.” This card’s customizable sheet loses the “Mercy” ability and gains“☐Cower. Add the command: “- ‘Cower.’ This enemy exhausts.”",
+    "taboo_text": "This card’s text box now reads: \"[action] If attached enemy is at your location: <b>Parley.</b> Test [willpower](3). If you succeed, give it a command (limit once per round per command) – \"Go.\" This enemy moves once in a direction of your choice.\" This card’s customizable sheet loses the \"Mercy\" ability and gains\"☐Cower. Add the command: \"- ‘Cower.’ This enemy exhausts.\"",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "tskp",
+    "pack_name": "Алые ключи. Сыщики",
+    "type_code": "asset",
+    "type_name": "Актив",
+    "faction_code": "seeker",
+    "faction_name": "Искатель",
+    "position": 41,
+    "exceptional": false,
+    "myriad": false,
+    "code": "09041-t",
+    "name": "Эмпирическая гипотеза",
+    "real_name": "Empirical Hypothesis",
+    "cost": 2,
+    "text": "Адаптация. Не более 1 такой карты на сыщика.\n<b>Обязательно</b> — В начале раунда: Выберите на этот раунд одно условие:\n• Вы провалили проверку хотя бы на 2.\n• Вы превысили сложность проверки хотя бы на 3.\nКогда выбранное условие выполняется, можете повернуть эту карту и положить на неё 1 подтверждение.\n[fast] Потратьте 1 подтверждение: Возьмите 1 карту.",
+    "customization_text": "□ <b>Пессимистичный прогноз.</b> Добавьте условие: «у вас на руке нет карт».\n□ <b>Пробы и ошибки.</b> Добавьте условие: «вам наносят хотя бы 1 рану и/или ужас».\n□ <b>Независимая переменная.</b> Добавьте условие: «вы сбрасываете из игры напасть или врага».\n□ <b>Полевые испытания.</b> Добавьте условие: «вы входите в локацию с неясностью 3 или выше».\n□□ <b>Рецензирование.</b> Выбранное условие может выполняться не только вами, а любыми сыщиками в вашей локации; также они могут активировать свойства [fast] «Эмпирической гипотезы».\n□□ <b>Грант.</b> Считайте, что на «Эмпирической гипотезе» также указано: «[fast] Потратьте 2 подтверждения: Снизьте на 3 цену следующей карты, которую сыграете в этой фазе».\n□□□ <b>Неопровержимое доказательство.</b> Считайте, что на «Эмпирической гипотезе» также указано: «[fast] Потратьте 3 подтверждения: Найдите 1 улику в вашей локации».\n□□□□ <b>Альтернативная гипотеза.</b> После того как вы повернули «Эмпирическую гипотезу», можете разыграть её обязательное свойство, выбрав условие, которое вы ещё не выбирали в этом раунде. Затем разверните её.",
+    "customization_change": "• У вас на руке нет карт.\n• Вам наносят хотя бы 1 рану и/или ужас.\n• Вы сбрасываете из игры напасть или врага.\n• Вы входите в локацию с неясностью 3 или выше.\nКогда выбранное условие выполняется любым сыщиком в вашей локации, можете повернуть «Эмпирическую гипотезу» и положить на неё 1 подтверждение. Другие сыщики в вашей локации могут активировать свойства [fast] «Эмпирической гипотезы».\n[fast] Потратьте 2 подтверждения: Снизьте на 3 цену следующей карты, которую сыграете в этой фазе.\n[fast] Потратьте 3 подтверждения: Найдите 1 улику в вашей локации.\nПосле того как вы повернули «Эмпирическую гипотезу», можете разыграть её обязательное свойство, выбрав условие, которое вы ещё не выбирали в этом раунде. Затем разверните её.",
+    "real_text": "Customizable. Limit 1 per investigator.\n<b>Forced</b> - At the start of the round: Choose one of the following criteria for this round\n- You fail a test by 2 or more.\n- You succeed at a test by 3 or more.\nWhen the chosen criteria is met, you may exhaust Empirical Hypothesis to add 1 evidence to it.\n[fast] Spend 1 evidence: Draw 1 card.",
+    "quantity": 2,
+    "skill_intellect": 1,
+    "xp": 0,
+    "health_per_investigator": false,
+    "deck_limit": 2,
+    "traits": "Талант. Наука.",
+    "real_traits": "Talent. Science.",
+    "customization_options": [
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 2,
+        "text_change": "replace",
+        "position": 4
+      },
+      {
+        "xp": 2,
+        "text_change": "append"
+      },
+      {
+        "xp": 3,
+        "text_change": "append"
+      },
+      {
+        "xp": 4,
+        "text_change": "insert",
+        "position": 4
+      }
+    ],
+    "illustrator": "Isuardi Therianto",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "482bd50b-d746-4e73-8df5-da49c9641ece",
+    "url": "http://arkhamdb.com/card/09041",
+    "imagesrc": "/bundles/cards/09041.png",
+    "taboo_text": "",
     "WARNING": "NOT UPDATED"
   }
 ]

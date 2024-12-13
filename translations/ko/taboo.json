@@ -210,7 +210,7 @@
     "octgn_id": "0ddd4332-6338-3470-3816-14e36d0acba0",
     "url": "http://arkhamdb.com/card/02226",
     "imagesrc": "/bundles/cards/02226.png",
-    "taboo_text": "This card’s [action] ability gains: “This attack may target a non-[[Elite]] enemy up to one location away from its standard range, ignoring the aloof and retaliate keywords.”",
+    "taboo_text": "이 카드의 [action] 기능은 다음 문구를 얻습니다: “이 공격은 일반 사거리보다 최대 1칸까지 더 떨어진 장소의 ‘[[정예]]가 아닌 적’을 대상으로 삼아도 되며, 그렇게 할 경우 ‘냉담한’과 ‘보복’ 키워드를 무시합니다.”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -285,7 +285,7 @@
     "octgn_id": "7d69d529-8921-4ab8-94d6-9602ef6aee5a",
     "url": "http://arkhamdb.com/card/05153",
     "imagesrc": "/bundles/cards/05153.png",
-    "taboo_text": "This card’s [fast] ability is now a [action] ability.",
+    "taboo_text": "이 카드의 [fast] 기능은 이제 [action] 기능으로 바뀝니다.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -428,7 +428,7 @@
     "duplicated_by": [
       "01692"
     ],
-    "taboo_text": "This card’s ability gains: “Remove Eucatastrophe from the game.”",
+    "taboo_text": "이 카드의 기능은 다음 문구를 얻습니다: “‘전화위복'을 게임에서 제거합니다.”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -463,7 +463,7 @@
     "octgn_id": "dc7600e3-a132-42b0-b96b-67ca0cee4aff",
     "url": "http://arkhamdb.com/card/06022",
     "imagesrc": "/bundles/cards/06022.png",
-    "taboo_text": "This card’s constant ability now reads: “If this card has no charges, remove it from the game.”",
+    "taboo_text": "이 카드의 상시 기능은 다음과 같이 바뀝니다: “‘여왕의 펜던트'에 더 이상 충전이 없으면, 이 카드를 게임에서 제거합니다.”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -496,7 +496,7 @@
     "octgn_id": "583a859c-01f8-4a2f-b963-4bccef10ca34",
     "url": "http://arkhamdb.com/card/06199",
     "imagesrc": "/bundles/cards/06199.png",
-    "taboo_text": "This card’s ability gains: “Remove each committed copy of Three Aces from the game.”",
+    "taboo_text": "이 카드의 기능은 다음 문구를 얻습니다: “소모된 ‘에이스 트리플' 사본을 모두 게임에서 제거합니다.”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -530,7 +530,7 @@
     "octgn_id": "5a8f5e1c-3603-4662-bdb3-824eef31b70b",
     "url": "http://arkhamdb.com/card/60318",
     "imagesrc": "/bundles/cards/60318.png",
-    "taboo_text": "Instead of “Shuffle each weakness that was discarded…”, this card’s ability now reads: “After this skill test resolves, draw each weakness discarded by this effect.”",
+    "taboo_text": "이 카드의 문구는 “이 효과로 버려진 모든 약점을 당신의 덱에 섞어 넣습니다.”에서 “이번 테스트를 해결한 후, 이 효과로 버려진 모든 약점을 뽑습니다.”로 바뀝니다.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -608,7 +608,7 @@
     "url": "http://arkhamdb.com/card/07003",
     "imagesrc": "/bundles/cards/07003.png",
     "backimagesrc": "/bundles/cards/07003b.png",
-    "taboo_text": "This card’s [reaction] ability now reads: “After you discover 1 or more clues at a location with an enemy: Either discover 1 additional clue at that location, or automatically evade that enemy if it is non-[[Elite]]. (Limit once per round.)",
+    "taboo_text": "이 카드의 [reaction] 기능의 문구는 이제 다음과 같이 바뀝니다: “그 장소에서 추가로 단서를 1개 더 발견하거나 그 적이 [[정예]]가 아니라면 그 적을 자동 회피합니다. (라운드당 1번 한정.)”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -639,7 +639,7 @@
     "octgn_id": "08e6c853-6f84-45be-92a7-2c5c1a69f108",
     "url": "http://arkhamdb.com/card/07122",
     "imagesrc": "/bundles/cards/07122.png",
-    "taboo_text": "This card’s [reaction] ability now reads: “When you resolve a [bless] token during a skill test…",
+    "taboo_text": "이 카드의 [reaction] 기능의 문구는 이제 다음과 같이 바뀝니다: “능력 테스트 동안, 당신이 [bless] 토큰을 하나 해결할 때…”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -744,7 +744,7 @@
     "octgn_id": "83fc44d4-edfe-4fb3-a7f8-8e42244c7064",
     "url": "http://arkhamdb.com/card/03112",
     "imagesrc": "/bundles/cards/03112.png",
-    "taboo_text": "This card’s [fast] ability now reads: “…Gain 1 resource for each doom on David Renfield (to a maximum of 3 resources).”",
+    "taboo_text": "이 카드의 [fast] 기능의 문구는 이제 다음과 같이 바뀝니다: “‘데이비드 렌필드’에 놓인 파멸마다 자원을 1개씩 획득합니다(최대 자원 3개까지).”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -859,7 +859,7 @@
   },
   {
     "pack_code": "tskp",
-    "pack_name": "The Scarlet Keys Investigator Expansion",
+    "pack_name": "진홍색 열쇠 조사자 확장",
     "type_code": "asset",
     "type_name": "자산",
     "faction_code": "survivor",
@@ -871,7 +871,7 @@
     "name": "낡은 열쇠 뭉치",
     "real_name": "Old Keyring",
     "cost": 1,
-    "text": "Uses (3 keys). If there are no keys on Old Keyring, discard it.\n[action]: <b>Investigate.</b> Your location gets -2 shroud for this investigation. If you succeed, remove 1 key from Old Keyring, and if this test's difficulty is 0, you discover 1 additional clue.",
+    "text": "사용(열쇠 3개). ‘낡은 열쇠 뭉치’에 열쇠가 없으면, 이 카드를 버립니다.\n[action]: <b>조사.</b> 당신이 위치한 장소는 이번 조사에서 -2 장막값을 얻습니다. 성공하면, ‘낡은 열쇠 뭉치’에서 열쇠를 1개 제거하고, 이번 능력 테스트의 난이도가 0이라면 당신은 추가로 단서를 1개 더 발견합니다.",
     "real_text": "Uses (3 keys). If there are no keys on Old Keyring, discard it.\n[action]: <b>Investigate.</b> Your location gets -2 shroud for this investigation. If you succeed, remove 1 key from Old Keyring, and if this test's difficulty is 0, you discover 1 additional clue.",
     "quantity": 2,
     "skill_intellect": 2,
@@ -893,8 +893,90 @@
     "WARNING": "NOT UPDATED"
   },
   {
+    "pack_code": "fhvp",
+    "pack_name": "The Feast of Hemlock Vale Investigator Expansion",
+    "type_code": "asset",
+    "type_name": "자산",
+    "faction_code": "seeker",
+    "faction_name": "탐구자",
+    "position": 59,
+    "exceptional": false,
+    "myriad": false,
+    "code": "10059-t",
+    "name": "Ravenous Myconid",
+    "real_name": "Ravenous Myconid",
+    "subname": "Sentient Strain",
+    "cost": 2,
+    "text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[reaction] When an investigator draws a non-weakness treachery card, it their locations shroud is equal to or less than Ravenous Myconid's growth: Cancel that treachery's effects and discard it. Remove all growth from Ravenous Myconid.",
+    "real_text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[reaction] When an investigator draws a non-weakness treachery card, if their locations shroud is equal to or less than Ravenous Myconid's growth: Cancel that treachery's effects and discard it. Remove all growth from Ravenous Myconid.",
+    "quantity": 1,
+    "skill_intellect": 1,
+    "xp": 4,
+    "health": 1,
+    "health_per_investigator": false,
+    "sanity": 1,
+    "deck_limit": 1,
+    "traits": "생물. 과학.",
+    "real_traits": "Creature. Science.",
+    "illustrator": "JB Casacop",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "aecbfa60-22c0-44b9-9d89-0037e06320db",
+    "url": "http://arkhamdb.com/card/10059",
+    "bonded_cards": [
+      {
+        "count": 1,
+        "code": "10045"
+      }
+    ],
+    "taboo_xp": 1,
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "fhvp",
+    "pack_name": "The Feast of Hemlock Vale Investigator Expansion",
+    "type_code": "asset",
+    "type_name": "자산",
+    "faction_code": "seeker",
+    "faction_name": "탐구자",
+    "position": 60,
+    "exceptional": false,
+    "myriad": false,
+    "code": "10060-t",
+    "name": "Ravenous Myconid",
+    "real_name": "Ravenous Myconid",
+    "subname": "Carnivorous Strain",
+    "cost": 2,
+    "text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[fast] Choose a non-[[Elite]] enemy at your location with equal or fewer remaining health than the amount of growth on Ravenous Myconid: Defeat that enemy. Remove all growth from Ravenous Myconid.",
+    "real_text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[fast] Choose a non-[[Elite]] enemy at your location with equal or fewer remaining health than the amount of growth on Ravenous Myconid: Defeat that enemy. Remove all growth from Ravenous Myconid.",
+    "quantity": 1,
+    "skill_combat": 1,
+    "xp": 4,
+    "health": 1,
+    "health_per_investigator": false,
+    "sanity": 1,
+    "deck_limit": 1,
+    "traits": "괴물. 과학.",
+    "real_traits": "Monster. Science.",
+    "illustrator": "JB Casacop",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "6f426c03-ea92-4c7d-bd07-e99c6231a7c5",
+    "url": "http://arkhamdb.com/card/10060",
+    "bonded_cards": [
+      {
+        "count": 1,
+        "code": "10045"
+      }
+    ],
+    "taboo_xp": 1,
+    "WARNING": "NOT UPDATED"
+  },
+  {
     "pack_code": "tskp",
-    "pack_name": "The Scarlet Keys Investigator Expansion",
+    "pack_name": "진홍색 열쇠 조사자 확장",
     "type_code": "asset",
     "type_name": "자산",
     "faction_code": "guardian",
@@ -903,12 +985,12 @@
     "exceptional": false,
     "myriad": false,
     "code": "09022-t",
-    "name": "Runic Axe",
+    "name": "룬새김 도끼",
     "real_name": "Runic Axe",
     "cost": 4,
-    "text": "Customizable. Uses (4 charges). Replenish 1 of these charges at the start of each round.\n[action]: <b>Fight.</b> You get +1 [combat] for this attack. Before this attack, you may spend any number of charges to imbue the axe with that many different inscriptions -\n- <i>Accuracy</i> - You get an additional +2 [combat] for this attack.\n- <i>Power</i> - This attack deals +1 damage.",
-    "customization_text": "□ <b>Heirloom.</b> This asset gets -1 cost and gains the [[Relic]] trait.\n□ <b>Inscription of Glory.</b> Add this inscription: \"- <i>Glory</i> - If this attack defeats an enemy, choose one: draw 1 card, heal 1 damage, or heal 1 horror.\"\n□ <b>Inscription of the Elders.</b> Add this inscription: \"- <i>Elders</i> - If this attack succeeds by an amount equal to or greater than your location's shroud, discover 1 clue at your location.\"\n□ <b>Inscription of the Hunt.</b> Add this inscription: \"- <i>Hunt</i> - Immediately move to a connecting location or engage an enemy at your location.\"\n□ <b>Inscription of Fury.</b> Add this inscription: \"- <i>Fury</i> - If this attack is successful, in addition to its standard damage, deal 1 damage to each other enemy engaged with you.\"\n□□□ <b>Ancient Power.</b> You may imbue the same inscription up to three times.\n□□□ <b>Saga.</b> Replenish 2 of Runic Axe's charges at the start of each round, instead of only 1.\n□□□□ <b>Scriptweaver.</b> For every charge spent, you may imbue the axe with up to two different inscriptions.",
-    "customization_change": "Item. Weapon. Melee. Relic.\n- <i>Glory</i> - If this attack defeats an enemy, choose one: draw 1 card, heal 1 damage, or heal 1 horror.\n- <i>Elders</i> - If this attack succeeds by an amount equal to or greater than your location's shroud, discover 1 clue at your location.\n- <i>Hunt</i> - Immediately move to a connecting location or engage an enemy at your location.\n- <i>Fury</i> - If this attack is successful, in addition to its standard damage, deal 1 damage to each other enemy engaged with you.\nYou may imbue the same inscription up to three times.\nCustomizable. Uses (4 charges). Replenish 2 of these charges at the start of each round.\n[action]: <b>Fight.</b> You get +1 [combat] for this attack. Before this attack, you may spend any number of charges to imbue the axe with twice as many different inscriptions -",
+    "text": "맞춤형. 사용(충전 4회). 매 라운드 시작에, 이 카드에 충전을 1회 보충합니다.\n[action]: <b>전투.</b> 당신은 이번 공격에서 +1 [combat]을 얻습니다. 이번 공격 전에, 당신은 도끼에 룬 마력을 불어넣기 위해 원하는 만큼 충전을 소비해도 됩니다. 소비한 충전마다 다음과 같은 룬 각인 중, 서로 다른 것을 하나씩 부여합니다 -\n─ <i>정밀</i> - 당신은 이번 공격에서 추가로 +2 [combat]을 얻습니다.\n─ <i>위력</i> - 이번 공격은 +1 피해를 줍니다.",
+    "customization_text": "□ <b>가보.</b> 이 자산은 -1 비용을 얻고 [[유물]] 특성을 획득합니다.\n□ <b>영광의 룬 각인.</b> 이 룬 각인을 추가합니다: \"─ <i>영광</i> - 이번 공격이 적을 쓰러뜨리면, 다음 중 하나를 선택합니다: 카드를 1장 뽑습니다/피해를 1 회복합니다/공포를 1 회복합니다.\"\n□ <b>고대인의 룬 각인.</b> 이 룬 각인을 추가합니다: \"─ <i>고대인</i> - 난이도를 넘어선 차이가 당신이 위치한 장소의 장막값 이상이 되도록 이번 공격이 성공하면, 당신이 위치한 장소에서 단서를 1개 발견합니다.\"\n□ <b>사냥의 룬 각인.</b> 이 룬 각인을 추가합니다: \"─ <i>사냥</i> - 즉시 이어진 장소 한 곳으로 이동하거나 당신이 위치한 장소에 있는 적 하나와 교전합니다.\"\n□ <b>격노의 룬 각인.</b> 이 룬 각인을 추가합니다: \"─ <i>격노</i> - 이번 공격이 성공하면, 일반적인 피해에 추가로, 당신과 교전한 다른 모든 적에게도 피해를 1씩 줍니다.\"\n□□□ <b>고대의 힘.</b> 당신은 동일한 룬 각인을 최대 3번까지 부여해도 됩니다.\n□□□ <b>영웅담.</b> 매 라운드 시작에, 이 카드에 충전을 1회가 아니라, 그 대신 2회 보충합니다.\n□□□□ <b>룬 방직자.</b> 소비한 충전마다, 도끼에 서로 다른 룬 각인을 최대 2개까지 부여해도 됩니다.",
+    "customization_change": "물품. 무기. 근접. 유물.\n─ <i>영광</i> - 이번 공격이 적을 쓰러뜨리면, 다음 중 하나를 선택합니다: 카드를 1장 뽑습니다/피해를 1 회복합니다/공포를 1 회복합니다.\n─ <i>고대인</i> - 난이도를 넘어선 차이가 당신이 위치한 장소의 장막값 이상이 되도록 이번 공격이 성공하면, 당신이 위치한 장소에서 단서를 1개 발견합니다.\n─ <i>사냥</i> - 즉시 이어진 장소 한 곳으로 이동하거나 당신이 위치한 장소에 있는 적 하나와 교전합니다.\n─ <i>격노</i> - 이번 공격이 성공하면, 일반적인 피해에 추가로, 당신과 교전한 다른 모든 적에게도 피해를 1씩 줍니다.\n당신은 동일한 룬 각인을 최대 3번까지 부여해도 됩니다.\n맞춤형. 사용(충전 4회). 매 라운드 시작에, 이 카드에 충전을 2회 보충합니다.\n[action]: <b>전투.</b> 당신은 이번 공격에서 +1 [combat]을 얻습니다. 이번 공격 전에, 당신은 도끼에 룬 마력을 불어넣기 위해 원하는 만큼 충전을 소비해도 됩니다. 다음과 같은 룬 각인 중, 서로 다른 각인을 소비한 충전의 두 배까지 부여합니다 -",
     "real_text": "Customizable. Uses (4 charges). Replenish 1 of these charges at the start of each round.\n[action]: <b>Fight.</b> You get +1 [combat] for this attack. Before this attack, you may spend any number of charges to imbue the axe with that many different inscriptions -\n- <i>Accuracy</i> - You get an additional +2 [combat] for this attack.\n- <i>Power</i> - This attack deals +1 damage.",
     "quantity": 2,
     "skill_combat": 1,
@@ -972,7 +1054,38 @@
   },
   {
     "pack_code": "tskp",
-    "pack_name": "The Scarlet Keys Investigator Expansion",
+    "pack_name": "진홍색 열쇠 조사자 확장",
+    "type_code": "asset",
+    "type_name": "자산",
+    "faction_code": "rogue",
+    "faction_name": "무법자",
+    "position": 77,
+    "exceptional": true,
+    "myriad": false,
+    "code": "09077-t",
+    "name": "밀거래",
+    "real_name": "Underworld Market",
+    "text": "영속. 특별. 당신은 덱 크기에 +10을 얻습니다.\n[reaction] 당신의 시작 카드를 뽑기 전, 당신의 덱에서 [[불법]] 카드를 10장 선택합니다: 그 카드들을 섞어 덱을 구성해 ‘밀거래’ 옆에 놓습니다. 이 덱을 ‘거래 덱’이라고 칭합니다.\n[reaction] 당신의 차례 시작에: 당신의 ‘거래 덱’ 맨 위 카드를 2장 공개합니다. 당신은 그중 1장을 뽑기 위해 자원을 1개 소비해도 됩니다. 나머지는 ‘거래 덱’ 맨 밑에 원하는 순서대로 놓습니다.",
+    "real_text": "Permanent. Exceptional. You get +10 deck size.\n[reaction] Before drawing your opening hand, choose 10 [[Illicit]] cards from your deck: Shuffle them together and place them next to Underworld Market, as your market deck.\n[reaction] At the start of your turn: Reveal the top 2 cards of your market deck. You may spend 1 resource to draw 1 of them. Place the rest on the bottom, in any order.",
+    "quantity": 1,
+    "xp": 2,
+    "health_per_investigator": false,
+    "deck_limit": 1,
+    "traits": "인맥. 불법.",
+    "real_traits": "Connection. Illicit.",
+    "illustrator": "Anders Finer",
+    "is_unique": false,
+    "permanent": true,
+    "double_sided": false,
+    "octgn_id": "ca637eba-e67c-4fe3-a6b9-ee91efceb665",
+    "url": "http://arkhamdb.com/card/09077",
+    "imagesrc": "/bundles/cards/09077.png",
+    "taboo_xp": 2,
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "tskp",
+    "pack_name": "진홍색 열쇠 조사자 확장",
     "type_code": "event",
     "type_name": "이벤트",
     "faction_code": "survivor",
@@ -981,10 +1094,10 @@
     "exceptional": false,
     "myriad": false,
     "code": "09108-t",
-    "name": "Shed a Light",
+    "name": "실마리를 비춰라",
     "real_name": "Shed a Light",
     "cost": 2,
-    "text": "Fast. Play before revealing a chaos token during an investigation you are performing, and only if the difficulty of this test is currently 0.\nThis test automatically succeeds. You discover 1 additional clue at this location and 1 additional clue at any location.",
+    "text": "신속. 당신이 실시하는 조사 도중 혼돈 토큰 하나를 공개하기 전, 이번 능력 테스트의 난이도가 현재 0인 경우에만 플레이할 수 있습니다.\n이번 테스트가 자동 성공합니다. 당신은 이 장소에서 추가로 단서를 1개 더 발견하고 아무 장소 한 곳에서 추가로 단서를 1개 더 발견합니다.",
     "real_text": "Fast. Play before revealing a chaos token during an investigation you are performing, and only if the difficulty of this test is currently 0.\nThis test automatically succeeds. You discover 1 additional clue at this location and 1 additional clue at any location.",
     "quantity": 2,
     "skill_intellect": 1,
@@ -1034,7 +1147,7 @@
     "octgn_id": "4543ebb4-35da-489f-bf9f-820e1078352c",
     "url": "http://arkhamdb.com/card/07269",
     "imagesrc": "/bundles/cards/07269.png",
-    "taboo_text": "This card’s ability gains: “Remove A Watchful Peace from the game.”",
+    "taboo_text": "이 카드의 기능은 다음 문구를 얻습니다: “‘불안한 평화'를 게임에서 제거합니다.”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1069,7 +1182,7 @@
     "octgn_id": "a2642077-3897-4563-83f6-d4e26123768d",
     "url": "http://arkhamdb.com/card/07301",
     "imagesrc": "/bundles/cards/07301.png",
-    "taboo_text": "This card’s ability gains: “Remove Hallow from the game.”",
+    "taboo_text": "이 카드의 기능은 다음 문구를 얻습니다: “‘신성화'를 게임에서 제거합니다.”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1105,7 +1218,7 @@
     "octgn_id": "72d6431f-ee56-43c6-b3b7-88d53f98cd54",
     "url": "http://arkhamdb.com/card/08019",
     "imagesrc": "/bundles/cards/08019.png",
-    "taboo_text": "This card’s <b>Forced</b> effect now reads: “<b>Forced</b> – When your first turn of the game begins: One at a time, play up to 5 [[Item]] assets…”",
+    "taboo_text": "이 카드의 <b>강제</b> 기능은 이제 다음과 같이 바뀝니다: “<b>강제</b> - 게임에서 당신의 첫 번째 차례를 시작할 때: 당신의 손에서 [[물품]] 자산을 (한 번에 1장씩) 최대 5장까지 플레이합니다.”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1143,7 +1256,7 @@
     "octgn_id": "b5b399d6-072b-428b-8dd5-85122d007aa2",
     "url": "http://arkhamdb.com/card/08032",
     "imagesrc": "/bundles/cards/08032.png",
-    "taboo_text": "This card’s ability gains: “(Max twice per game.)”",
+    "taboo_text": "이 카드의 기능은 다음 문구를 얻습니다: “(게임당 최대 2번.)”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1185,7 +1298,7 @@
     "duplicated_by": [
       "01533"
     ],
-    "taboo_text": "This card’s [reaction] ability now reads: “After you successfully investigate, exhaust Dr. Milan Christopher...”",
+    "taboo_text": "이 카드의 [reaction] 기능은 다음과 같이 바뀝니다: “당신이 조사를 성공한 후, ‘밀란 크리스토퍼 박사'를 소진합니다…”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1280,7 +1393,7 @@
     "alternated_by": [
       "90078"
     ],
-    "taboo_text": "This card’s [reaction] ability gains: “(Limit once per round.)”",
+    "taboo_text": "이 카드의 [reaction] 기능은 다음 문구를 얻습니다: “(라운드당 1번 한정.)”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1416,7 +1529,7 @@
     "octgn_id": "31c82a7c-e642-4c53-a1ad-13b589edac18",
     "url": "http://arkhamdb.com/card/03029",
     "imagesrc": "/bundles/cards/03029.png",
-    "taboo_text": "This card’s ability now reads: “Put a level 0-3 [[Item]] asset into play from your hand.”",
+    "taboo_text": "이 카드의 기능은 다음과 같이 바뀝니다: “당신의 손에 있는 레벨 0-3 [[물품]] 자산 1장을 플레이 영역에 둡니다.”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1524,7 +1637,7 @@
     "octgn_id": "a9990ab5-25b1-40aa-9436-e24bd889bfd7",
     "url": "http://arkhamdb.com/card/05116",
     "imagesrc": "/bundles/cards/05116.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "이 카드의 [action] 기능은 이제 [fast] 기능으로 바뀝니다.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1559,7 +1672,7 @@
     "octgn_id": "f6e6bd79-7d2a-4ee8-a469-6e72ebbfa25c",
     "url": "http://arkhamdb.com/card/05188",
     "imagesrc": "/bundles/cards/05188.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "이 카드의 [action] 기능은 이제 [fast] 기능으로 바뀝니다.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1595,7 +1708,7 @@
     "octgn_id": "8c671c80-d9a1-400d-a11d-75678e3b5bd7",
     "url": "http://arkhamdb.com/card/05189",
     "imagesrc": "/bundles/cards/05189.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "이 카드의 [action] 기능은 이제 [fast] 기능으로 바뀝니다.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1632,7 +1745,7 @@
     "octgn_id": "43caf116-2a77-4168-a3cb-13885b676b25",
     "url": "http://arkhamdb.com/card/05020",
     "imagesrc": "/bundles/cards/05020.png",
-    "taboo_text": "This card’s ability now reads “<b>Parley.</b> Choose a non-[[Elite]] enemy at your location…”",
+    "taboo_text": "이 카드의 기능은 이제 “<b>협상.</b> 당신이 위치한 장소에 있는 [[정예]]가 아닌 적 하나를 선택하고…” 문구로 바뀝니다.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1672,7 +1785,7 @@
     "octgn_id": "56924231-f626-4110-a6cb-110051423225",
     "url": "http://arkhamdb.com/card/06195",
     "imagesrc": "/bundles/cards/06195.png",
-    "taboo_text": "This card’s [action] ability now reads: “[action] Spend 1 ammo: <b>Fight.</b> You get +2 [combat] for this attack. If a chaos token with a non-negative modifier is revealed during this attack, this attack deals +2 damage.”",
+    "taboo_text": "이 카드의 [action] 기능은 다음과 같이 바뀝니다: “[action] 탄약을 1발 소비합니다: <b>전투.</b> 당신은 이번 공격에서 +2 [combat]을 얻습니다. 이번 공격 동안 음수가 아닌 보정값을 가진 혼돈 토큰이 공개되면, 이 공격은 +2 피해를 줍니다.”",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2198,7 +2311,7 @@
     "octgn_id": "8cc2d9c7-68be-4c2e-ac73-255a2cef591b",
     "url": "http://arkhamdb.com/card/04105",
     "imagesrc": "/bundles/cards/04105.png",
-    "taboo_text": "This card’s ability now reads “<b>Parley.</b> Choose a non-weakness enemy at your location…”",
+    "taboo_text": "이 카드의 기능은 이제 “<b>협상.</b> 당신이 위치한 장소에 있는 약점이 아닌 적 하나를 선택하고…” 문구로 바뀝니다.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2393,6 +2506,7 @@
     "real_slot": "Hand",
     "traits": "물품. 악기. 유물. 저주받은.",
     "real_traits": "Item. Instrument. Relic. Cursed.",
+    "tags": "se.",
     "illustrator": "Carlos Palma Cruchaga",
     "is_unique": true,
     "permanent": false,
@@ -2502,7 +2616,7 @@
     "octgn_id": "50e87e5f-6d92-4dd6-86a4-ab8ba454799c",
     "url": "http://arkhamdb.com/card/08076",
     "imagesrc": "/bundles/cards/08076.png",
-    "taboo_text": "This card’s ability gains “(Max twice per game.)”",
+    "taboo_text": "이 카드의 기능은 “(게임당 최대 2번.)” 문구를 얻습니다.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2587,6 +2701,41 @@
     "pack_name": "지구의 끝자락 조사자 확장",
     "type_code": "asset",
     "type_name": "자산",
+    "faction_code": "rogue",
+    "faction_name": "무법자",
+    "faction2_code": "survivor",
+    "faction2_name": "생존자",
+    "position": 113,
+    "exceptional": false,
+    "myriad": false,
+    "code": "08113-t",
+    "name": "비양심적인 대출",
+    "real_name": "Unscrupulous Loan",
+    "cost": 0,
+    "text": "조사자당 1장 한정. 이 카드는 플레이 영역에서 나갈 수 없습니다.\n[reaction] 당신이 ‘비양심적인 대출’을 플레이한 후: 자원을 10개 획득합니다.\n<b>강제</b> - 게임이 끝나거나 당신이 탈락할 때, 당신의 자원 저장소에 있는 자원이 10개 미만이라면: ‘비양심적인 대출’을 추방합니다.",
+    "real_text": "Limit 1 per investigator. Cannot leave play.\n[reaction] After you play Unscrupulous Loan: Gain 10 resources.\n<b>Forced</b> - When the game ends or you are eliminated, if you have fewer than 10 resources in your resource pool: Exile Unscrupulous Loan.",
+    "quantity": 2,
+    "xp": 3,
+    "health_per_investigator": false,
+    "deck_limit": 2,
+    "traits": "계약.",
+    "real_traits": "Pact.",
+    "illustrator": "Drazenka Kimpel",
+    "is_unique": false,
+    "exile": true,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "90f645d5-0de3-409b-bb6e-5cd89178004b",
+    "url": "http://arkhamdb.com/card/08113",
+    "imagesrc": "/bundles/cards/08113.png",
+    "taboo_text": "이 카드의 첫 번째 줄은 다음 문구를 얻습니다: “캠페인 모드 전용.”",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "eoep",
+    "pack_name": "지구의 끝자락 조사자 확장",
+    "type_code": "asset",
+    "type_name": "자산",
     "faction_code": "guardian",
     "faction_name": "수호자",
     "faction2_code": "mystic",
@@ -2622,7 +2771,7 @@
   },
   {
     "pack_code": "tskp",
-    "pack_name": "The Scarlet Keys Investigator Expansion",
+    "pack_name": "진홍색 열쇠 조사자 확장",
     "type_code": "asset",
     "type_name": "자산",
     "faction_code": "seeker",
@@ -2631,10 +2780,10 @@
     "exceptional": false,
     "myriad": false,
     "code": "09045-t",
-    "name": "Research Notes",
+    "name": "연구 일지",
     "real_name": "Research Notes",
     "cost": 1,
-    "text": "[reaction] After a player card ability places 1 or more of your clues on your location: Place that many resources on Research Notes, as evidence.\n[action]: Test [intellect] (0). For each point you succeed by, you may spend 1 evidence to discover 1 clue at your location.",
+    "text": "[reaction] 플레이어 카드 기능으로 당신이 위치한 장소에 당신이 가진 단서를 1개 이상 놓은 후: 토큰 저장소에서 자원을 놓은 단서 개수만큼 가져와 ‘연구 일지’에 놓습니다. 이 자원 토큰은 ‘증거’로 간주합니다.\n[action]: [intellect] (0)을 테스트합니다. 성공하면, 난이도를 넘어선 차이마다, 당신은 자신이 위치한 장소에서 단서를 1개 발견하기 위해 증거를 1개 소비해도 됩니다.",
     "real_text": "[reaction] After a player card ability places 1 or more of your clues on your location: Place that many resources on Research Notes, as evidence.\n[action]: Test [intellect] (0). For each point you succeed by, you may spend 1 evidence to discover 1 clue at your location.",
     "quantity": 2,
     "skill_intellect": 1,
@@ -2652,12 +2801,12 @@
     "octgn_id": "31b210cb-325b-4a50-9e7b-cccb0dd8f04a",
     "url": "http://arkhamdb.com/card/09045",
     "imagesrc": "/bundles/cards/09045.png",
-    "taboo_text": "This card’s second ability gains: “(max 3 evidence spent per round).”",
+    "taboo_text": "이 카드의 두 번째 기능은 다음을 얻습니다: “(라운드당 증거는 최대 3개까지 소비 가능).”",
     "WARNING": "NOT UPDATED"
   },
   {
     "pack_code": "tskp",
-    "pack_name": "The Scarlet Keys Investigator Expansion",
+    "pack_name": "진홍색 열쇠 조사자 확장",
     "type_code": "event",
     "type_name": "이벤트",
     "faction_code": "mystic",
@@ -2666,12 +2815,12 @@
     "exceptional": false,
     "myriad": false,
     "code": "09081-t",
-    "name": "Power Word",
+    "name": "지배의 언령",
     "real_name": "Power Word",
     "cost": 3,
-    "text": "Customizable. Fast. Play only during your turn.\nAttach to a non-[[Elite]] enemy at your location.\n[action] If attached enemy is at your location: <b>Parley.</b> Give it a command (limit once per round per command) -\n- <i>\"Go.\"</i> This enemy moves once in a direction of your choice.\n- <i>\"Cower.\"</i> This enemy exhausts.",
-    "customization_text": "□ <b>Betray.</b> Add the command: \"- <i>'Betray.'</i> Deal 1 damage to any enemy at this enemy's location with an equal or lower fight value than this enemy.\"\n□ <b>Mercy.</b> Add the command: \"- <i>'Mercy.'</i> An investigator at this enemy's location heals damage or horror equal to this enemy's respective damage/horror value.\"\n□ <b>Confess.</b> Add the command: \"- <i>'Confess.'</i> Discover 1 clue at this enemy's location if its health is equal to or higher than its location's shroud.\"\n□ <b>Distract.</b> Add the command: \"- <i>'Distract.'</i> Automatically evade any enemy at this enemy's location with an equal or lower evade value than this enemy.\"\n□□ <b>Greater Control.</b> Power Word gains \"[fast]: Return Power Word to your hand.\"\n□□□ <b>Bonded.</b> You may activate the parley ability on Power Word from up to one location away from the attached enemy.\n□□□ <b>Tonguetwister.</b> When you parley with Power Word, you may give up to two different commands.\n□□□ <b>Thrice Spoken.</b> You may include three copies of Power Word in your deck. When you give a command using one copy, also give that command to each other enemy with one of your copies of Power Word attached.",
-    "customization_change": "- <i>\"Betray.\"</i> Deal 1 damage to any enemy at this enemy's location with an equal or lower fight value than this enemy.\n- <i>\"Mercy.\"</i> An investigator at this enemy's location heals damage or horror equal to this enemy's respective damage/horror value.\n- <i>\"Confess.\"</i> Discover 1 clue at this enemy's location if its health is equal to or higher than its location's shroud.\n- <i>\"Distract.\"</i> Automatically evade any enemy at this enemy's location with an equal or lower evade value than this enemy.\n[fast]: Return Power Word to your hand.\nYou may activate the parley ability on Power Word from up to one location away from the attached enemy.\n[action] If attached enemy is at your location: <b>Parley.</b> Give it up to two different commands (limit once per round per command) -\nYou may include three copies of Power Word in your deck. When you give a command using one copy, also give that command to each other enemy with one of your copies of Power Word attached.",
+    "text": "맞춤형. 신속. 당신의 차례 동안에만 플레이할 수 있습니다.\n당신이 위치한 장소에 있는 [[정예]]가 아닌 적 하나에게 부착합니다.\n[action] 부착된 적이 당신이 위치한 장소에 있다면: <b>협상.</b> 그 적에게 명령을 내립니다(각각의 명령마다 라운드당 1번 한정) -\n─ <i>\"가라.\"</i> 이 적은 당신이 선택한 방향으로 1칸 이동합니다.\n─ <i>\"두려워하라.\"</i> 이 적은 소진됩니다.",
+    "customization_text": "□ <b>배신하라.</b> 이 명령을 추가합니다: \"─ <i>'배신하라.'</i> 이 적이 위치한 장소에 있는 적 가운데, 이 적의 전투값 이하인 적 하나에게 피해를 1 줍니다.\"\n□ <b>자비를 베풀어라.</b> 이 명령을 추가합니다: \"─ <i>'자비를 베풀어라.'</i> 이 적이 위치한 장소에 있는 조사자 한 명은, 이 적의 피해값만큼 피해를 회복하거나 공포값만큼 공포를 회복합니다.\"\n□ <b>고하라.</b> 이 명령을 추가합니다: \"─ <i>'고하라.'</i> 이 적의 체력값이 이 적이 위치한 장소의 장막값 이상이면, 이 적이 위치한 장소에서 단서를 1개 발견합니다.\"\n□ <b>주의를 돌려라.</b> 이 명령을 추가합니다: \"─ <i>'주의를 돌려라.'</i> 이 적이 위치한 장소에 있는 적 가운데, 이 적의 회피값 이하인 적 하나를 자동 회피합니다.\"\n□□ <b>제어권 강화.</b> ‘지배의 언령’은 다음 기능을 획득합니다 \"[fast]: ‘지배의 언령’을 당신의 손으로 가져옵니다.\"\n□□□ <b>속박.</b> 당신은 ‘지배의 언령’이 부착된 적으로부터 최대 1칸 떨어져 있더라도 그 카드의 협상 기능을 활성화해도 됩니다.\n□□□ <b>복잡한 발음.</b> 당신이 ‘지배의 언령’으로 협상할 때, 서로 다른 명령을 최대 둘까지 내려도 됩니다.\n□□□ <b>삼중 주문.</b> 당신은 ‘지배의 언령’ 사본을 최대 3장까지 당신의 덱에 포함시킬 수 있습니다. 당신이 사본 하나로 명령을 내릴 때, 당신의 ‘지배의 언령’ 사본이 부착된 다른 모든 적에게도 같은 명령을 내립니다.",
+    "customization_change": "─ <i>\"배신하라.\"</i> 이 적이 위치한 장소에 있는 적 가운데, 이 적의 전투값 이하인 적 하나에게 피해를 1 줍니다.\n─ <i>\"자비를 베풀어라.\"</i> 이 적이 위치한 장소에 있는 조사자 한 명은, 이 적의 피해값만큼 피해를 회복하거나 공포값만큼 공포를 회복합니다.\n─ <i>\"고하라.\"</i> 이 적의 체력값이 이 적이 위치한 장소의 장막값 이상이면, 이 적이 위치한 장소에서 단서를 1개 발견합니다.\n─ <i>\"주의를 돌려라.\"</i> 이 적이 위치한 장소에 있는 적 가운데, 이 적의 회피값 이하인 적 하나를 자동 회피합니다.\n[fast]: ‘지배의 언령’을 당신의 손으로 가져옵니다.\n당신은 ‘지배의 언령’이 부착된 적으로부터 최대 1칸 떨어져 있더라도 그 카드의 협상 기능을 활성화해도 됩니다.\n[action] 부착된 적이 당신이 위치한 장소에 있다면: <b>협상.</b> 그 적에게 서로 다른 두 가지 명령을 내립니다(각각의 명령마다 라운드당 1번 한정) -\n당신은 ‘지배의 언령’ 사본을 최대 3장까지 당신의 덱에 포함시킬 수 있습니다. 당신이 사본 하나로 명령을 내릴 때, 당신의 ‘지배의 언령’ 사본이 부착된 다른 모든 적에게도 같은 명령을 내립니다.",
     "real_text": "Customizable. Fast. Play only during your turn.\nAttach to a non-[[Elite]] enemy at your location.\n[action] If attached enemy is at your location: <b>Parley.</b> Give it a command (limit once per round per command) -\n- <i>\"Go.\"</i> This enemy moves once in a direction of your choice.\n- <i>\"Cower.\"</i> This enemy exhausts.",
     "quantity": 3,
     "skill_intellect": 1,
@@ -2729,7 +2878,82 @@
     "octgn_id": "fe908036-fc59-4d16-9499-bb1921915c6d",
     "url": "http://arkhamdb.com/card/09081",
     "imagesrc": "/bundles/cards/09081.png",
-    "taboo_text": "This card’s text box now reads: “[action] If attached enemy is at your location: <b>Parley.</b> Test [willpower] (3). If you succeed, give it a command (limit once per round per command) – “Go.” This enemy moves once in a direction of your choice.” This card’s customizable sheet loses the “Mercy” ability and gains“☐Cower. Add the command: “- ‘Cower.’ This enemy exhausts.”",
+    "taboo_text": "This card’s text box now reads: \"[action] If attached enemy is at your location: <b>Parley.</b> Test [willpower](3). If you succeed, give it a command (limit once per round per command) – \"Go.\" This enemy moves once in a direction of your choice.\" This card’s customizable sheet loses the \"Mercy\" ability and gains\"☐Cower. Add the command: \"- ‘Cower.’ This enemy exhausts.\"",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "tskp",
+    "pack_name": "진홍색 열쇠 조사자 확장",
+    "type_code": "asset",
+    "type_name": "자산",
+    "faction_code": "seeker",
+    "faction_name": "탐구자",
+    "position": 41,
+    "exceptional": false,
+    "myriad": false,
+    "code": "09041-t",
+    "name": "실험적 가설",
+    "real_name": "Empirical Hypothesis",
+    "cost": 2,
+    "text": "맞춤형. 조사자당 1장 한정.\n<b>강제</b> - 라운드 시작에: 다음 중에서 이번 라운드에 적용될 준거를 하나 선택합니다. \n─ 난이도에 모자란 차이 2 이상으로 실패함.\n─ 난이도를 넘어선 차이 3 이상으로 성공함.\n선택한 준거가 충족될 때, 이 카드에 증거를 1개 추가하기 위해 당신은 ‘실험적 가설’을 소진해도 됩니다.\n[fast] 증거를 1개 소비합니다: 카드를 1장 뽑습니다.",
+    "customization_text": "□ <b>비관적인 전망.</b> 다음과 같은 준거를 추가합니다: \"당신의 손에 있는 카드가 다 떨어짐.\"\n□ <b>시행착오.</b> 다음과 같은 준거를 추가합니다: \"당신이 피해 또는 공포를 받음.\"\n□ <b>독립변인.</b> 다음과 같은 준거를 추가합니다: \"당신이 플레이 영역에서 음모나 적 하나를 버림.\"\n□ <b>현장 연구.</b> 다음과 같은 준거를 추가합니다: \"당신이 장막값이 3 이상인 장소 한 곳에 들어감.\"\n□□ <b>동료 심사.</b> 선택한 준거는 오직 당신만이 아니라, 그 대신 당신이 위치한 장소에 있는 아무 조사자나 충족시킬 수 있습니다. 당신이 위치한 장소에 있는 다른 조사자 역시 ‘실험적 가설’에 있는 [fast] 기능을 격발해도 됩니다.\n□□ <b>연구 보조금.</b> ‘실험적 가설’은 다음 기능을 획득합니다: \"[fast] 증거를 2개 소비합니다: 당신이 이번 단계 동안 플레이하는 다음 카드 1장에 한해, 그 비용을 3만큼 낮춥니다.\"\n□□□ <b>반박할 수 없는 증거.</b> ‘실험적 가설’은 다음 기능을 획득합니다: \"[fast] 증거를 3개 소비합니다: 당신이 위치한 장소에서 단서를 1개 발견합니다.\"\n□□□□ <b>대립가설.</b> 당신이 ‘실험적 가설’을 소진한 후, 당신은 그 카드의 강제 효과를 해결해도 됩니다(단, 이번 라운드에 선택하지 않은 준거를 선택해야 합니다). 그런 다음, 그 카드를 준비시킵니다.",
+    "customization_change": "- 당신의 손에 있는 카드가 다 떨어짐.\n─ 당신이 피해 또는 공포를 받음.\n─ 당신이 플레이 영역에서 음모나 적 하나를 버림.\n─ 당신이 장막값이 3 이상인 장소 한 곳에 들어감.\n선택한 준거를 당신이 위치한 장소에 있는 아무 조사자 한 명이 충족시켰을 때, 이 카드에 증거를 1개 추가하기 위해 당신은 ‘실험적 가설’을 소진해도 됩니다. 당신이 위치한 장소에 있는 다른 조사자 역시 ‘실험적 가설’에 있는 [fast] 기능을 격발해도 됩니다.\n[fast] 증거를 2개 소비합니다: 당신이 이번 단계 동안 플레이하는 다음 카드 1장에 한해, 그 비용을 3만큼 낮춥니다.\n[fast] 증거를 3개 소비합니다: 당신이 위치한 장소에서 단서를 1개 발견합니다.\n당신이 ‘실험적 가설’을 소진한 후, 당신은 그 카드의 강제 효과를 해결해도 됩니다(단, 이번 라운드에 선택하지 않은 준거를 선택해야 합니다). 그런 다음, 그 카드를 준비시킵니다.",
+    "real_text": "Customizable. Limit 1 per investigator.\n<b>Forced</b> - At the start of the round: Choose one of the following criteria for this round\n- You fail a test by 2 or more.\n- You succeed at a test by 3 or more.\nWhen the chosen criteria is met, you may exhaust Empirical Hypothesis to add 1 evidence to it.\n[fast] Spend 1 evidence: Draw 1 card.",
+    "quantity": 2,
+    "skill_intellect": 1,
+    "xp": 0,
+    "health_per_investigator": false,
+    "deck_limit": 2,
+    "traits": "재능. 과학.",
+    "real_traits": "Talent. Science.",
+    "customization_options": [
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 2,
+        "text_change": "replace",
+        "position": 4
+      },
+      {
+        "xp": 2,
+        "text_change": "append"
+      },
+      {
+        "xp": 3,
+        "text_change": "append"
+      },
+      {
+        "xp": 4,
+        "text_change": "insert",
+        "position": 4
+      }
+    ],
+    "illustrator": "Isuardi Therianto",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "482bd50b-d746-4e73-8df5-da49c9641ece",
+    "url": "http://arkhamdb.com/card/09041",
+    "imagesrc": "/bundles/cards/09041.png",
+    "taboo_text": "이 카드의 [fast] 기능은 “(라운드당 2번 한정.)” 문구를 얻습니다.",
     "WARNING": "NOT UPDATED"
   }
 ]

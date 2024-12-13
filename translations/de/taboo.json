@@ -210,7 +210,7 @@
     "octgn_id": "0ddd4332-6338-3470-3816-14e36d0acba0",
     "url": "http://arkhamdb.com/card/02226",
     "imagesrc": "/bundles/cards/02226.png",
-    "taboo_text": "This card’s [action] ability gains: “This attack may target a non-[[Elite]] enemy up to one location away from its standard range, ignoring the aloof and retaliate keywords.”",
+    "taboo_text": "Die [action]-Fähigkeit dieser Karte erhält folgenden zusätzlichen Text: „Dieser Angriff darf Nicht-[[Elite]]-Gegner bis zu 1 Ort weiter entfernt zum Ziel haben als die normale Reichweite erlaubt und ignoriert die Merkmale Zurückhaltend und Zurückschlagen.\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -428,7 +428,7 @@
     "duplicated_by": [
       "01692"
     ],
-    "taboo_text": "This card’s ability gains: “Remove Eucatastrophe from the game.”",
+    "taboo_text": "Diese Karte erhält folgenden zusätzlichen Text: „Entferne Wendung zum Guten aus dem Spiel.\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -463,7 +463,7 @@
     "octgn_id": "dc7600e3-a132-42b0-b96b-67ca0cee4aff",
     "url": "http://arkhamdb.com/card/06022",
     "imagesrc": "/bundles/cards/06022.png",
-    "taboo_text": "This card’s constant ability now reads: “If this card has no charges, remove it from the game.”",
+    "taboo_text": "Die anhaltende Fähigkeit dieser Karte lautet jetzt: „Falls diese Karte keine Ladungen hat, entferne sie aus dem Spiel.\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -496,7 +496,7 @@
     "octgn_id": "583a859c-01f8-4a2f-b963-4bccef10ca34",
     "url": "http://arkhamdb.com/card/06199",
     "imagesrc": "/bundles/cards/06199.png",
-    "taboo_text": "This card’s ability gains: “Remove each committed copy of Three Aces from the game.”",
+    "taboo_text": "Diese Karte erhält folgenden zusätzlichen Text: „Entferne jede beigetragene Kopie von Drei Asse aus dem Spiel.\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -893,6 +893,88 @@
     "WARNING": "NOT UPDATED"
   },
   {
+    "pack_code": "fhvp",
+    "pack_name": "Das Fest von Hemlock Vale (Ermittler-Erweiterung)",
+    "type_code": "asset",
+    "type_name": "Vorteil",
+    "faction_code": "seeker",
+    "faction_name": "Sucher",
+    "position": 59,
+    "exceptional": false,
+    "myriad": false,
+    "code": "10059-t",
+    "name": "Gefräßiger Mykonid",
+    "real_name": "Ravenous Myconid",
+    "subname": "Bewusstseinsfähige Art",
+    "cost": 2,
+    "text": "Erforscht. Nur 1 pro Deck.\n[fast]: Durchsuche deine gebundenen Karten nach Unheimliches Wachstum und füge es deiner Hand hinzu. (Nur ein Mal pro Runde.)\n[reaction] Sobald ein Ermittler eine Nicht-Schwäche-Verratskarte zieht und falls der Schleierwert seines Ortes gleich oder niedriger der Anzahl an Wachstum auf Gefräßiger Mykonid ist: Hebe die Effekte jener Verratskarte auf. Entferne sämtliches Wachstum von Gefräßiger Mykonid.",
+    "real_text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[reaction] When an investigator draws a non-weakness treachery card, if their locations shroud is equal to or less than Ravenous Myconid's growth: Cancel that treachery's effects and discard it. Remove all growth from Ravenous Myconid.",
+    "quantity": 1,
+    "skill_intellect": 1,
+    "xp": 4,
+    "health": 1,
+    "health_per_investigator": false,
+    "sanity": 1,
+    "deck_limit": 1,
+    "traits": "Kreatur. Wissenschaft.",
+    "real_traits": "Creature. Science.",
+    "illustrator": "JB Casacop",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "aecbfa60-22c0-44b9-9d89-0037e06320db",
+    "url": "http://arkhamdb.com/card/10059",
+    "bonded_cards": [
+      {
+        "count": 1,
+        "code": "10045"
+      }
+    ],
+    "taboo_xp": 1,
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "fhvp",
+    "pack_name": "Das Fest von Hemlock Vale (Ermittler-Erweiterung)",
+    "type_code": "asset",
+    "type_name": "Vorteil",
+    "faction_code": "seeker",
+    "faction_name": "Sucher",
+    "position": 60,
+    "exceptional": false,
+    "myriad": false,
+    "code": "10060-t",
+    "name": "Gefräßiger Mykonid",
+    "real_name": "Ravenous Myconid",
+    "subname": "Fleischfressende Art",
+    "cost": 2,
+    "text": "Erforscht. Nur 1 pro Deck.\n[fast]: Durchsuche deine gebundenen Karten nach Unheimliches Wachstum und füge es deiner Hand hinzu. (Nur ein Mal pro Runde.)\n[fast] Wähle einen Nicht-[[Elite]]-Gegner an deinem Ort, dessen verbleibende Ausdauer gleich oder niedriger der Anzahl an Wachstum auf Gefräßiger Mykonid ist: Besiege jenen Gegner. Entferne sämtliches Wachstum von Gefräßiger Mykonid.",
+    "real_text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[fast] Choose a non-[[Elite]] enemy at your location with equal or fewer remaining health than the amount of growth on Ravenous Myconid: Defeat that enemy. Remove all growth from Ravenous Myconid.",
+    "quantity": 1,
+    "skill_combat": 1,
+    "xp": 4,
+    "health": 1,
+    "health_per_investigator": false,
+    "sanity": 1,
+    "deck_limit": 1,
+    "traits": "Monster. Wissenschaft.",
+    "real_traits": "Monster. Science.",
+    "illustrator": "JB Casacop",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "6f426c03-ea92-4c7d-bd07-e99c6231a7c5",
+    "url": "http://arkhamdb.com/card/10060",
+    "bonded_cards": [
+      {
+        "count": 1,
+        "code": "10045"
+      }
+    ],
+    "taboo_xp": 1,
+    "WARNING": "NOT UPDATED"
+  },
+  {
     "pack_code": "tskp",
     "pack_name": "Die scharlachroten Schlüssel (Ermittler-Erweiterung)",
     "type_code": "asset",
@@ -973,6 +1055,37 @@
   {
     "pack_code": "tskp",
     "pack_name": "Die scharlachroten Schlüssel (Ermittler-Erweiterung)",
+    "type_code": "asset",
+    "type_name": "Vorteil",
+    "faction_code": "rogue",
+    "faction_name": "Schurke",
+    "position": 77,
+    "exceptional": true,
+    "myriad": false,
+    "code": "09077-t",
+    "name": "Markt der Mafia",
+    "real_name": "Underworld Market",
+    "text": "Dauerhaft. Außergewöhnlich. Du bekommst +10 Deckgröße.\n[reaction] Bevor du deine Starthand ziehst, wähle 10 [[Illegal]]-Karten in deinem Deck: Mische sie zusammen und platziere sie als dein Marktdeck neben Markt der Mafia.\n[reaction] Zu Beginn deines Zuges: Enthülle die obersten 2 Karten deines Marktdecks. Du darfst 1 Ressource ausgeben, um 1 davon zu ziehen. Platziere den Rest in beliebiger Reihenfolge unter deinem Marktdeck.",
+    "real_text": "Permanent. Exceptional. You get +10 deck size.\n[reaction] Before drawing your opening hand, choose 10 [[Illicit]] cards from your deck: Shuffle them together and place them next to Underworld Market, as your market deck.\n[reaction] At the start of your turn: Reveal the top 2 cards of your market deck. You may spend 1 resource to draw 1 of them. Place the rest on the bottom, in any order.",
+    "quantity": 1,
+    "xp": 2,
+    "health_per_investigator": false,
+    "deck_limit": 1,
+    "traits": "Verbindung. Illegal.",
+    "real_traits": "Connection. Illicit.",
+    "illustrator": "Anders Finer",
+    "is_unique": false,
+    "permanent": true,
+    "double_sided": false,
+    "octgn_id": "ca637eba-e67c-4fe3-a6b9-ee91efceb665",
+    "url": "http://arkhamdb.com/card/09077",
+    "imagesrc": "/bundles/cards/09077.png",
+    "taboo_xp": 2,
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "tskp",
+    "pack_name": "Die scharlachroten Schlüssel (Ermittler-Erweiterung)",
     "type_code": "event",
     "type_name": "Ereignis",
     "faction_code": "survivor",
@@ -1034,7 +1147,7 @@
     "octgn_id": "4543ebb4-35da-489f-bf9f-820e1078352c",
     "url": "http://arkhamdb.com/card/07269",
     "imagesrc": "/bundles/cards/07269.png",
-    "taboo_text": "This card’s ability gains: “Remove A Watchful Peace from the game.”",
+    "taboo_text": "Diese Karte erhält folgenden zusätzlichen Text: „Entferne Ein vorsichtiger Frieden aus dem Spiel.\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1069,7 +1182,7 @@
     "octgn_id": "a2642077-3897-4563-83f6-d4e26123768d",
     "url": "http://arkhamdb.com/card/07301",
     "imagesrc": "/bundles/cards/07301.png",
-    "taboo_text": "This card’s ability gains: “Remove Hallow from the game.”",
+    "taboo_text": "Diese Karte erhält folgenden zusätzlichen Text: „Entferne Weihen aus dem Spiel.\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1280,7 +1393,7 @@
     "alternated_by": [
       "90078"
     ],
-    "taboo_text": "This card’s [reaction] ability gains: “(Limit once per round.)”",
+    "taboo_text": "Die [reaction]-Fähigkeit dieser Karte erhält folgenden zusätzlichen Text: „(Nur ein Mal pro Runde.)\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1416,7 +1529,7 @@
     "octgn_id": "31c82a7c-e642-4c53-a1ad-13b589edac18",
     "url": "http://arkhamdb.com/card/03029",
     "imagesrc": "/bundles/cards/03029.png",
-    "taboo_text": "This card’s ability now reads: “Put a level 0-3 [[Item]] asset into play from your hand.”",
+    "taboo_text": "Die Fähigkeit dieser Karte lautet jetzt: „Bringe eine [[Gegenstand]]-Vorteilskarte der Stufe 0–3 von deiner Hand ins Spiel.\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1524,7 +1637,7 @@
     "octgn_id": "a9990ab5-25b1-40aa-9436-e24bd889bfd7",
     "url": "http://arkhamdb.com/card/05116",
     "imagesrc": "/bundles/cards/05116.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "Die [Action]-Fähigkeit dieser Karten ist jetzt eine [fast]-Fähigkeit.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1559,7 +1672,7 @@
     "octgn_id": "f6e6bd79-7d2a-4ee8-a469-6e72ebbfa25c",
     "url": "http://arkhamdb.com/card/05188",
     "imagesrc": "/bundles/cards/05188.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "Die [Action]-Fähigkeit dieser Karten ist jetzt eine [fast]-Fähigkeit.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1595,7 +1708,7 @@
     "octgn_id": "8c671c80-d9a1-400d-a11d-75678e3b5bd7",
     "url": "http://arkhamdb.com/card/05189",
     "imagesrc": "/bundles/cards/05189.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "Die [Action]-Fähigkeit dieser Karten ist jetzt eine [fast]-Fähigkeit.",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1672,7 +1785,7 @@
     "octgn_id": "56924231-f626-4110-a6cb-110051423225",
     "url": "http://arkhamdb.com/card/06195",
     "imagesrc": "/bundles/cards/06195.png",
-    "taboo_text": "This card’s [action] ability now reads: “[action] Spend 1 ammo: <b>Fight.</b> You get +2 [combat] for this attack. If a chaos token with a non-negative modifier is revealed during this attack, this attack deals +2 damage.”",
+    "taboo_text": "Die [action]-Fähigkeit dieser Karte lautet nun: „[action] Gib 1 Munition aus: <b>Kampf.</b> Du bekommst für diesen Angriff +2 [combat]. Falls während dieses Angriffs ein Chaosmarker mit einem nicht-negativen Modifikator enthüllt wird, fügt dieser Angriff +2 Schaden zu.\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1870,7 +1983,7 @@
     "real_name": "Jewel of Aureolus",
     "subname": "Geschenk des Homunkuli",
     "cost": 3,
-    "text": "[reaction] Nachdem ein [skull]-, [cultist]-, [tablet]-, [elder_thing]-, oder [auto_fail]-Symbol während einer Fertigkeitsprobe enthüllt worden ist, erschöpfe Juwel von Aureolus: Ziehe 1 Karte oder erhalte 2 Ressourcen.",
+    "text": "[reaction] Nachdem ein [skull]-, [cultist]-, [tablet]-, [elder_thing]-, oder [auto_fail]-Symbol während einer Fertigkeitsprobe an deinem Ort enthüllt worden ist, erschöpfe Juwel von Aureolus: Ziehe 1 Karte oder erhalte 2 Ressourcen.",
     "real_text": "[reaction] After a [skull], [cultist], [tablet], [elder_thing], or [auto_fail] symbol is revealed during a skill test at your location, exhaust Jewel of Aureolus: Draw 1 card or gain 2 resources.",
     "quantity": 2,
     "skill_wild": 1,
@@ -2084,7 +2197,7 @@
     "url": "http://arkhamdb.com/card/03006",
     "imagesrc": "/bundles/cards/03006.png",
     "backimagesrc": "/bundles/cards/03006b.png",
-    "taboo_text": "This card's forced ability is moved to its reverse side, and it should now read: “<b>Additional Setup</b>: After you draw your opening hand, choose a role ([survivor], [guardian], [seeker], [rogue], [mystic], or Neutral).” This card's front side additionally gains: “[action]: Switch roles. Does not provoke attacks of opportunity.”",
+    "taboo_text": "This card's forced ability is moved to its reverse side, and it should now read: \"<b>Additional Setup</b>: After you draw your opening hand, choose a role ([survivor], [guardian], [seeker], [rogue], [mystic], or Neutral).\" This card's front side additionally gains: \"[action]: Switch roles. Does not provoke attacks of opportunity.\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2393,6 +2506,7 @@
     "real_slot": "Hand",
     "traits": "Gegenstand. Instrument. Relikt. Verflucht.",
     "real_traits": "Item. Instrument. Relic. Cursed.",
+    "tags": "se.",
     "illustrator": "Carlos Palma Cruchaga",
     "is_unique": true,
     "permanent": false,
@@ -2587,6 +2701,41 @@
     "pack_name": "Am Rande der Welt (Ermittler-Erweiterung)",
     "type_code": "asset",
     "type_name": "Vorteil",
+    "faction_code": "rogue",
+    "faction_name": "Schurke",
+    "faction2_code": "survivor",
+    "faction2_name": "Überlebender",
+    "position": 113,
+    "exceptional": false,
+    "myriad": false,
+    "code": "08113-t",
+    "name": "Unvernünftiger Kredit",
+    "real_name": "Unscrupulous Loan",
+    "cost": 0,
+    "text": "Nur 1 pro Ermittler. Kann das Spiel nicht verlassen.\n[reaction] Nachdem du Unvernünftiger Kredit gespielt hast: Du erhältst 10 Ressourcen.\n<b>Erzwungen</b> - Sobald das Spiel endet oder du ausscheidest, falls du weniger als 10 Ressourcen in deinem Ressourcenvorrat hast: Schicke Unvernünftiger Kredit ins Exil.",
+    "real_text": "Limit 1 per investigator. Cannot leave play.\n[reaction] After you play Unscrupulous Loan: Gain 10 resources.\n<b>Forced</b> - When the game ends or you are eliminated, if you have fewer than 10 resources in your resource pool: Exile Unscrupulous Loan.",
+    "quantity": 2,
+    "xp": 3,
+    "health_per_investigator": false,
+    "deck_limit": 2,
+    "traits": "Pakt.",
+    "real_traits": "Pact.",
+    "illustrator": "Drazenka Kimpel",
+    "is_unique": false,
+    "exile": true,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "90f645d5-0de3-409b-bb6e-5cd89178004b",
+    "url": "http://arkhamdb.com/card/08113",
+    "imagesrc": "/bundles/cards/08113.png",
+    "taboo_text": "",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "eoep",
+    "pack_name": "Am Rande der Welt (Ermittler-Erweiterung)",
+    "type_code": "asset",
+    "type_name": "Vorteil",
     "faction_code": "guardian",
     "faction_name": "Wächter",
     "faction2_code": "mystic",
@@ -2729,7 +2878,82 @@
     "octgn_id": "fe908036-fc59-4d16-9499-bb1921915c6d",
     "url": "http://arkhamdb.com/card/09081",
     "imagesrc": "/bundles/cards/09081.png",
-    "taboo_text": "This card’s text box now reads: “[action] If attached enemy is at your location: <b>Parley.</b> Test [willpower] (3). If you succeed, give it a command (limit once per round per command) – “Go.” This enemy moves once in a direction of your choice.” This card’s customizable sheet loses the “Mercy” ability and gains“☐Cower. Add the command: “- ‘Cower.’ This enemy exhausts.”",
+    "taboo_text": "This card’s text box now reads: \"[action] If attached enemy is at your location: <b>Parley.</b> Test [willpower](3). If you succeed, give it a command (limit once per round per command) – \"Go.\" This enemy moves once in a direction of your choice.\" This card’s customizable sheet loses the \"Mercy\" ability and gains\"☐Cower. Add the command: \"- ‘Cower.’ This enemy exhausts.\"",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "tskp",
+    "pack_name": "Die scharlachroten Schlüssel (Ermittler-Erweiterung)",
+    "type_code": "asset",
+    "type_name": "Vorteil",
+    "faction_code": "seeker",
+    "faction_name": "Sucher",
+    "position": 41,
+    "exceptional": false,
+    "myriad": false,
+    "code": "09041-t",
+    "name": "Empirische Hypothese",
+    "real_name": "Empirical Hypothesis",
+    "cost": 2,
+    "text": "Individualisierbar. Nur 1 pro Ermittler.\n<b>Erzwungen</b> - Zu Beginn der Runde: Wähle für diese Runde 1 der folgenden Kriterien …\n- Dir misslingt eine Probe um 2 oder mehr.\n- Dir gelingt eine Probe um 3 oder mehr.\nSobald das gewählte Kriterium zutrifft, darfst du Empirische Hypothese erschöpfen, um 1 Beweis darauf zu platzieren.\n[fast] Gib 1 Beweis aus: Ziehe 1 Karte.",
+    "customization_text": "□ <b>Pessimistischer Ausblick.</b> Füge dieses Kriterium hinzu: „Du hast keine Karten mehr auf der Hand.”\n□ <b>Versuch und Irrtum.</b> Füge dieses Kriterium hinzu: „Du erleidest Schaden oder Horror.”\n□ <b>Unabhängige Variable.</b> Füge dieses Kriterium hinzu: „Du legst eine Verratskarte oder einen Gegner aus dem Spiel ab.”\n□ <b>Feldforschung.</b> Füge dieses Kriterium hinzu: „Du betrittst einen Ort mit 3 oder mehr Schleier.”\n□□ <b>Peer-Review.</b> Das gewählte Kriterium trifft zu, falls bei einem beliebigen Ermittler an deinem Ort das Kriterium zutrifft statt nur bei dir. Andere Ermittler an deinem Ort dürfen die [fast]-Fähigkeiten auf Empirische Hypothese auslösen.\n□□ <b>Forschungszuschuss.</b> Empirische Hypothese erhält: „[fast] Gib 2 Beweise aus: Senke die Kosten der nächsten Karte, die du in dieser Phase spielst, um 3.”\n□□□ <b>Unwiderlegbarer Beweis.</b> Empirische Hypothese erhält: „[fast] Gib 3 Beweise aus: Du entdeckst 1 Hinweis an deinem Ort.”\n□□□□ <b>Alternative Hypothese.</b> Nachdem du Empirische Hypothese erschöpft hast, darfst du ihren Erzwungen-Effekt abhandeln und ein Kriterium wählen, das du in dieser Runde noch nicht gewählt hast. Mache Empirische Hypothese dann wieder spielbereit.",
+    "customization_change": "- Du hast keine Karten mehr auf der Hand.\n- Du erleidest Schaden oder Horror.\n- Du legst eine Verratskarte oder einen Gegner aus dem Spiel ab.\n- Du betrittst einen Ort mit 3 oder mehr Schleier.\nSobald das gewählte Kriterium bei einem beliebigen Ermittler an deinem Ort zutrifft, darfst du Empirische Hypothese erschöpfen, um 1 Beweis darauf zu platzieren. Andere Ermittler an deinem Ort dürfen die [fast]-Fähigkeiten auf Empirische Hypothese auslösen.\n[fast] Gib 2 Beweise aus: Senke die Kosten der nächsten Karte, die du in dieser Phase spielst, um 3.\n[fast] Gib 3 Beweise aus: Du entdeckst 1 Hinweis an deinem Ort.\nNachdem du Empirische Hypothese erschöpft hast, darfst du ihren Erzwungen-Effekt abhandeln und ein Kriterium wählen, das du in dieser Runde noch nicht gewählt hast. Mache Empirische Hypothese dann wieder spielbereit.",
+    "real_text": "Customizable. Limit 1 per investigator.\n<b>Forced</b> - At the start of the round: Choose one of the following criteria for this round\n- You fail a test by 2 or more.\n- You succeed at a test by 3 or more.\nWhen the chosen criteria is met, you may exhaust Empirical Hypothesis to add 1 evidence to it.\n[fast] Spend 1 evidence: Draw 1 card.",
+    "quantity": 2,
+    "skill_intellect": 1,
+    "xp": 0,
+    "health_per_investigator": false,
+    "deck_limit": 2,
+    "traits": "Talent. Wissenschaft.",
+    "real_traits": "Talent. Science.",
+    "customization_options": [
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 2,
+        "text_change": "replace",
+        "position": 4
+      },
+      {
+        "xp": 2,
+        "text_change": "append"
+      },
+      {
+        "xp": 3,
+        "text_change": "append"
+      },
+      {
+        "xp": 4,
+        "text_change": "insert",
+        "position": 4
+      }
+    ],
+    "illustrator": "Isuardi Therianto",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "482bd50b-d746-4e73-8df5-da49c9641ece",
+    "url": "http://arkhamdb.com/card/09041",
+    "imagesrc": "/bundles/cards/09041.png",
+    "taboo_text": "",
     "WARNING": "NOT UPDATED"
   }
 ]

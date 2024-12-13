@@ -307,7 +307,7 @@ def get_se_copyright(card, sheet):
         'itm': '2020',
         'eoep': '2021',
         'eoec': '2021',
-        'rtnotz': '2017', 
+        'rtnotz': '2017',
         'rtdwl': '2018',
         'rtptc': '2019',
         'rttfa': '2020',
@@ -342,7 +342,10 @@ def get_se_copyright(card, sheet):
         'ltr': '2023',
         'blbe': '2023',
         'hfa': '2024',
-        'ptr': '2023'
+        'ptr': '2023',
+        'tmg': '2024',
+        'pap': '2024',
+        'aof': '2024',
     }
     return f'<cop> {year_map[pack]} FFG'
 
@@ -401,7 +404,7 @@ def get_se_pack(card, sheet):
         'fhvc': 'TheFeastofHemlockVale',
         'eoep': 'EdgeOfTheEarthInv',
         'eoec': 'EdgeOfTheEarth',
-        'rtnotz': 'ReturnToTheNightOfTheZealot', 
+        'rtnotz': 'ReturnToTheNightOfTheZealot',
         'rtdwl': 'ReturnToTheDunwichLegacy',
         'rtptc': 'ReturnToThePathToCarcosa',
         'rttfa': 'ReturnToTheForgottenAge',
@@ -416,6 +419,7 @@ def get_se_pack(card, sheet):
         'fof': 'FortuneAndFolly',
         'mtt': 'MachinationsThroughTime',
         'blbe': 'TheBlobThatAteEverythingELSE!',
+        'tmg': 'TheMidwinterGala',
         'nat': 'NathanielCho',
         'har': 'HarveyWalters',
         'win': 'WinifredHabbamock',
@@ -431,6 +435,8 @@ def get_se_pack(card, sheet):
         'ptr': 'ParallelInvestigators',
         'rop': 'ParallelInvestigators',
         'hfa': 'ParallelInvestigators',
+        'pap': 'ParallelInvestigators',
+        'aof': 'ParallelInvestigators',
         'hoth': 'Promos',
         'tdor': 'Promos',
         'iotv': 'Promos',
@@ -733,12 +739,13 @@ def get_se_encounter(card, sheet):
         'cleanup_crew': 'CleanupCrew',
         'crimson_conspiracy': 'CrimsonConspiracy',
         'dealings_in_the_dark': 'DealingsInTheDark',
+        'the_midwinter_gala': 'TheMidwinterGala',
         None: '',
     }
 
     if encounter in encounter_map:
         return encounter_map[encounter]
-    else: 
+    else:
         return "".join(x.capitalize() for x in encounter.lower().split("_"))
 
 def get_se_encounter_total(card, sheet):
@@ -1032,6 +1039,7 @@ def get_se_encounter_total(card, sheet):
         'congress_of_the_keys': 22,
         'spatial_anomaly': 8,
         'mysteries_abound': 4,
+        'the_midwinter_gala': 78,
         None: 0,
     }
     return str(encounter_map[encounter])
@@ -1215,11 +1223,11 @@ def get_se_front_rule(card):
     return get_se_rule(rule)
 
 def get_se_back_rule(card, sheet):
-    if sheet == 1: 
+    card_type = card['type_code']
+    rule = get_field(card, 'back_text', '')
+    if card_type == 'key' and sheet == 1:
         rule = get_field(card, 'text', '')
-    else: 
-        rule = get_field(card, 'back_text', '')
-    
+
     return get_se_rule(rule)
 
 def get_se_chaos(rule, index):
@@ -1331,11 +1339,11 @@ def get_se_front_flavor(card):
     return get_se_flavor(flavor)
 
 def get_se_back_flavor(card, sheet):
-    if sheet == 1: 
+    card_type = card['type_code']
+    flavor = get_field(card, 'back_flavor', '')
+    if card_type == 'key' and sheet == 1:
         flavor = get_field(card, 'flavor', '')
-    else: 
-        flavor = get_field(card, 'back_flavor', '')
-    
+
     return get_se_flavor(flavor)
 
 def get_se_back_header(card):
@@ -1710,7 +1718,7 @@ def recreate_dir(dir):
 def download_repo(repo_folder, repo):
     if os.path.isdir(repo_folder):
         return repo_folder
-    
+
     print(f'Cloning {repo}...')
     ensure_dir(args.repo_dir)
     repo_name = repo.split('/')[-1]
@@ -1774,7 +1782,7 @@ def download_card(ahdb_id):
                 elif get_field(card, 'encounter_code', None) == None and get_field(card['linked_card'], 'encounter_code', None) != None:
                     card['encounter_code'] = card['linked_card']['encounter_code']
                     card['encounter_position'] = card['linked_card']['encounter_position']
-        
+
         with open(filename, 'w', encoding='utf-8') as file:
             json_str = json.dumps(list(translation.values()), indent=2, ensure_ascii=False)
             file.write(json_str)
@@ -1785,19 +1793,22 @@ def download_card(ahdb_id):
         cards = []
         with open(filename, 'r', encoding='utf-8') as file:
             cards.extend(json.loads(file.read()))
+        for idx, card in enumerate(cards):
+            if 'alternate_of' in card:
+                cards.append(cards.pop(idx))
         # NOTE: Add taboo cards with -t suffix.
         with open(f'translations/{lang_code}/taboo.json', 'r', encoding='utf-8') as file:
             cards.extend(json.loads(file.read()))
         for card in cards:
-            ahdb[card['code']] = card        
+            ahdb[card['code']] = card
 
-            if 'back_link' in card and card['code'][-1] == 'a':                
-                pid = f'{card['code'][:-1]}'
+            if 'back_link' in card and card['code'][-1] == 'a':
+                pid = f'{card["code"][:-1]}'
                 pp_card = copy.deepcopy(card)
                 pp_card['code'] = pid
                 ahdb[pid] = pp_card
 
-            if 'alternate_of' in card:                                                 
+            if 'alternate_of' in card:
                 old_id = card['alternate_of']
                 old_card = ahdb[old_id]
 
@@ -1984,7 +1995,7 @@ def translate_sced_card(url, deck_w, deck_h, deck_x, deck_y, is_front, card, met
     result_id = encode_result_id(get_en_url_id(url), deck_w, deck_h, deck_x, deck_y, rotate, sheet)
     if result_id in result_set:
         return
-    print(f'Translating {card['code']} - {result_id}...')
+    print(f'Translating {card["code"]} - {result_id}...')
     # print(f'{card}')
 
     if card_type == 'asset':
@@ -2260,8 +2271,8 @@ def translate_sced_card_object(object, metadata, card):
         translate_back = False
 
     if translate_back:
-        if card['type_code'] == 'key': back_is_front = False     
-        
+        if card['type_code'] == 'key': back_is_front = False
+
         # NOTE: If back side has a separate entry, then it's treated as if it's the front side of the card.
         if deck['UniqueBack']:
             translate_sced_card(back_url, deck_w, deck_h, deck_x, deck_y, back_is_front, back_card, metadata)
@@ -2288,7 +2299,7 @@ def process_player_cards(callback):
     repo_folder = download_repo(args.mod_dir_primary, 'argonui/SCED')
     player_folder = f'{repo_folder}/objects/AllPlayerCards.15bb07'
     filenames = os.listdir(player_folder)
-    
+
     bar = Bar(f'Processing player cards ', max=len(filenames))
     for filename in filenames:
         bar.next()
@@ -2319,12 +2330,15 @@ def process_encounter_cards(callback, **kwargs):
     skip_files = [
         'labyrinths_of_lunacy.json', #issue during download
         # 'the_scarlet_keys.json', #double sided key
+        'innsmouth_conspiracy.json', #not available in russian yet
         'fortune_and_folly.json',
         'machinations_through_time.json',
+        'the_midwinter_gala.json',
         'meddling_of_meowlathotep.json',
         'the_feast_of_hemlock_vale.json', #missing agenda and scenario cards
         'blob_that_ate_everything.json',
         'challenge_laid_to_rest.json',
+        'the_drowned_city_preview.json',
         'challenge_relics_of_the_past.json'
    ]
     for folder in folders:
@@ -2538,8 +2552,8 @@ def update_sced_files():
             file.write(json_str)
 
 if args.step in [None, steps[0]]:
-    process_player_cards(translate_sced_object)
     process_encounter_cards(translate_sced_object)
+    process_player_cards(translate_sced_object)
     write_csv()
 
 if args.step in [None, steps[1]]:
