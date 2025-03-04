@@ -100,6 +100,8 @@ The `SE_Generator` directory is a self-contained Strange Eons project. This mean
 
 Some cards don't have direct entries on ArkhamDB, e.g. taboo cards, so we include their translation data in the `translations` folder.
 
+Run misc/taboo.py script to download latest taboo changes.
+
 If you want to perform any language dependent transformation on generated text, you can add a `transform.py` file (with region code suffix) and declare the corresponding [transformation functions](https://github.com/lriuui0x0/SCED_Localization/blob/master/translations/zh/transform_CN.py). You will likely need to declare an entry for `transform_victory` at least because ArkhamDB translation data doesn't translate the word "Victory".
 
 ### Dropbox access token

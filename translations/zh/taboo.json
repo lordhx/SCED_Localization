@@ -38,7 +38,7 @@
   },
   {
     "pack_code": "rcore",
-    "pack_name": "Revised Core Set",
+    "pack_name": "基礎遊戲修訂版",
     "type_code": "asset",
     "type_name": "支援",
     "faction_code": "survivor",
@@ -210,7 +210,7 @@
     "octgn_id": "0ddd4332-6338-3470-3816-14e36d0acba0",
     "url": "http://arkhamdb.com/card/02226",
     "imagesrc": "/bundles/cards/02226.png",
-    "taboo_text": "This card’s [action] ability gains: “This attack may target a non-[[Elite]] enemy up to one location away from its standard range, ignoring the aloof and retaliate keywords.”",
+    "taboo_text": "此卡牌的[action]能力獲得：\"這次攻擊可以選擇位於標準射程一個地點外的一個非[[精英]]敵人作為目標，忽略其冷漠和反擊關鍵詞。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -285,7 +285,7 @@
     "octgn_id": "7d69d529-8921-4ab8-94d6-9602ef6aee5a",
     "url": "http://arkhamdb.com/card/05153",
     "imagesrc": "/bundles/cards/05153.png",
-    "taboo_text": "This card’s [fast] ability is now a [action] ability.",
+    "taboo_text": "此卡牌的[fast]能力改為[action]能力。",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -428,7 +428,7 @@
     "duplicated_by": [
       "01692"
     ],
-    "taboo_text": "This card’s ability gains: “Remove Eucatastrophe from the game.”",
+    "taboo_text": "此卡牌的能力獲得：\"將美滿結局移出遊戲。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -463,7 +463,7 @@
     "octgn_id": "dc7600e3-a132-42b0-b96b-67ca0cee4aff",
     "url": "http://arkhamdb.com/card/06022",
     "imagesrc": "/bundles/cards/06022.png",
-    "taboo_text": "This card’s constant ability now reads: “If this card has no charges, remove it from the game.”",
+    "taboo_text": "此卡牌的持續能力改為：\"如果此卡牌沒有充能，將其移出遊戲。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -496,7 +496,7 @@
     "octgn_id": "583a859c-01f8-4a2f-b963-4bccef10ca34",
     "url": "http://arkhamdb.com/card/06199",
     "imagesrc": "/bundles/cards/06199.png",
-    "taboo_text": "This card’s ability gains: “Remove each committed copy of Three Aces from the game.”",
+    "taboo_text": "此卡牌的能力獲得：\"將所有投入的三條A移出遊戲。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -530,7 +530,7 @@
     "octgn_id": "5a8f5e1c-3603-4662-bdb3-824eef31b70b",
     "url": "http://arkhamdb.com/card/60318",
     "imagesrc": "/bundles/cards/60318.png",
-    "taboo_text": "Instead of “Shuffle each weakness that was discarded…”, this card’s ability now reads: “After this skill test resolves, draw each weakness discarded by this effect.”",
+    "taboo_text": "此卡牌的能力改為：\"在這次技能檢定結算後，抽取本效果中丟棄的每張弱點卡。\"，而不是\"將本效果中丟棄的所有弱點卡洗回你的牌堆。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -608,7 +608,7 @@
     "url": "http://arkhamdb.com/card/07003",
     "imagesrc": "/bundles/cards/07003.png",
     "backimagesrc": "/bundles/cards/07003b.png",
-    "taboo_text": "This card’s [reaction] ability now reads: “After you discover 1 or more clues at a location with an enemy: Either discover 1 additional clue at that location, or automatically evade that enemy if it is non-[[Elite]]. (Limit once per round.)",
+    "taboo_text": "此卡牌的[reaction]能力改為：\"你在有敵人的地點發現線索後：發現該地點的額外1個線索，或者如果該敵人非[[精英]]，自動躲避該敵人(每輪限制一次)。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -639,7 +639,7 @@
     "octgn_id": "08e6c853-6f84-45be-92a7-2c5c1a69f108",
     "url": "http://arkhamdb.com/card/07122",
     "imagesrc": "/bundles/cards/07122.png",
-    "taboo_text": "This card’s [reaction] ability now reads: “When you resolve a [bless] token during a skill test…",
+    "taboo_text": "此卡牌的[reaction]能力改為：\"在技能檢定期間你結算一個[bless]標記時……\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -744,7 +744,7 @@
     "octgn_id": "83fc44d4-edfe-4fb3-a7f8-8e42244c7064",
     "url": "http://arkhamdb.com/card/03112",
     "imagesrc": "/bundles/cards/03112.png",
-    "taboo_text": "This card’s [fast] ability now reads: “…Gain 1 resource for each doom on David Renfield (to a maximum of 3 resources).”",
+    "taboo_text": "此卡牌的[fast]能力改為：\"……大衛·倫費爾德身上每有一個毀滅標記，獲得1資源(最多3資源)。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -893,6 +893,88 @@
     "WARNING": "NOT UPDATED"
   },
   {
+    "pack_code": "fhvp",
+    "pack_name": "鐵杉谷盛宴調查員擴充",
+    "type_code": "asset",
+    "type_name": "支援",
+    "faction_code": "seeker",
+    "faction_name": "探求者",
+    "position": 59,
+    "exceptional": false,
+    "myriad": false,
+    "code": "10059-t",
+    "name": "暴食菌株",
+    "real_name": "Ravenous Myconid",
+    "subname": "警戒枝蔓",
+    "cost": 2,
+    "text": "研究完成。每副牌組限制1張。\n[fast]：在你的綁定卡牌中查找詭異生長，並將其加入你的手牌。(每輪限制一次。)\n[reaction]在調查員抽取一張非弱點詭計卡時，如果其所在地點的隱藏值等於或低於暴食菌株上的生長數量：取消該詭計卡的效果並將其丟棄。移除暴食菌株上的全部生長。",
+    "real_text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[reaction] When an investigator draws a non-weakness treachery card, if their locations shroud is equal to or less than Ravenous Myconid's growth: Cancel that treachery's effects and discard it. Remove all growth from Ravenous Myconid.",
+    "quantity": 1,
+    "skill_intellect": 1,
+    "xp": 4,
+    "health": 1,
+    "health_per_investigator": false,
+    "sanity": 1,
+    "deck_limit": 1,
+    "traits": "生物. 科學",
+    "real_traits": "Creature. Science.",
+    "illustrator": "JB Casacop",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "aecbfa60-22c0-44b9-9d89-0037e06320db",
+    "url": "http://arkhamdb.com/card/10059",
+    "bonded_cards": [
+      {
+        "count": 1,
+        "code": "10045"
+      }
+    ],
+    "taboo_xp": 1,
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "fhvp",
+    "pack_name": "鐵杉谷盛宴調查員擴充",
+    "type_code": "asset",
+    "type_name": "支援",
+    "faction_code": "seeker",
+    "faction_name": "探求者",
+    "position": 60,
+    "exceptional": false,
+    "myriad": false,
+    "code": "10060-t",
+    "name": "暴食菌株",
+    "real_name": "Ravenous Myconid",
+    "subname": "食肉枝蔓",
+    "cost": 2,
+    "text": "研究完成。每副牌組限制1張。\n[fast]：在你的綁定卡牌中查找詭異生長，並將其加入你的手牌。(每輪限制一次。)\n[fast]選擇你所在地點一名剩餘生命值等於或低於暴食菌株上的生長數量的非[[精英]]敵人：擊敗該敵人。移除暴食菌株上的全部生長。",
+    "real_text": "Researched. Limit 1 per deck.\n[fast]: Search your bonded cards for Uncanny Growth and add it to your hand. (Limit once per round.)\n[fast] Choose a non-[[Elite]] enemy at your location with equal or fewer remaining health than the amount of growth on Ravenous Myconid: Defeat that enemy. Remove all growth from Ravenous Myconid.",
+    "quantity": 1,
+    "skill_combat": 1,
+    "xp": 4,
+    "health": 1,
+    "health_per_investigator": false,
+    "sanity": 1,
+    "deck_limit": 1,
+    "traits": "怪物. 科學",
+    "real_traits": "Monster. Science.",
+    "illustrator": "JB Casacop",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "6f426c03-ea92-4c7d-bd07-e99c6231a7c5",
+    "url": "http://arkhamdb.com/card/10060",
+    "bonded_cards": [
+      {
+        "count": 1,
+        "code": "10045"
+      }
+    ],
+    "taboo_xp": 1,
+    "WARNING": "NOT UPDATED"
+  },
+  {
     "pack_code": "tskp",
     "pack_name": "緋紅密鑰調查員擴充",
     "type_code": "asset",
@@ -907,7 +989,7 @@
     "real_name": "Runic Axe",
     "cost": 4,
     "text": "特製。使用(4充能)。當每輪開始時補充1充能。\n[action]：<b>攻擊</b>。這次攻擊你+1[combat]。在這次攻擊前，你可以花費任意數量充能，每花費1充能，灌輸到此斧的一條不同的描述上—\n- <i>精準</i>—這次攻擊你額外+2[combat]。\n- <i>力量</i>—這次攻擊造成+1傷害。",
-    "customization_text": "□<b>家傳。</b>本支援卡費用降低1點，並獲得[[遺物]]屬性。\n□<b>榮耀雕文。</b>增加此描述\"- <i>榮耀</i>—如果這次攻擊擊敗敵人，選擇一項：抽取1張卡牌、治癒1點傷害或治癒1點恐懼。\"。\n□<b>長者雕文。</b>增加此描述\"- <i>長者</i>—如果這次攻擊成功且超過難度在你所在地點的隱藏值以上，發現你所在地點的1個線索。\"\n□<b>追獵雕文</b>增加此描述\"- <i>追獵</i>—立即移動到連接地點或與你所在地點的一名敵人交戰。\"\n□<b>狂怒雕文。</b>增加此描述\"- <i>狂怒</i>—如果這次攻擊成功，除了其基礎傷害以外，對每名與你交戰的其餘敵人造成1點傷害。\"\n□□□<b>遠古力量。</b>你可以重複灌輸在同一項描述上最多三次。\n□□□<b>傳說。</b>當每輪開始時盧恩斧的充能不補充1，改為補充2。\n□□□□<b>織法者</b>對於每1個花費的充能，你可以灌輸到此斧的最多兩條不同的描述上。",
+    "customization_text": "□<b>家傳。</b>本支援卡費用降低1點，並獲得[[遺物]]屬性。\n□<b>榮耀雕文。</b>增加此描述\"- <i>榮耀</i>—如果這次攻擊擊敗敵人，選擇一項：抽取1張卡牌、治癒1點傷害或治癒1點恐懼。\"。\n□<b>長者雕文。</b>增加此描述\"- <i>長者</i>—如果這次攻擊成功且超過難度在你所在地點的隱藏值以上，發現你所在地點的1個線索。\"\n□<b>追獵雕文。</b>增加此描述\"- <i>追獵</i>—立即移動到連接地點或與你所在地點的一名敵人交戰。\"\n□<b>狂怒雕文。</b>增加此描述\"- <i>狂怒</i>—如果這次攻擊成功，除了其基礎傷害以外，對每名與你交戰的其餘敵人造成1點傷害。\"\n□□□<b>遠古力量。</b>你可以重複灌輸在同一項描述上最多三次。\n□□□<b>傳說。</b>當每輪開始時盧恩斧的充能不補充1，改為補充2。\n□□□□<b>織法者。</b>對於每1個花費的充能，你可以灌輸到此斧的最多兩條不同的描述上。",
     "customization_change": "道具. 武器. 近戰. 遺物\n- <i>榮耀</i>—如果這次攻擊擊敗敵人，選擇一項：抽取1張卡牌、治癒1點傷害或治癒1點恐懼。\n- <i>長者</i>—如果這次攻擊成功且超過難度在你所在地點的隱藏值以上，發現你所在地點的1個線索。\n- <i>追獵</i>—立即移動到連接地點或與你所在地點的一名敵人交戰。\n- <i>狂怒</i>—如果這次攻擊成功，除了其基礎傷害以外，對每名與你交戰的其餘敵人造成1點傷害。\n你可以重複灌輸在同一項描述上最多三次。\n特製。使用(4充能)。當每輪開始時補充2充能。\n[action]：<b>攻擊</b>。這次攻擊你+1[combat]。在這次攻擊前，你可以花費任意數量充能，每花費1充能，灌輸到此斧的至多兩條不同的描述上。",
     "real_text": "Customizable. Uses (4 charges). Replenish 1 of these charges at the start of each round.\n[action]: <b>Fight.</b> You get +1 [combat] for this attack. Before this attack, you may spend any number of charges to imbue the axe with that many different inscriptions -\n- <i>Accuracy</i> - You get an additional +2 [combat] for this attack.\n- <i>Power</i> - This attack deals +1 damage.",
     "quantity": 2,
@@ -968,6 +1050,37 @@
     "url": "http://arkhamdb.com/card/09022",
     "imagesrc": "/bundles/cards/09022.png",
     "taboo_text": "升級 – <b>追獵雕文</b>：+1經驗。",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "tskp",
+    "pack_name": "緋紅密鑰調查員擴充",
+    "type_code": "asset",
+    "type_name": "支援",
+    "faction_code": "rogue",
+    "faction_name": "流浪者",
+    "position": 77,
+    "exceptional": true,
+    "myriad": false,
+    "code": "09077-t",
+    "name": "地下黑市",
+    "real_name": "Underworld Market",
+    "text": "永久。卓越。你的牌組卡牌張數+10。\n[reaction]在抽取你的起始手牌前，從你的牌堆選擇10張[[違法]]卡牌：將其混洗在一起並放置在地下黑市旁，作為你的市場牌堆。\n[reaction]當你的回合開始時：揭示你市場牌堆頂部的2張卡牌。你可以花費1資源來抽取其中1張。將剩下卡牌以任意順序放置在該牌堆底部。",
+    "real_text": "Permanent. Exceptional. You get +10 deck size.\n[reaction] Before drawing your opening hand, choose 10 [[Illicit]] cards from your deck: Shuffle them together and place them next to Underworld Market, as your market deck.\n[reaction] At the start of your turn: Reveal the top 2 cards of your market deck. You may spend 1 resource to draw 1 of them. Place the rest on the bottom, in any order.",
+    "quantity": 1,
+    "xp": 2,
+    "health_per_investigator": false,
+    "deck_limit": 1,
+    "traits": "人脈. 違法",
+    "real_traits": "Connection. Illicit.",
+    "illustrator": "Anders Finer",
+    "is_unique": false,
+    "permanent": true,
+    "double_sided": false,
+    "octgn_id": "ca637eba-e67c-4fe3-a6b9-ee91efceb665",
+    "url": "http://arkhamdb.com/card/09077",
+    "imagesrc": "/bundles/cards/09077.png",
+    "taboo_xp": 2,
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1034,7 +1147,7 @@
     "octgn_id": "4543ebb4-35da-489f-bf9f-820e1078352c",
     "url": "http://arkhamdb.com/card/07269",
     "imagesrc": "/bundles/cards/07269.png",
-    "taboo_text": "This card’s ability gains: “Remove A Watchful Peace from the game.”",
+    "taboo_text": "此卡牌的能力獲得：\"將警戒和平移出遊戲。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1069,7 +1182,7 @@
     "octgn_id": "a2642077-3897-4563-83f6-d4e26123768d",
     "url": "http://arkhamdb.com/card/07301",
     "imagesrc": "/bundles/cards/07301.png",
-    "taboo_text": "This card’s ability gains: “Remove Hallow from the game.”",
+    "taboo_text": "此卡牌的能力獲得：\"將聖潔移出遊戲。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1105,7 +1218,7 @@
     "octgn_id": "72d6431f-ee56-43c6-b3b7-88d53f98cd54",
     "url": "http://arkhamdb.com/card/08019",
     "imagesrc": "/bundles/cards/08019.png",
-    "taboo_text": "This card’s <b>Forced</b> effect now reads: “<b>Forced</b> – When your first turn of the game begins: One at a time, play up to 5 [[Item]] assets…”",
+    "taboo_text": "此卡牌的<b>強制</b>效果改為：\"<b>強制</b> – 在你遊戲的第一回合開始時：一次一張，打出你手牌中最多5張[[道具]]支援卡……\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1143,7 +1256,7 @@
     "octgn_id": "b5b399d6-072b-428b-8dd5-85122d007aa2",
     "url": "http://arkhamdb.com/card/08032",
     "imagesrc": "/bundles/cards/08032.png",
-    "taboo_text": "This card’s ability gains: “(Max twice per game.)”",
+    "taboo_text": "此卡牌的能力獲得：\"(每場遊戲最多兩次。)\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1185,7 +1298,7 @@
     "duplicated_by": [
       "01533"
     ],
-    "taboo_text": "This card’s [reaction] ability now reads: “After you successfully investigate, exhaust Dr. Milan Christopher...”",
+    "taboo_text": "此卡牌的[reaction]能力改為：\"在你成功調查後，消耗米蘭·克里斯托弗博士……\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1280,7 +1393,7 @@
     "alternated_by": [
       "90078"
     ],
-    "taboo_text": "This card’s [reaction] ability gains: “(Limit once per round.)”",
+    "taboo_text": "此卡牌的[reaction]能力獲得：\"(每輪限制一次。)\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1416,7 +1529,7 @@
     "octgn_id": "31c82a7c-e642-4c53-a1ad-13b589edac18",
     "url": "http://arkhamdb.com/card/03029",
     "imagesrc": "/bundles/cards/03029.png",
-    "taboo_text": "This card’s ability now reads: “Put a level 0-3 [[Item]] asset into play from your hand.”",
+    "taboo_text": "此卡牌的能力改為：\"將手牌中的一張等級0-3的[[道具]]支援卡放置入場。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1524,7 +1637,7 @@
     "octgn_id": "a9990ab5-25b1-40aa-9436-e24bd889bfd7",
     "url": "http://arkhamdb.com/card/05116",
     "imagesrc": "/bundles/cards/05116.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "此卡牌的[action]能力改為[fast]能力。",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1559,7 +1672,7 @@
     "octgn_id": "f6e6bd79-7d2a-4ee8-a469-6e72ebbfa25c",
     "url": "http://arkhamdb.com/card/05188",
     "imagesrc": "/bundles/cards/05188.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "此卡牌的[action]能力改為[fast]能力。",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1595,7 +1708,7 @@
     "octgn_id": "8c671c80-d9a1-400d-a11d-75678e3b5bd7",
     "url": "http://arkhamdb.com/card/05189",
     "imagesrc": "/bundles/cards/05189.png",
-    "taboo_text": "This card’s [action] ability is now a [fast] ability.",
+    "taboo_text": "此卡牌的[action]能力改為[fast]能力。",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1632,7 +1745,7 @@
     "octgn_id": "43caf116-2a77-4168-a3cb-13885b676b25",
     "url": "http://arkhamdb.com/card/05020",
     "imagesrc": "/bundles/cards/05020.png",
-    "taboo_text": "This card’s ability now reads “<b>Parley.</b> Choose a non-[[Elite]] enemy at your location…”",
+    "taboo_text": "此卡牌的能力改為：\"<b>談判</b>。選擇你所在地點的一名非[[精英]]敵人……\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -1672,7 +1785,7 @@
     "octgn_id": "56924231-f626-4110-a6cb-110051423225",
     "url": "http://arkhamdb.com/card/06195",
     "imagesrc": "/bundles/cards/06195.png",
-    "taboo_text": "This card’s [action] ability now reads: “[action] Spend 1 ammo: <b>Fight.</b> You get +2 [combat] for this attack. If a chaos token with a non-negative modifier is revealed during this attack, this attack deals +2 damage.”",
+    "taboo_text": "此卡牌的[action]能力改為：\"[action]花費1子彈：<b>攻擊</b>。這次攻擊你+2[combat]。如果這次攻擊中抽出的混亂標記為非負數修正值，這次攻擊造成+2傷害。\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2198,7 +2311,7 @@
     "octgn_id": "8cc2d9c7-68be-4c2e-ac73-255a2cef591b",
     "url": "http://arkhamdb.com/card/04105",
     "imagesrc": "/bundles/cards/04105.png",
-    "taboo_text": "This card’s ability now reads “<b>Parley.</b> Choose a non-weakness enemy at your location…”",
+    "taboo_text": "此卡牌的能力改為：\"<b>談判</b>。選擇你所在地點的一個非弱點敵人……\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2393,6 +2506,7 @@
     "real_slot": "Hand",
     "traits": "道具. 樂器. 遺物. 詛咒縈繞",
     "real_traits": "Item. Instrument. Relic. Cursed.",
+    "tags": "se.",
     "illustrator": "Carlos Palma Cruchaga",
     "is_unique": true,
     "permanent": false,
@@ -2502,7 +2616,7 @@
     "octgn_id": "50e87e5f-6d92-4dd6-86a4-ab8ba454799c",
     "url": "http://arkhamdb.com/card/08076",
     "imagesrc": "/bundles/cards/08076.png",
-    "taboo_text": "This card’s ability gains “(Max twice per game.)”",
+    "taboo_text": "此卡牌的能力獲得：\"(每場遊戲最多兩次。)\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2587,6 +2701,41 @@
     "pack_name": "闇與地球之界調查員擴充",
     "type_code": "asset",
     "type_name": "支援",
+    "faction_code": "rogue",
+    "faction_name": "流浪者",
+    "faction2_code": "survivor",
+    "faction2_name": "求生者",
+    "position": 113,
+    "exceptional": false,
+    "myriad": false,
+    "code": "08113-t",
+    "name": "大肆借貸",
+    "real_name": "Unscrupulous Loan",
+    "cost": 0,
+    "text": "每位調查員限制1張。不能離場。\n[reaction]在你打出大肆借貸後：獲得10資源。\n<b>強制</b> - 在遊戲結束或你退場時，如果你的資源池中的資源少於10：放逐大肆借貸。",
+    "real_text": "Limit 1 per investigator. Cannot leave play.\n[reaction] After you play Unscrupulous Loan: Gain 10 resources.\n<b>Forced</b> - When the game ends or you are eliminated, if you have fewer than 10 resources in your resource pool: Exile Unscrupulous Loan.",
+    "quantity": 2,
+    "xp": 3,
+    "health_per_investigator": false,
+    "deck_limit": 2,
+    "traits": "契約",
+    "real_traits": "Pact.",
+    "illustrator": "Drazenka Kimpel",
+    "is_unique": false,
+    "exile": true,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "90f645d5-0de3-409b-bb6e-5cd89178004b",
+    "url": "http://arkhamdb.com/card/08113",
+    "imagesrc": "/bundles/cards/08113.png",
+    "taboo_text": "此卡牌的第一行獲得：\"劇本模式專用。\"",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "eoep",
+    "pack_name": "闇與地球之界調查員擴充",
+    "type_code": "asset",
+    "type_name": "支援",
     "faction_code": "guardian",
     "faction_name": "守衛者",
     "faction2_code": "mystic",
@@ -2652,7 +2801,7 @@
     "octgn_id": "31b210cb-325b-4a50-9e7b-cccb0dd8f04a",
     "url": "http://arkhamdb.com/card/09045",
     "imagesrc": "/bundles/cards/09045.png",
-    "taboo_text": "This card’s second ability gains: “(max 3 evidence spent per round).”",
+    "taboo_text": "此卡牌的第二項能力獲得：\"(每輪最多花費3證據。)\"",
     "WARNING": "NOT UPDATED"
   },
   {
@@ -2729,7 +2878,82 @@
     "octgn_id": "fe908036-fc59-4d16-9499-bb1921915c6d",
     "url": "http://arkhamdb.com/card/09081",
     "imagesrc": "/bundles/cards/09081.png",
-    "taboo_text": "This card’s text box now reads: “[action] If attached enemy is at your location: <b>Parley.</b> Test [willpower] (3). If you succeed, give it a command (limit once per round per command) – “Go.” This enemy moves once in a direction of your choice.” This card’s customizable sheet loses the “Mercy” ability and gains“☐Cower. Add the command: “- ‘Cower.’ This enemy exhausts.”",
+    "taboo_text": "This card’s text box now reads: \"[action] If attached enemy is at your location: <b>Parley.</b> Test [willpower](3). If you succeed, give it a command (limit once per round per command) – \"Go.\" This enemy moves once in a direction of your choice.\" This card’s customizable sheet loses the \"Mercy\" ability and gains\"☐Cower. Add the command: \"- ‘Cower.’ This enemy exhausts.\"",
+    "WARNING": "NOT UPDATED"
+  },
+  {
+    "pack_code": "tskp",
+    "pack_name": "緋紅密鑰調查員擴充",
+    "type_code": "asset",
+    "type_name": "支援",
+    "faction_code": "seeker",
+    "faction_name": "探求者",
+    "position": 41,
+    "exceptional": false,
+    "myriad": false,
+    "code": "09041-t",
+    "name": "經驗假設法",
+    "real_name": "Empirical Hypothesis",
+    "cost": 2,
+    "text": "特製。每位調查員限制1張。\n<b>強制</b>-當一輪開始時：為本輪選擇以下一個假設標準(你檢定失敗且低於難度至少2點，或你檢定成功且超過難度至少3點)。在達成所選的假設標準時，你可以消耗經驗假設法來增加1證據到其上。\n[fast]花費1證據：抽取1張卡牌。",
+    "customization_text": "□<b>悲觀前景。</b>增加以下假設標準：\"你的手牌用完了。\"\n□<b>試誤法。</b>增加以下假設標準：\"你受到傷害或恐懼。\"\n□<b>自變量。</b>增加以下假設標準：你從場上丟棄一張詭計卡或一名敵人。\"\n□<b>實地研究。</b>增加以下假設標準：\"你進入隱藏值3以上的地點。\"\n□□<b>同行評審。</b>不只有你，改為如果你所在地點任一調查員達成所選的假設標準就能達成該標準。你所在地點其他調查員可以觸發經驗假設法上的[fast]能力。\n□□<b>研究補助金。</b>經驗假設法獲得：\"[fast]花費2證據：本階段你打出的下一張卡牌的費用降低3點。\"\n□□□<b>無可辯駁。</b>經驗假設法獲得：\"[fast]花費3證據：發現你所在地點的1個線索。\"\n□□□□<b>對立假說。</b>在你消耗經驗假設法後，你可以結算其強制效果，並選擇一項本輪你尚未選擇的假設標準。然後，將其準備。",
+    "customization_change": "你的手牌用完了，\n你受到傷害或恐懼，\n你從場上丟棄一張詭計卡或一名敵人，\n你進入隱藏值3以上的地點，\n你所在地點任一調查員在達成所選的假設標準時，你可以消耗經驗假設法來增加1證據到其上。你所在地點的其他調查員可以觸發經驗假設法上的[fast]能力。\n[fast]花費2證據：本階段你打出的下一張卡牌的費用降低3點。\n[fast]花費3證據：發現你所在地點的1個線索。\n在你消耗經驗假設法後，你可以結算其強制效果，並選擇一項本輪你尚未選擇的假設標準。然後，將其準備。",
+    "real_text": "Customizable. Limit 1 per investigator.\n<b>Forced</b> - At the start of the round: Choose one of the following criteria for this round\n- You fail a test by 2 or more.\n- You succeed at a test by 3 or more.\nWhen the chosen criteria is met, you may exhaust Empirical Hypothesis to add 1 evidence to it.\n[fast] Spend 1 evidence: Draw 1 card.",
+    "quantity": 2,
+    "skill_intellect": 1,
+    "xp": 0,
+    "health_per_investigator": false,
+    "deck_limit": 2,
+    "traits": "才能. 科學",
+    "real_traits": "Talent. Science.",
+    "customization_options": [
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 1,
+        "text_change": "insert",
+        "position": 3
+      },
+      {
+        "xp": 2,
+        "text_change": "replace",
+        "position": 4
+      },
+      {
+        "xp": 2,
+        "text_change": "append"
+      },
+      {
+        "xp": 3,
+        "text_change": "append"
+      },
+      {
+        "xp": 4,
+        "text_change": "insert",
+        "position": 4
+      }
+    ],
+    "illustrator": "Isuardi Therianto",
+    "is_unique": false,
+    "permanent": false,
+    "double_sided": false,
+    "octgn_id": "482bd50b-d746-4e73-8df5-da49c9641ece",
+    "url": "http://arkhamdb.com/card/09041",
+    "imagesrc": "/bundles/cards/09041.png",
+    "taboo_text": "此卡牌的[fast]能力獲得\"每輪限制兩次\"",
     "WARNING": "NOT UPDATED"
   }
 ]
