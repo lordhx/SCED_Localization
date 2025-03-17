@@ -35,7 +35,7 @@ steps = ['translate', 'generate', 'pack', 'upload', 'update']
 langs = ['es', 'de', 'it', 'fr', 'ko', 'uk', 'pl', 'ru', 'zh_TW', 'zh_CN']
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--lang', default='zh_CN', choices=langs, help='The language to translate into')
+parser.add_argument('--lang', default='ru', choices=langs, help='The language to translate into')
 parser.add_argument('--se-executable', default=r'C:\Program Files\StrangeEons\bin\eons.exe', help='The Strange Eons executable path')
 parser.add_argument('--se-preferences', default=fr'{os.getenv("APPDATA")}\StrangeEons3\preferences', help='The Strange Eons preferences file path')
 parser.add_argument('--filter', default='True', help='A Python expression filter for what cards to process')
@@ -44,7 +44,7 @@ parser.add_argument('--cache-dir', default='cache', help='The directory to keep 
 parser.add_argument('--decks-dir', default='decks', help='The directory to keep translated deck images')
 parser.add_argument('--ahdb-dir', default='repos/arkhamdb-json-data', help='The directory to the ArkhamDB json data repository')
 parser.add_argument('--mod-dir-primary', default='repos/SCED', help='The directory to the primary mod repository')
-parser.add_argument('--mod-dir-secondary', default='repos/loadable-objects', help='The directory to the secondary mod repository')
+parser.add_argument('--mod-dir-secondary', default='repos/SCED-downloads', help='The directory to the secondary mod repository')
 parser.add_argument('--url-file', default='cache/urls.json', help='The file to keep the url mapping')
 parser.add_argument('--dropbox-token', default=None, help='The dropbox token for uploading translated deck images')
 parser.add_argument('--new-link', action='store_true', help='Whether to create new URL while uploading deck images')
@@ -346,6 +346,7 @@ def get_se_copyright(card, sheet):
         'tmg': '2024',
         'pap': '2024',
         'aof': '2024',
+        'tdcp': '2025',
     }
     return f'<cop> {year_map[pack]} FFG'
 
@@ -404,6 +405,7 @@ def get_se_pack(card, sheet):
         'fhvc': 'TheFeastofHemlockVale',
         'eoep': 'EdgeOfTheEarthInv',
         'eoec': 'EdgeOfTheEarth',
+        'tdcp': 'TheDrownedCity',
         'rtnotz': 'ReturnToTheNightOfTheZealot',
         'rtdwl': 'ReturnToTheDunwichLegacy',
         'rtptc': 'ReturnToThePathToCarcosa',
@@ -1040,6 +1042,7 @@ def get_se_encounter_total(card, sheet):
         'spatial_anomaly': 8,
         'mysteries_abound': 4,
         'the_midwinter_gala': 78,
+        'written_in_rock': 38, 'hemlock_house': 44, 'the_silent_heath': 26, 'the_lost_sister': 31, 'the_thing_in_the_depths': 39, 'the_twisted_hollow': 34, 'the_longest_night': 38, 'fate_of_the_vale': 40, 'the_first_day': 4, 'the_second_day': 4, 'the_final_day': 4, 'day_of_rest': 2, 'day_of_rain': 6, 'day_of_the_feast': 10, 'residents': 20, 'the_vale': 17, 'heirlooms': 3, 'horrors_in_the_rock': 12, 'agents_of_the_colour': 4, 'transfiguration': 4, 'blight': 4, 'refractions': 5, 'the_forest': 11, 'myconids': 5, 'mutations': 4, 'fire': 5,
         None: 0,
     }
     return str(encounter_map[encounter])
@@ -1871,7 +1874,7 @@ def download_card(ahdb_id):
                 card[point_key] = point
                 card['text'] = re.sub(re_point, '', card['text'])
 
-    return ahdb[ahdb_id]
+    return ahdb.get(ahdb_id, None)
 
 url_map = None
 def read_url_map():
@@ -1977,7 +1980,8 @@ se_types = [
     'scenario_header',
     'story',
     'key_front',
-    'key_back'
+    'key_back',
+    'enemy_location'
 ]
 se_cards = dict(zip(se_types, [[] for _ in range(len(se_types))]))
 result_set = set()
@@ -2291,9 +2295,11 @@ def translate_sced_object(object, metadata, card, _1, _2):
     elif object['Name'] == 'Custom_Token':
         translate_sced_token_object(object, metadata, card)
 
-def is_translatable(ahdb_id):
+def is_translatable(metadata):
     # NOTE: Skip minicards.
-    return '-m' not in ahdb_id
+    # print(metadata)
+
+    return metadata.get('id', None) and ('-m' not in metadata['id']) and (metadata.get('cycle', '') not in ['The Drowned City'])
 
 def process_player_cards(callback):
     repo_folder = download_repo(args.mod_dir_primary, 'argonui/SCED')
@@ -2307,9 +2313,8 @@ def process_player_cards(callback):
             metadata_filename = f'{player_folder}/{filename}'
             with open(metadata_filename, 'r', encoding='utf-8') as metadata_file:
                 metadata = json.loads(metadata_file.read())
-                ahdb_id = metadata['id']
-                if is_translatable(ahdb_id):
-                    card = download_card(ahdb_id)
+                if is_translatable(metadata):
+                    card = download_card(metadata['id'])
                     if eval(args.filter):
                         object_filename = metadata_filename.replace('.gmnotes', '.json')
                         with open(object_filename, 'r', encoding='utf-8') as object_file:
@@ -2324,64 +2329,75 @@ def process_player_cards(callback):
 
 def process_encounter_cards(callback, **kwargs):
     include_decks = kwargs.get('include_decks', False)
-    repo_folder = download_repo(args.mod_dir_secondary, 'Chr1Z93/loadable-objects')
-    folders = ['campaigns', 'scenarios']
+    repo_folder = download_repo(args.mod_dir_secondary, 'Chr1Z93/SCED-downloads')
+    top_folders = ['campaign', 'scenario']
     # NOTE: These campaigns don't have data on ADB yet.
-    skip_files = [
-        'labyrinths_of_lunacy.json', #issue during download
-        # 'the_scarlet_keys.json', #double sided key
-        'innsmouth_conspiracy.json', #not available in russian yet
-        'fortune_and_folly.json',
-        'machinations_through_time.json',
-        'the_midwinter_gala.json',
-        'meddling_of_meowlathotep.json',
-        'the_feast_of_hemlock_vale.json', #missing agenda and scenario cards
-        'blob_that_ate_everything.json',
-        'challenge_laid_to_rest.json',
-        'the_drowned_city_preview.json',
-        'challenge_relics_of_the_past.json'
-   ]
-    for folder in folders:
-        campaign_folder = f'{repo_folder}/{folder}'
-        for filename in os.listdir(campaign_folder):
-            if filename in skip_files:
-                continue
-            campaign_filename = f'{campaign_folder}/{filename}'
-            with open(campaign_filename, 'r', encoding='utf-8') as object_file:
-                def find_encounter_objects(object):
-                    if type(object) == dict:
-                        if include_decks and object.get('Name') == 'Deck':
-                            results = find_encounter_objects(object['ContainedObjects'])
-                            results.append(object)
-                            return results
-                        elif object.get('Name') in ['Card', 'CardCustom'] and object.get('GMNotes', '').startswith('{'):
-                            return [object]
-                        # NOTE: Some scenario cards have tracker box on them and are custom token object instead.
-                        elif object.get('Name') == 'Custom_Token' and object.get('Nickname') == 'Scenario' and object.get('GMNotes', '').startswith('{'):
-                            return [object]
-                        elif 'ContainedObjects' in object:
-                            return find_encounter_objects(object['ContainedObjects'])
-                        else:
-                            return []
-                    elif type(object) == list:
-                        results = []
-                        for inner_object in object:
-                            results.extend(find_encounter_objects(inner_object))
-                        return results
-                    else:
-                        return []
+#     skip_files = [
+#         'labyrinths_of_lunacy.json', #issue during download
+#         # 'the_scarlet_keys.json', #double sided key
+#         'innsmouth_conspiracy.json', #not available in russian yet
+#         'fortune_and_folly.json',
+#         'machinations_through_time.json',
+#         'the_midwinter_gala.json',
+#         'meddling_of_meowlathotep.json',
+#         # 'the_feast_of_hemlock_vale.json', #missing agenda and scenario cards
+#         'blob_that_ate_everything.json',
+#         'challenge_laid_to_rest.json',
+#         'the_drowned_city_preview.json',
+#         'challenge_relics_of_the_past.json'
+#    ]
 
-                campaign = json.loads(object_file.read())
-                for object in find_encounter_objects(campaign):
-                    if object.get('Name', None) == 'Deck':
-                        callback(object, None, None, campaign_filename, campaign)
-                    else:
-                        metadata = json.loads(object['GMNotes'])
-                        ahdb_id = metadata['id']
-                        if is_translatable(ahdb_id):
-                            card = download_card(ahdb_id)
-                            if eval(args.filter):
-                                callback(object, metadata, card, campaign_filename, campaign)
+    for top_folder in top_folders:
+        for root, dirs, files in os.walk(f'{repo_folder}/decomposed/{top_folder}'):
+            for name in files:
+                if name.endswith((".json")) and '\\The Path to Carcosa' in root:
+                    campaign_filename = os.path.join(root, name)
+                    
+                    with open(campaign_filename, 'r', encoding='utf-8') as object_file:
+                        def find_encounter_objects(object):
+                            if type(object) == dict:
+                                if type(object.get('GMNotes', '')) != dict and object.get('GMNotes', '').startswith('{'):
+                                     object['GMNotes'] = json.loads(object['GMNotes'])
+
+                                if type(object.get('GMNotes', '')) != dict and object.get('GMNotes_path', '').endswith('.gmnotes'):
+                                    name = object.get('GMNotes_path', '').split('/')[-1]
+                                    gmnotes_filename =  os.path.join(root, name)
+                                    with open(gmnotes_filename, 'r', encoding='utf-8') as gmnotes_file:
+                                        object['GMNotes'] = json.loads(gmnotes_file.read())
+
+                                if include_decks and object.get('Name') == 'Deck':
+                                    # results = find_encounter_objects(object['ContainedObjects'])
+                                    # results.append(object)
+                                    # return results
+                                    return [object]
+                                elif object.get('Name') in ['Card', 'CardCustom'] and type(object.get('GMNotes', '')) == dict:
+                                    return [object]
+                                # NOTE: Some scenario cards have tracker box on them and are custom token object instead.
+                                elif object.get('Name') == 'Custom_Token' and object.get('Nickname') == 'Scenario' and type(object.get('GMNotes', '')) == dict:
+                                    return [object]
+                                elif 'ContainedObjects' in object:
+                                    return find_encounter_objects(object['ContainedObjects'])
+                                else:
+                                    return []
+                            elif type(object) == list:
+                                results = []
+                                for inner_object in object:
+                                    results.extend(find_encounter_objects(inner_object))
+                                return results
+                            else:
+                                return []
+
+                        campaign = json.loads(object_file.read())
+
+                        for object in find_encounter_objects(campaign):
+                            if object.get('Name', None) == 'Deck':
+                                callback(object, None, None, campaign_filename, campaign)
+                            else:
+                                metadata = object['GMNotes']
+                                if is_translatable(metadata):
+                                    card = download_card(metadata['id'])
+                                    if card and eval(args.filter):
+                                        callback(object, metadata, card, campaign_filename, campaign)
 
 def write_csv():
     data_dir = 'SE_Generator/data'
@@ -2543,17 +2559,24 @@ def update_sced_card_object(object, metadata, card, filename, root):
                 url_object[url_key] = url_map[args.lang][deck_url_id]
 
 def update_sced_files():
-    for filename, root in updated_files.items():
+    for filename, object in updated_files.items():
         with open(filename, 'w', encoding='utf-8') as file:
             print(f'Writing {filename}...')
-            json_str = json.dumps(root, indent=2, ensure_ascii=False)
+
+            if object.get('GMNotes_path', '').endswith('.gmnotes'):
+                del object['GMNotes']
+
+            if type(object.get('GMNotes', '')) == dict:
+                object['GMNotes'] = json.dumps(object['GMNotes'], indent=2, ensure_ascii=False)
+            
+            json_str = json.dumps(object, indent=2, ensure_ascii=False)
             # NOTE: Reverse the lower case scientific notation 'e' to upper case, in order to be consistent with those generated by TTS.
             json_str = re.sub(r'(\d+)e-(\d\d)', r'\1E-\2', json_str)
             file.write(json_str)
 
 if args.step in [None, steps[0]]:
     process_encounter_cards(translate_sced_object)
-    process_player_cards(translate_sced_object)
+    # process_player_cards(translate_sced_object)
     write_csv()
 
 if args.step in [None, steps[1]]:
@@ -2566,7 +2589,7 @@ if args.step in [None, steps[3]]:
     upload_images()
 
 if args.step in [None, steps[4]]:
-    process_player_cards(update_sced_card_object)
+    # process_player_cards(update_sced_card_object)
     process_encounter_cards(update_sced_card_object, include_decks=True)
     update_sced_files()
 
